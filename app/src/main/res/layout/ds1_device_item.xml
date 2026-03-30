@@ -7,5 +7,5 @@
     android:paddingBottom="15dp"
     android:paddingLeft="24dp"
     android:paddingRight="24dp"
-    android:background="#2C2323"
+    android:background="@color/alert_item_background"
     android:screenOrientation="portrait" />

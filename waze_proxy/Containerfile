@@ -1,0 +1,48 @@
+FROM fedora:41
+
+# Install Xvfb, a window manager, and Chrome dependencies
+RUN dnf install -y \
+        python3 \
+        python3-pip \
+        xorg-x11-server-Xvfb \
+        openbox \
+        dbus-x11 \
+        wget \
+        liberation-fonts \
+        google-noto-sans-fonts \
+        nss \
+        atk \
+        at-spi2-atk \
+        cups-libs \
+        libdrm \
+        libXcomposite \
+        libXdamage \
+        libXrandr \
+        mesa-libgbm \
+        mesa-dri-drivers \
+        pango \
+        alsa-lib \
+        libxkbcommon \
+    && dnf clean all
+
+# Install Google Chrome stable
+RUN wget -q -O /tmp/google-chrome.rpm \
+        https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm \
+    && dnf install -y /tmp/google-chrome.rpm \
+    && rm -f /tmp/google-chrome.rpm \
+    && dnf clean all
+
+RUN google-chrome-stable --version
+
+WORKDIR /app
+
+COPY requirements.txt .
+RUN pip3 install --no-cache-dir -r requirements.txt
+RUN playwright install chromium
+
+COPY server.py .
+COPY start.sh .
+RUN chmod +x start.sh
+
+EXPOSE 8080
+ENTRYPOINT ["/app/start.sh"]

@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     android:screenOrientation="portrait">
 
     <TextView
@@ -43,12 +44,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/useAircraftsLabel" />
 
+    <TextView
+        android:id="@+id/aircraftsURLHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Default server is OpenSky Network (https://opensky-network.org)"
+        android:textSize="12sp"
+        android:textColor="@color/hint_text"
+        app:layout_constraintTop_toBottomOf="@id/aircraftsURLEdit"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <EditText
         android:id="@+id/aircraftsUserEdit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="16dp"
         android:layout_marginBottom="32dp"
         android:layout_marginEnd="24dp"
         android:autofillHints="username"
@@ -57,7 +70,7 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/aircraftsURLEdit" />
+        app:layout_constraintTop_toBottomOf="@id/aircraftsURLHint" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/password"
@@ -85,5 +98,38 @@
             app:layout_constraintTop_toTopOf="parent" />
 
     </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/aircraftsLoginHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Optional. Authenticated users get higher API rate limits for more frequent updates."
+        android:textSize="12sp"
+        android:textColor="@color/hint_text"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/aircraftsReminderLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="16dp"
+        android:layout_marginStart="24dp"
+        android:text="Speech reminders"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/aircraftsLoginHint"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/aircraftsReminderSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/aircraftsLoginHint" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

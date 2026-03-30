@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     android:screenOrientation="portrait"
-    tools:context="com.jsd.x761.nexus.SettingsMenuActivity">
+    tools:context="com.jsd.x761.growler.SettingsMenuActivity">
 
     <ListView
         android:id="@+id/menuView"

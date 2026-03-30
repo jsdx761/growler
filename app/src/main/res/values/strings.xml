@@ -1,23 +1,45 @@
 <resources>
-    <string name="app_name">Nexus</string>
+    <string name="app_name">Growler</string>
     <!--
     This string is used for square devices and overridden by hello_world in
     values-round/strings.xml for round devices.
     -->
-    <string name="preference_file_key">NexusPreferences</string>
-    <string name="key_ds1_enabled">NexusDS1Enabled</string>
-    <string name="key_ds1_autoconnect">NexusDS1Autoconnect</string>
-    <string name="key_ds1_autoconnect_address">NexusDS1AutoconnectAddress</string>
-    <string name="key_reports_enabled">NexusReportsEnabled</string>
-    <string name="key_reports_url">NexusReportsURL</string>
-    <string name="default_reports_url">https://your-crowd-sourced-alert-server</string>
-    <string name="key_aircrafts_enabled">NexusAircraftsEnabled</string>
-    <string name="key_aircrafts_url">NexusAircraftsURL</string>
+    <string name="preference_file_key">GrowlerPreferences</string>
+    <string name="key_ds1_enabled">GrowlerDS1Enabled</string>
+    <string name="key_ds1_autoconnect">GrowlerDS1Autoconnect</string>
+    <string name="key_ds1_autoconnect_address">GrowlerDS1AutoconnectAddress</string>
+    <string name="key_reports_enabled">GrowlerReportsEnabled</string>
+    <string name="key_reports_url">GrowlerReportsURL</string>
+    <string name="default_reports_url">https://www.waze.com</string>
+    <string name="key_reports_env">GrowlerReportsEnv</string>
+    <string name="default_reports_env">na</string>
+    <string name="key_reports_api_key">GrowlerReportsAPIKey</string>
+    <string name="default_reports_api_key"></string>
+    <string name="key_reports_police">GrowlerReportsPolice</string>
+    <string name="key_reports_accident">GrowlerReportsAccident</string>
+    <string name="key_reports_hazard">GrowlerReportsHazard</string>
+    <string name="key_reports_jam">GrowlerReportsJam</string>
+    <string name="key_reports_reminder">GrowlerReportsReminder</string>
+    <string name="key_location_foreground_service">GrowlerLocationForegroundService</string>
+    <string name="key_location_wake_lock">GrowlerLocationWakeLock</string>
+    <string name="key_location_interval">GrowlerLocationInterval</string>
+    <string name="default_location_interval">2000</string>
+    <string name="key_aircrafts_enabled">GrowlerAircraftsEnabled</string>
+    <string name="key_aircrafts_url">GrowlerAircraftsURL</string>
     <string name="default_aircrafts_url">https://opensky-network.org</string>
-    <string name="key_aircrafts_user">NexusAircraftsUser</string>
+    <string name="key_aircrafts_user">GrowlerAircraftsUser</string>
     <string name="default_aircrafts_user">user</string>
-    <string name="key_aircrafts_password">NexusAircraftsPassword</string>
+    <string name="key_aircrafts_password">GrowlerAircraftsPassword</string>
     <string name="default_aircrafts_password">password</string>
-    <string name="shortcut_alerts_short_label">Nexus Alerts</string>
+    <string name="key_aircrafts_reminder">GrowlerAircraftsReminder</string>
+    <string name="key_voice_use_prerecorded">GrowlerVoiceUsePreRecorded</string>
+    <string name="key_voice_mode">GrowlerVoiceMode</string>
+    <string name="key_voice_speed">GrowlerVoiceSpeed</string>
+    <string name="key_voice_pitch">GrowlerVoicePitch</string>
+    <string name="key_tuned_local_voice">GrowlerTunedLocalVoice</string>
+    <string name="key_tuned_local_pitch">GrowlerTunedLocalPitch</string>
+    <string name="key_tuned_local_rate">GrowlerTunedLocalRate</string>
+    <string name="key_tuned_local_filter">GrowlerTunedLocalFilter</string>
+    <string name="shortcut_alerts_short_label">Growler Alerts</string>
     <string name="shortcut_volume_short_label">DS1 Volume</string>
 </resources>

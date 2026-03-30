@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     android:screenOrientation="portrait">
 
     <ImageView
@@ -14,7 +15,7 @@
         android:src="@drawable/radar_24"
         android:contentDescription="Radar"
         android:visibility="visible"
-        app:tint="#444444"
+        app:tint="@color/status_icon_inactive"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -59,4 +60,16 @@
         app:layout_constraintEnd_toEndOf="@+id/ds1VolumeSeekBar"
         app:layout_constraintStart_toStartOf="@+id/ds1VolumeSeekBar"
         app:layout_constraintTop_toTopOf="@+id/ds1VolumeMinus" />
+
+    <TextView
+        android:id="@+id/ds1VolumeHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Controls the volume on the DS1 unit"
+        android:textSize="12sp"
+        android:textColor="@color/hint_text"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/ds1VolumeSeekBar"
+        app:layout_constraintStart_toStartOf="@+id/ds1VolumeSeekBar"
+        app:layout_constraintTop_toBottomOf="@+id/ds1VolumeText" />
 </androidx.constraintlayout.widget.ConstraintLayout>

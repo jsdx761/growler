@@ -1,6 +1,6 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="Theme.Nexus" parent="Theme.AppCompat">
+    <style name="Theme.Growler" parent="Theme.AppCompat">
 
     </style>
 </resources>

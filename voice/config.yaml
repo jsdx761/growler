@@ -1,0 +1,68 @@
+# ============================================================================
+# Voice Segment Generation Pipeline — Configuration
+# Target: UK female navigation / radar detector / aviation alert voice
+#
+# Uses the Mistral Voxtral API to clone a voice from reference recordings
+# and generate pre-recorded audio segments for the Growler Android app.
+#
+# Usage:
+#   python pipeline.py                   # run all stages
+#   python pipeline.py --stage 1         # run only stage 1
+#   python pipeline.py --list            # list available stages
+# ============================================================================
+
+# ─── General ───────────────────────────────────────────────────────────────
+general:
+  output_dir: ./output
+
+# ─── Voxtral (Mistral API) ────────────────────────────────────────────────
+voxtral:
+  model: voxtral-mini-tts-2603
+  reference_recordings_dir: ./reference_recordings
+  reference_gap_ms: 750                  # Silence between segments in combined file
+  reference_rms_threshold_db: 4.0        # Exclude segments > this many dB below median RMS
+  reference_file: ./reference_recordings/combined_raw-esv2-speech-100p.wav
+  voice_name: uk-voice-clone
+  gender: female
+  languages: [en]
+  tags: [cloned, navigation]
+  request_delay_s: 0.1                 # Delay between API calls (rate limiting)
+  voice_output_subdir: voxtral_voice   # Voice info + preview samples
+
+# ─── Voxtral Voice Segments ───────────────────────────────────────────────
+voxtral_segments:
+  segments_file: ./data/voice_segments.txt
+  candidates_per_segment: 1             # N takes per segment; >1 enables SNR-based selection
+  denoise: false                        # Apply FFmpeg denoise filter chain (can alter speech timbre)
+
+# ─── ElevenLabs (Instant Voice Cloning + TTS) ────────────────────────────
+# Alternative pipeline using ElevenLabs API (stages 4–6).
+# Requires ELEVENLABS_API_KEY in .env.
+#
+# Starter plan ($5/mo) includes 30,000 credits.
+# Credit usage per full run (863 segments):
+#   - eleven_multilingual_v2,    1 candidate:  ~20,000 credits (fits Starter)
+#   - eleven_flash_v2_5 (0.5x), 1 candidate:  ~10,000 credits
+elevenlabs:
+  model: eleven_multilingual_v2          # Best quality; alt: eleven_flash_v2_5 (faster, 0.5x credits)
+  output_format: pcm_24000             # Raw PCM at 24 kHz -> converted to WAV (matches Voxtral output)
+  reference_file: ./reference_recordings/combined_raw-esv2-speech-100p.wav  # Adobe Enhanced Speech V2
+  voice_name: uk-voice-clone-elevenlabs
+  voice_description: UK female navigation and alert voice
+  gender: female
+  accent: british
+  languages: [en]
+  remove_background_noise: false        # Reference is already Adobe-denoised; enabling degrades quality
+  stability: 1.00                       # 0.0–1.0: higher = more consistent (0.60–0.85 for narration)
+  similarity_boost: 1.00                # 0.0–1.0: higher = closer to reference voice
+  speed: 0.82                            # 0.7–1.2: speaking rate (1.0 = default; lower = slower)
+  style: 0.0                            # Keep at 0 (ElevenLabs recommendation)
+  use_speaker_boost: true               # Enhances voice similarity at slight latency cost
+  request_delay_s: 0.5                  # Delay between API calls (Starter: 3 concurrent v2 requests)
+  voice_output_subdir: elevenlabs_voice
+  package_speeds: [0.75, 0.82]           # Speed variants to package in stage 6
+
+# ─── ElevenLabs Voice Segments ───────────────────────────────────────────
+elevenlabs_segments:
+  segments_file: ./data/voice_segments.txt
+  candidates_per_segment: 1             # 1 = ~20K credits (multilingual_v2); >1 enables SNR-based selection

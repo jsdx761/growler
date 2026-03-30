@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     android:screenOrientation="portrait">
 
     <TextView
@@ -42,5 +43,219 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/useReportsLabel" />
+
+    <TextView
+        android:id="@+id/reportsURLHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Waze server (https://www.waze.com) or proxy server"
+        android:textSize="12sp"
+        android:textColor="@color/hint_text"
+        app:layout_constraintTop_toBottomOf="@id/reportsURLEdit"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/reportsAPIKeyLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="4dp"
+        android:layout_marginStart="24dp"
+        android:text="API key (optional)"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/reportsURLHint"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/reportsAPIKeyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:passwordToggleEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reportsAPIKeyLabel">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/reportsAPIKeyEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:inputType="textPassword"
+            android:textSize="16sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/reportsAPIKeyHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Used to secure access to a proxy server"
+        android:textSize="12sp"
+        android:textColor="@color/hint_text"
+        app:layout_constraintTop_toBottomOf="@id/reportsAPIKeyLayout"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/reportsEnvLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="4dp"
+        android:layout_marginStart="24dp"
+        android:screenOrientation="portrait"
+        android:text="Region"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/reportsAPIKeyHint"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/reportsEnvEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:autofillHints=""
+        android:inputType="text"
+        android:text="na"
+        android:textSize="16sp"
+        android:hint="na"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reportsEnvLabel" />
+
+    <TextView
+        android:id="@+id/reportsEnvHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="na = North America, row = Rest of World"
+        android:textSize="12sp"
+        android:textColor="@color/hint_text"
+        app:layout_constraintTop_toBottomOf="@id/reportsEnvEdit"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/reportsTypesLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="8dp"
+        android:layout_marginStart="24dp"
+        android:text="Alert types"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/reportsEnvHint"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/reportsPoliceLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:layout_marginStart="24dp"
+        android:text="Speed traps"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/reportsTypesLabel"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/reportsPoliceSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reportsTypesLabel" />
+
+    <TextView
+        android:id="@+id/reportsAccidentLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:layout_marginStart="24dp"
+        android:text="Accidents"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/reportsPoliceLabel"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/reportsAccidentSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reportsPoliceLabel" />
+
+    <TextView
+        android:id="@+id/reportsHazardLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:layout_marginStart="24dp"
+        android:text="Hazards"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/reportsAccidentLabel"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/reportsHazardSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reportsAccidentLabel" />
+
+    <TextView
+        android:id="@+id/reportsJamLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:layout_marginStart="24dp"
+        android:text="Traffic jams"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/reportsHazardLabel"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/reportsJamSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reportsHazardLabel" />
+
+    <TextView
+        android:id="@+id/reportsReminderLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="16dp"
+        android:layout_marginStart="24dp"
+        android:text="Speech reminders"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/reportsJamLabel"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/reportsReminderSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reportsJamLabel" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

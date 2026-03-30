@@ -1,5 +1,5 @@
 a00137,Agusta Aerospace Corp,H2T,State Of New Jersey
-a00195,Beech,L2T,State Of South Carolina
+a00195,Textron Aviation Inc,L2T,State Of South Carolina
 a00196,Airbus Helicopters Inc,H1T,Pinellas County Sheriffs Office
 a001a0,Bell Helicopter Textron Canada,H2T,State Of Delaware
 a001c1,Embraer Executive Aircraft Inc,L2J,State Of Texas
@@ -20,19 +20,19 @@ a01108,Cessna,L1P,State Of North Carolina
 a01270,Dji,,Greeley Police Department
 a0127d,Bell,H1T,Washoe County Sheriffs Office
 a0175f,Yuneec,L4E,Salt River Police Department
-a01883,Cessna,L1P,State Of Minnesota
+a01883,Textron Aviation Inc,L1P,State Of Minnesota
 a019b3,Cessna,L1P,State Of Wisconsin
 a01b41,Bell,,Charlotte County Sheriffs Office
 a01d04,Piper,L1P,State Of Alaska
 a01f35,Piper,L2P,State Of Florida Dept Of Ag And Consumer Services
-a0240a,Cessna,L1P,State Of Connecticut
-a02566,Bell,H1T,Chambers County Sheriff's Office
+a0240a,Cessna,L1P,Dale County Sheriffs Office
+a02566,Bell,H1T,Jefferson County Sheriffs Office
 a0263f,Eurocopter Deutschland Gmbh,H2T,Broward County Sheriffs Office
 a0293c,Hughes,H1T,State Of Montana
 a02b6e,Cirrus Design Corp,L1P,Harris County Sheriffs Office
 a02b78,Bell,H1T,State Of New York
 a02c9a,Hawker Beechcraft Corp,L2T,State Of Tennessee
-a02d68,Cessna,L1P,State Of New Jersey
+a02d68,Cessna,L1T,State Of New Jersey
 a02d83,Mil Moscow Helicopter,H2T,State Of Iowa
 a02dc7,Bell,H1T,Pinal County Sheriff Dept
 a030c3,Bell,H1T,Livingston Parish Sheriff Dept
@@ -56,7 +56,7 @@ a052f7,Bell,H2T,New York State Police
 a053e1,Bell,H1T,Baxter County Sheriffs Department
 a054df,Beech,L2T,State Of Washington
 a05798,Bell,,Baxter County Sheriffs Department
-a05916,Beech,L2T,Idaho Department Of Law Enforcement
+a05916,Beech,L2T,Idaho State Police
 a06006,Bell,H1T,North Carolina State Highway Patrol
 a064fb,Eurocopter,H1T,Austin Police Department
 a066c9,Piper,L1P,State Of Alaska
@@ -90,18 +90,18 @@ a0acf4,Cessna,L1P,Maricopa County Sheriffs Office
 a0b1b3,Dji,,Us Border Patrol Academy
 a0b5a2,Airbus Helicopters Deutschland,H2T,Las Vegas Metropolitan Police Department
 a0b67f,Enstrom Helicopter Corp,H1T,State Of Minnesota Dnr Enforcement Aviation
-a0b693,Cessna,L1P,State Of Alaska
+a0b693,Cessna,L1T,State Of Alaska
 a0bf9a,Cessna,L1P,Suffolk County Police Pilots Assoc
 a0cafb,Md Helicopters Inc,H1T,San Diego County Sheriff
 a0cb7f,Troy Built Models,,State Of Iowa University Of Iowa
 a0cea3,Bell,H1T,Montana Highway Patrol
 a0d25a,Bell,,Montana Highway Patrol
-a0d375,Trimble Navigation Ltd,L1E,State Of Idaho Military Division
+a0d375,Trimble Navigation Ltd,,State Of Idaho Military Division
 a0d44f,Cessna,L1P,Dawn Patrol Flying Club Inc
 a0d611,Gippsaero Pty Ltd,L1P,California Highway Patrol
 a0d69d,Bell,H1T,Anne Arundel County Police Department
 a0d6e8,Bell,H1T,Jackson County Sheriffs Dept
-a0d72c,Trimble Navigation Ltd,L1E,State Of Idaho Military Division
+a0d72c,Trimble Navigation Ltd,,State Of Idaho Military Division
 a0da54,Bell,H1T,Anne Arundel County Police Department
 a0da9c,Bell,H1T,Alabama Law Enforcement Agency
 a0dae3,Sensefly Ltd,H4E,State Of Idaho Military Division
@@ -114,7 +114,7 @@ a0de56,Bell,H1T,Jackson County Sheriffs Dept
 a0de60,Dji,,Massachusetts State Police
 a0e136,Gippsaero Pty Ltd,L1P,California Highway Patrol
 a0e5c1,Bell,H1T,Alabama Law Enforcement Agency
-a0e760,Md Helicopters Inc,H1T,City Of Houston Police Dept
+a0e760,Md Helicopters Inc,H2T,City Of Houston Police Dept
 a0e834,Bell Helicopter Textron Canada,H2T,Palm Beach County Sheriffs Office
 a0e8e6,Bell,H1T,Collier County Sheriffs Office
 a0e93d,Bell,H1T,Greenville County Sheriffs Office
@@ -149,7 +149,7 @@ a12b3e,Cessna,L1P,Nebraska State Patrol
 a12d53,Airbus Helicopters Inc,H1T,Seminole County Sheriffs Office
 a13042,Bell,H1T,Shelby County Sheriffs Office
 a130c0,Bell Helicopter Textron,H1T,Omaha Police Department
-a1310a,American Eurocopter Corp,H1T,Seminole County Sheriffs Office
+a1310a,Airbus Helicopters Inc,H1T,Seminole County Sheriffs Office
 a13ed3,Bell,H1T,Florence County Sheriff Department
 a13f10,Cessna,L1P,State Of Ohio
 a13ff1,Bell,H1T,State Of New York
@@ -177,7 +177,7 @@ a16662,Draganfly Innovations Inc,,Mesa County Sheriffs Office
 a1668f,Cessna,L1P,State Of Ohio Dept Of Public Safety
 a16770,Bell,H1T,New York State Police
 a16974,Cessna,L1P,Commonwealth Of Puerto Rico Policia Of Puerto Rico
-a16aed,Bell,H1T,Connecticut State Police
+a16aed,Bell,H1T,Dale County Sheriffs Office
 a16cdd,Bell,H1T,Los Angeles Police Department
 a16e5d,Bell,H1T,Washoe County Sheriffs Office
 a1721a,Cessna,L1P,State Of Iowa
@@ -196,11 +196,11 @@ a190fa,Aerovodochody,L1J,State Of Iowa University Of Iowa
 a19148,Bell,H2T,New York State Police
 a19346,Beech,L2T,New York State Police
 a196fd,Beech,L2T,State Of New York
-a19758,Cessna,L1P,Colorado State Patrol
-a19b0f,Cessna,L1P,Colorado State Patrol
+a19758,Pilatus Aircraft Ltd,L1T,Colorado State Patrol
+a19b0f,Cessna,L1T,Colorado State Patrol
 a19dc4,Aerovironment Inc,,Grand Forks County Sheriffs Dept
 a19e49,Dji,H4E,City Of Mesa Police Dept
-a19ec6,Cessna,L1P,Colorado State Patrol
+a19ec6,Cessna,L1T,Colorado State Patrol
 a1a17b,Aerovironment Inc,,Grand Forks County Sheriffs Department
 a1a200,Dji,H4E,City Of Mesa Police Dept/aviation Dept
 a1a27d,Cessna,L2P,Colorado State Patrol
@@ -212,7 +212,7 @@ a1a5d2,Cessna,L1P,State Of Minnesota
 a1a62a,Bell,H1T,Ventura County Sheriffs Department
 a1a634,Raytheon Aircraft Company,L2T,State Of Colorado
 a1a674,Bell,H1T,Ventura County Sheriffs Department
-a1a86d,Bell,H1T,Stanislaus County Sheriffs Department
+a1a86d,Bell,H1T,Merced County Sherrifs Office
 a1a8e9,Draganfly Innovations,,Grand Forks County Sheriffs Department
 a1a956,Cessna,L1P,Tulare County Sheriff
 a1a95c,Bell Helicopter Textron,H1T,Stanislaus County Sheriffs Department
@@ -251,7 +251,7 @@ a1df2c,Cessna,L1P,State Of California Department Of Fish And Game
 a1e29f,Bell,H1T,Kentucky State Police
 a1edc4,Dji,,Massachusetts State Police - Cars Unit
 a1eea6,Cessna,L1P,State Of Iowa
-a1ef84,Cessna,L1P,Oregon State Police
+a1ef84,Cessna,L1T,Oregon State Police
 a1f0c0,Bell,H1T,Pasadena Police Department
 a1f126,Leptron Industrial Robotic Hel,,Arlington Police Dept
 a1f17b,Bell,H1T,New York State Police Aviation Unit
@@ -261,7 +261,7 @@ a1f4dd,Bell,H1T,Baton Rouge Police Department
 a1f743,Cessna,L1P,State Of Nc
 a1f894,Eurocopter,H1T,Anaheim Police Dept
 a1f8fb,Dji,H4E,Tom Green County Sheriff's Office
-a1fca0,Cirrus,L1P,State Of Iowa
+a1fca0,Cirrus Design Corp,L1P,Iowa State Patrol
 a206ab,Cessna,L1P,State Of California Dept Of Fish & Game
 a2099b,Bell,H1T,Livingston Parish Sheriff's Office
 a20dd5,Cessna,L1P,Iowa State Patrol
@@ -270,7 +270,7 @@ a2106e,Bell,,Faulkner County Sheriffs Department
 a21095,Bell,H1T,Greenville County Sheriffs Office
 a2144c,Cessna,L1P,Greenville County Sheriffs Office
 a2147b,Bell,H1T,Washoe County Sheriff Dept
-a214a0,Eurocopter,H1T,Los Angeles Police Department
+a214a0,Airbus Helicopters Inc,H1T,City Of Los Angeles
 a21803,Bell,H1T,Greenville County Sheriffs Office
 a21e10,Beech,L1P,State Of Iowa
 a22607,Cessna,L1P,State Of Utah
@@ -349,7 +349,7 @@ a31701,Dji,H4E,State Of Arizona
 a3171e,Bell,H1T,Clayton County Police Department
 a3178f,Bell,H1T,Walker County Sheriff Dept
 a31887,Cessna,L1P,North Dakota Highway Patrol
-a31a6a,Bell,H1T,Scott County Sheriffs Department
+a31a6a,Bell,H1T,Dale County Sheriffs Office
 a31bd5,Agustawestland Philadelphia,H2T,State Of New Jersey
 a31be9,Eurocopter Deutschland Gmbh,H2T,Suffolk County Police Dept
 a31ca8,Bell,H1T,State Of West Virginia
@@ -366,15 +366,15 @@ a32f77,Bell,H1T,City Of Tucson Police Department
 a32fc2,Bell,H1T,Harrison County Sheriffs Department
 a3323a,Cessna,L1P,Washington State Patrol
 a3335f,Cessna,L1P,Washington State Patrol
-a33377,Bell,H1T,San Bernardino Co Sheriffs Dept
+a33377,Bell,H1T,San Bernardino County Sheriffs Aviation Division
 a3364d,Bell,H1T,Wayne County Sheriffs Office
 a336e5,Bell,H1T,City Of Tucson Police Department
-a3372e,Bell,H1T,San Bernardino County Sheriffs Aviation Division
+a3372e,Bell Textron Canada Ltd,H2T,San Bernardiino County Sheriffs Dept
 a33956,Dji,,Anderson County Sheriffs Office
 a33ae5,Bell,H2T,San Bernardino County Sheriffs Aviation Division
-a33dbb,Bell,H1T,Columbus County Sheriffs Office
+a33dbb,Bell,H1T,Robeson County Sheriffs Office
 a33e07,Bell,H1T,Leon County Sheriffs Office
-a33e9c,Bell,H1T,San Bernardino Co Sheriffs Department
+a33e9c,Bell Textron Canada Ltd,H2T,San Bernardino County Sheriffs Dept
 a34172,Bell,H1T,Columbus County Sheriffs Office
 a34738,Beech,L2P,State Of Tennessee
 a34cb1,Bell,H1T,Yellowstone County Sheriff Office
@@ -409,7 +409,7 @@ a3d12a,Dji,H4E,City Of Bethlehem Police Dept
 a3d3b7,Bell Helicopter Textron Canada,H1T,State Of Washington
 a3e372,Bell,H1T,Mississippi County Sheriffs Department
 a3e5b7,Eurocopter,,Charlotte County Sheriffs Office
-a3e5bf,Raytheon Aircraft Company,L2T,State Of Kansas
+a3e5bf,Raytheon Aircraft Company,L2T,Sedgwick County
 a3e5ee,Eurocopter,H1T,City Of Memphis Police Department
 a3e5fc,Eurocopter,H1T,State Of North Carolina
 a3e610,Hawker Beechcraft Corp,L2T,State Of New York
@@ -433,8 +433,8 @@ a4146e,Cirrus Design Corp,L1P,Clark Co Indiana Sheriffs Office
 a423ca,Cessna,L1P,State Of New Hampshire Dept Of Safety
 a42434,Bell,H1T,New Hampshire State Police
 a42b17,Cessna,L1P,State Of Montana
-a42eba,Hughes,H1T,Jefferson County Sheriffs Office
-a42f04,Md Helicopters Inc,H1T,Atlanta Police Department
+a42eba,Hughes,H1T,City Of Oxford Alabama Police Department
+a42f04,Md Helicopters Inc,H2T,City Of Atlanta
 a43129,Dji,,State Of Tennessee
 a431f6,Vulcanair Spa,L2P,State Of California
 a434fa,Eurocopter,H1T,State Of North Carolina
@@ -473,16 +473,16 @@ a49f6f,Cessna,L1P,County Of Merced Sheriff's Dept
 a4a924,Bell,H1T,State Of New Jersey
 a4abda,Beech,L2T,San Bernadino County Sheriffs Office
 a4abfe,Bell,H1T,Jackson Police Department
-a4b179,Cessna,L1P,Miami Dade Police Dept
+a4b179,Cessna,L1P,Miami-dade Sheriffs Office
 a4b1f6,Bell,H1T,Connecticut State Police
 a4b3c9,Md Helicopters Inc,,Gwinnett County Police Dept
 a4b4da,Eurocopter,H1T,Jefferson County Sheriffs Office
-a4b530,Cessna,L1P,Miami Dade Police Dept
+a4b530,Cessna,L1T,Miami-dade Sheriff's Office
 a4b5ad,Bell,H1T,Connecticut State Police
 a4bcac,Bell,H1T,North Carolina State Highway Patrol
 a4c063,Bell Helicopter Textron Canada,H1T,North Carolina State Highway Patrol
 a4c32b,Beech,L2T,Calcasieu Parish Police Jury
-a4c434,Bell,H1T,Charlotte Mecklenburg Police Department
+a4c434,Bell Textron Canada Ltd,H1T,Charlotte-mecklenburg Police Dept
 a4c726,Bell Helicopter Textron Canada,H1T,State Of Nevada
 a4c72a,Bell Helicopter Textron Canada,H1T,Sarasota County Sheriffs Office
 a4c77b,Bell,H1T,State Of Nevada
@@ -494,7 +494,7 @@ a4c7d1,Bell Helicopter Textron Canada,H1T,Nc Highway Patrol
 a4c7e5,Bell,H1T,New York City Police Aviation Unit
 a4c833,Bell,H1T,Alabama Law Enforcement Agency
 a4c843,Bell Helicopter Textron Canada,H1T,State Of Indiana
-a4d1e1,Beech,L2T,Lee County Sheriffs Office
+a4d1e1,Beech,L2T,Dale County Sheriffs Office
 a4d240,Bell,H1T,Memphis Police Department
 a4d8c9,Bell,H1T,King County Sheriffs Office
 a4d98e,Bell,H1T,City Of Tampa Police Department
@@ -520,7 +520,7 @@ a5220e,Bell,,Winthrop Harbor Police Dept
 a52259,Airbus Helicopters Inc,H1T,Pinellas County Sheriffs Office
 a52431,Cessna,L1P,State Of Louisiana
 a52461,Bell,H2T,New York State Police
-a524bc,Bell,H2T,State Of New York
+a524bc,Airbus Helicopters Inc,H1T,State Of New York
 a52bcf,Bell,H2T,State Of New York
 a534d3,Piper,L1P,Hood River County Sheriff's Office
 a539b4,Aeryon Labs Inc,H4E,Michigan Department Of State Police
@@ -560,7 +560,7 @@ a5cb56,Cessna,L1P,State Of Wisconsin
 a5cbe2,Cessna,L1P,State Of Wisconsin
 a5cd60,Bell,H1T,Citrus County Sheriff's Office
 a5ce9c,Cessna,L1P,State Of Alaska
-a5d117,Bell,H1T,Citrus County Sheriffs Office
+a5d117,Bell,,Citrus County Sheriffs Office
 a5d76c,Airbus Helicopters Inc,,Hillsborough County Sheriffs Office
 a5dbb7,Textron Aviation Inc,L1P,State Of Alabama Department Of Conservation
 a5e8b1,Aeryon Labs Inc,H4E,State Of Arizona
@@ -596,7 +596,8 @@ a64a67,Md Helicopters Inc,H1T,South Carolina Law Enforcement Division
 a64a8b,Embraer Executive Aircraft Inc,L2J,State Of Texas
 a64d0a,Beech,L2T,Clark County Sheriff Office
 a64d34,Bell Helicopter Textron Canada,H1T,Office Of The Sheriff
-a64da4,Md Helicopters Inc,H1T,City Of Mesa Police Dept
+a64da4,Md Helicopters Inc,H2T,City Of Mesa Police Dept
+a64e26,Bell Textron Canada Ltd,H1T,Southern Utah University
 a64e48,Utah County Sheriff,L1P,Utah County Sheriff
 a65512,Md Helicopters Inc,H2T,Mesa Police Dept
 a6558f,Bell Helicopter Textron Canada,H1T,State Of Indiana
@@ -654,7 +655,7 @@ a6c4fe,Mcdonnell Douglas Helicopters,H1T,San Diego County Sheriff
 a6c50d,Hughes,H1T,Oxford Police Department
 a6c6bf,Airbus Helicopters Inc,,Hillsborough County Sheriff's Office
 a6c703,Aeryon Labs Inc,H4E,Michigan Department Of State Police
-a6cbb3,Bell,H1T,St. Johns County Sheriffs Office
+a6cbb3,Bell,H1T,Putnam County Sheriffs Office
 a6d2a7,Dji,,City Of Myrtle Beach Police Department
 a6d2d8,Bell,,Charleston County Sheriffs Office
 a6d30b,Dji,,City Of Myrtle Beach Police Department
@@ -671,7 +672,7 @@ a6ebc8,Autel Robotics,H4E,Euclid Police Department
 a6ebde,Dji,H4E,Adams County Sheriffs Office
 a6ec39,Bell,H1T,Oconee County Sheriff Dept
 a6ee4e,Dji,H4E,State Of Arizona
-a6f0c7,Cessna,L1P,State Of Alaska
+a6f0c7,Cessna,L1T,State Of Alaska
 a6f205,Dji,H4E,State Of Arizona
 a6f4eb,Piper,L1P,State Of Alaska
 a6f5bc,Dji,H4E,State Of Arizona
@@ -681,8 +682,8 @@ a6f9ac,Leptron Industrial Robotic Hel,,Arlington Police Department
 a6fb56,Draganfly Innovations Inc,H1E,Canyon County Sheriff's Office
 a700b4,Dji,,Flowood Police Department
 a703df,Cessna,L1P,California Highway Patrol
-a704c0,Cessna,L1P,Illinois State Police
-a709f3,Cessna,L1P,Sheriffs Department
+a704c0,Textron Aviation Inc,L1P,Illinois State Police
+a709f3,Cessna,L1T,Sheriffs Department
 a70ad0,Md Helicopters Inc,H2T,City Of Columbus Division Of Police
 a70b4d,Cessna,L1P,California Highway Patrol
 a70f83,Bell,H1T,Md Dnr Police Dept
@@ -693,7 +694,7 @@ a73362,Dji,,City Of Richmond Police Dept
 a74523,Dji,H4E,Highland County Sheriffs Office
 a749fa,Bell,H1T,Brevard County Sheriffs Office
 a75995,Eurocopter,H1T,San Antonio Police Department
-a75ee7,Cessna,L1P,State Of Alaska
+a75ee7,Cessna,L1T,State Of Alaska
 a7622d,Bell,H1T,Nebraska State Patrol
 a76234,Raytheon Aircraft Company,L2T,State Of New Mexico
 a77176,Bell,,East Baton Rouge Parish Sheriff
@@ -742,7 +743,7 @@ a7f075,Bell Helicopter Textron Canada,H1T,City Of Tampa Police Dept
 a7f332,Cessna,L1P,Florida Highway Patrol
 a7f4ce,Piper,L1P,State Of Montana
 a7f6e9,Cessna,L1P,Florida Highway Partrol
-a7fb77,Cessna,L1T,Pima County Sheriff's Department
+a7fb77,Cessna,L1P,Pima County Sheriff's Department
 a80054,Cessna,L1P,State Of Utah
 a80348,Bell,H1T,Williamson County Sheriff Office
 a80532,Kevin Allred,,Shelby County Sheriffs Office
@@ -759,10 +760,10 @@ a820f8,American Eurocopter Corp,H1T,Austin Police Dept
 a82214,Bell,H1T,Hernando County Sheriffs Office
 a8229f,Nicholas C Thompson,,Patrol Services Inc
 a82e7e,Bell,,Walton County Sheriffs Department
-a82f24,Bell,H1T,San Bernardino County Sheriffs Dept
+a82f24,Bell,H1T,Brunswick County Sheriffs Office
 a83822,Bell Helicopter Textron Canada,H1T,Tennessee Highway Patrol Department Of Safety
 a83dd4,Dji,H4E,State Of Arizona
-a83e96,Bell,H1T,Tuscaloosa Police Department
+a83e96,Bell,H1T,Dale County Sheriffs Office
 a8414b,Bell,H1T,Osceola County Sheriffs Office
 a8416f,Bell,H1T,Hernando County Sheriff
 a8418b,Dji,H4E,State Of Arizona
@@ -788,17 +789,17 @@ a8815e,Dji,H4E,Williamson County Sheriffs Office
 a885d8,Cessna,L1P,State Of Illinois
 a8894f,Cessna,L1P,State Of North Carolina
 a88cd2,Brinc,H4E,State Of Arizona
-a88d77,Bell,H1T,Kansas Highway Patrol
+a88d77,Airbus Helicopters Inc,H1T,Kansas Highway Patrol
 a89089,Brinc,H4E,State Of Arizona
 a891eb,Bell,H1T,Richland County Sheriff Department South Carolina
-a8920f,Cessna,L1P,New York State Police
+a8920f,Cessna,L1T,New York State Police
 a89372,Bell,H1T,Canton Police Department
 a8965c,Bell,H1T,Columbus Police Dept
 a8a06e,Yuneec,H6E,Metra Police Dept
 a8a425,Yuneec,H6E,Metra Police Department
 a8a7dc,Yuneec,,Metra Police Department
 a8b8ad,Cessna,L1P,California Highway Patrol
-a8b98e,Cessna,L1P,Illinois State Police
+a8b98e,Textron Aviation Inc,L1P,Illinois State Police
 a8d33a,American Eurocopter Llc,H1T,Los Angeles Police Dept Air Support Division
 a8d746,Dji,,Massachusetts State Police - Cars Unit
 a8da5e,Bell,H1T,City Of Wilmington Police Department
@@ -874,7 +875,7 @@ a987b1,Dji,H4E,East Baton Rouge Parish Sheriffs Office
 a98c1f,Cessna,L1P,State Of Alaska
 a98c7d,Bell,H1T,Dekalb County Sheriffs Office
 a99314,Cessna,L1P,State Of Ohio
-a99425,Dji,H4E,Miami-dade Police Department
+a99425,Dji,H4E,Miami Dade Sheriff's Office
 a9976d,Dji,,Association Of Blair County Law Enforcement
 a99c89,Robinson Helicopter,H1P,State Of Alaska
 a9a0ae,Robinson Helicopter,H1P,State Of Alaska
@@ -908,7 +909,7 @@ a9f3b2,Dji,H4E,Williamson County Sheriffs Office
 a9f7dd,Airbus Helicopters Inc,H1T,Las Vegas Metropolitan Police Department
 a9f806,Maxsur,,Clay County Sheriffs Office
 aa0505,Draganfly Innovations Inc,,Montgomery County Sheriff's Office
-aa1597,Cessna,L1P,New York State Police
+aa1597,Cessna,L1T,New York State Police
 aa169d,Schweizer,H1P,Houston Police Dept
 aa16c0,Schweizer,H1P,Houston Police Dept
 aa1ac6,Bell,H1T,State Of Tennessee
@@ -916,7 +917,7 @@ aa1ec5,Sikorsky,H2T,State Of Illinois
 aa20ae,Bell,H1T,Al Etowah Co Sheriff Dept
 aa21c5,Bell,H1T,Mississippi County Sheriff Department
 aa24cb,Robinson Helicopter Company,H1P,Merced County Sheriffs Office
-aa3111,Cessna,L1P,Maricopa County Sheriffs Office
+aa3111,Cessna,L1T,Maricopa County Sheriffs Office
 aa32db,Cessna,L1P,Pierce County Sheriffs Department
 aa357d,Honeycomb Corporation,L1E,State Of Wyoming Military Department
 aa365e,Honeycomb Corporation,L1E,State Of Wyoming-military Department
@@ -930,16 +931,16 @@ aa5fcb,Dji,,Lehigh University Police Department
 aa60e2,Bell,H1T,Mi State Police Field Supp Aviation
 aa660f,Bellanca,L1P,State Of Alaska
 aa6d7b,Cessna,L1P,Kings County Sheriff's Office
-aa6e5c,Cessna,L1P,Illinois State Police
+aa6e5c,Textron Aviation Inc,L1P,Illinois State Police
 aa6fd4,Dji,,Ouachita County Sheriff Office
-aa7114,Cessna,L1P,Polk County Sheriffs Office
+aa7114,Kodiak Aircraft Co Inc,L1T,Polk County Sheriff's Office
 aa74e9,Cessna,L1P,Florida Highway Patrol
 aa75e3,Raytheon Aircraft Company,L2T,State Of Of Utah
 aa7641,Dji,H4E,Hendersonville Police Nc
 aa8695,Dji,H4E,Salt River Police Department
 aa86d4,Bell,H1T,Wayne County Sheriffs Office
 aa8a8b,Bell,H1T,Wayne County Sheriffs Office
-aa8c44,Dji,H0E,Miami Dade Police Department
+aa8c44,Dji,H0E,Miami-dade Sheriff's Office
 aa91d2,Dji,,Gwinnett County Police Dept
 aa9287,Dji,,Niagara County Sheriffs Office
 aa9810,Airbus Helicopters Inc,H1T,Broward County Sheriffs Office
@@ -962,27 +963,27 @@ aadabd,Dji,,Village Of Orland Park Police Department
 aae0c2,Eurocopter,H1T,Los Angeles Interagency Metropolitan Police
 aae2f3,Bell,H1T,Martin County Sheriffs Department
 aae30c,Air Tractor Inc,L1T,State Of North Carolina
-aae5f0,Bell Helicopter Textron Canada,H1T,Volusia Sheriffs Office
-aae6ab,Dji,H4E,Miami-dade Police Department
+aae5f0,Bell Helicopter Textron Canada,H1T,Pasco Sheriffs Office
+aae6ab,Dji,H4E,Miami-dade Sheriff's Office
 aae6c3,Air Tractor Inc,L1T,State Of North Carolina
 aae9a7,Bell Helicopter Textron Canada,H1T,Bay County Florida
-aaed5e,Bell Helicopter Textron Canada,H1T,Volusia Sheriffs Office
+aaed5e,Bell Helicopter Textron Canada,H1T,Pasco Sheriffs Office
 aaee64,Dji,H4E,Dover Delaware Police Department
 aaf1da,American Eurocopter Corp,H1T,Miami Dade Police Dept
 aaf287,Dji,H4E,Miami Dade Police Dept
 aaf3f7,Cessna,L1P,St Bernard Parish Police Jury
 aaf591,Eurocopter France,H1T,Miami Dade Police Dept
 aaf5ac,Cessna,L1P,State Of Minnesota
-aaf603,Dji,H4E,St Charles Parish Sheriffs Office
+aaf603,Dji,,St Charles Parish Sheriffs Office
 aaf60b,Cessna,L1P,County Of San Luis Obispo Sheriffs Office
 aaf948,American Eurocopter Llc,H1T,Miami Dade Police Department
-aaf9ba,Dji,H4E,St Charles Parish Sheriffs Office
+aaf9ba,Dji,,St Charles Parish Sheriffs Office
 aaf9ed,Dji,H4E,Dover Delaware Police Department
 aafbfc,Dji,H4E,Dover Delaware Police Dept
 aafcff,Eurocopter,H1T,Miami Dade Police Dept
-aafd71,Dji,H4E,St Charles Parish Sheriffs Office
+aafd71,Dji,,St Charles Parish Sheriffs Office
 ab0127,Hughes Helicopters Inc,H1T,San Bernardino County Sheriffs Department
-ab0128,Dji,H4E,St Charles Parish Sheriffs Office
+ab0128,Dji,,St Charles Parish Sheriffs Office
 ab0824,Cessna,L1P,State Of Missouri
 ab0a0b,Eurocopter,H1T,State Of Ohio Department Of Transportation
 ab0afa,Bell,H2T,State Of Louisiana
@@ -1053,8 +1054,8 @@ abac7a,Dji,H4E,New Castle County Police
 abafdc,Bell,H1T,Morgan County Sheriff Department
 abb13a,Dji,H4E,Salt River Police Department
 abb1ec,Dji,H4E,Salt River Police Department
-abb44b,Dji,H4E,Miami-dade Police Dept
-abb474,Dji,H4E,Chippewa Co Sheriffs Office
+abb44b,Dji,H4E,Miami-dade Sheriff's Office
+abb474,Dji,,Chippewa Co Sheriffs Office
 abb5a6,Bell,H1T,Bladen County Sheriffs Office
 abb7b4,Bell,H1T,Pasadena Police Department
 abbe51,Partenavia S.p.a.,L2P,State Of Ohio
@@ -1098,7 +1099,7 @@ ac455f,Dji,H4E,Alamosa County Sheriffs Office
 ac46f2,Bell,H1T,West Virginia State Police
 ac4795,Dji,H4E,Gwinnett County Police Department
 ac4a10,Cessna,,State Of Illinois
-ac4ab8,Textron Aviation Inc,,Massachusetts State Police
+ac4ab8,Textron Aviation Inc,L1T,Massachusetts State Police
 ac4e8b,Autel Robotics,H4E,Kearney Police Department
 ac4eee,Dji,H4E,State Of Michigan
 ac5985,Bell,H1T,West Virginia State Police
@@ -1108,7 +1109,7 @@ ac6365,Dji,H4E,Gwinnett County Police Dept
 ac6baf,Agusta Aerospace Corp,H2T,State Of New Jersey
 ac6d28,Eurocopter,H1T,Dekalb County Police
 ac6df4,Bell,H1T,State Of Missouri
-ac6e82,Cessna,L1P,Monterey County Sheriffs Office
+ac6e82,Cessna,L1T,Monterey County Sheriffs Office
 ac6fe9,Cessna,L1P,Kansas Highway Patrol
 ac715d,Dji,H4E,Gwinnett County Police Department
 ac7198,Partenavia S.p.a.,L2P,State Of Oregon
@@ -1131,7 +1132,7 @@ ac8fd1,Piper,,State Of Alaska
 ac917c,Bell,H1T,Jefferson County Sheriff Dept
 ac92b4,Dji,H4E,Miami-dade Police Dept
 ac94a7,Eurocopter,H1T,Dekalb Police Department
-ac94b9,Bell,H1T,Monroe County Sheriffs Office
+ac94b9,Bell,H1T,Putnam County Sheriffs Office
 ac9524,Bell,H1T,Washoe County Sheriff Dept
 ac9573,Cessna,L1P,State Of Missouri
 ac9582,Bell,H1T,Stratford Police Department
@@ -1152,11 +1153,11 @@ ac9a7f,Bell,H1T,Sumter County Sheriffs Office
 ac9a86,Md Helicopters,H1T,Las Vegas Metropolitan Police Department
 ac9a95,Raytheon Aircraft Company,L2T,California Highway Patrol
 ac9aa2,Hughes Helicopters Inc,H1T,St Louis County Police Department
-ac9ab0,Eurocopter,H1T,Metropolitan Police Dept
+ac9ab0,Airbus Helicopters Inc,H1T,Mayor And City Council Of Washington Dc
 ac9ab4,Airbus Helicopters Inc,H1T,Hillsborough County Sheriffs Office
 ac9ab6,Bell,H1T,Brevard County Sheriffs Office
-ac9ae9,Sikorsky,H2T,Monroe County Sheriffs Office
-ac9af4,Bell,H1T,Fort Worth Police Department
+ac9ae9,Agustawestland Philadelphia,H2T,Monroe County Florida
+ac9af4,Bell Textron Canada Ltd,H1T,City Of Fort Worth
 ac9afb,Bell,H1T,Sacramento County Sheriffs Department
 ac9afd,Bell,H1T,Marion County Sheriffs Office
 ac9b01,Robinson Helicopter Co,H1T,Polk County Sheriffs Office
@@ -1168,24 +1169,24 @@ ac9b3d,Bell,H1T,Brevard County Sheriffs Department
 ac9b40,Hughes,H1T,St Louis County Police
 ac9b51,Bell,H1T,Santa Barbara Sheriffs Dept
 ac9b57,Bell,H1T,Marion Co Sheriff Office
-ac9b66,Sikorsky,H2T,Monroe County Sheriffs Office
+ac9b66,Agustawestland Philadelphia,H2T,Monroe County Florida
 ac9b7c,Bell,H1T,Marion County Sheriffs Department
 ac9b88,Md Helicopters Inc,H1T,St Louis County Police Dept
-ac9b9b,Bell,H1T,Jefferson Parish Sheriffs Office
+ac9b9b,Bell,H1T,Tehama County Sheriff's Office
 ac9b9d,Eurocopter,H1T,Charlotte County Sheriffs Office
 ac9ba0,American Eurocopter Corp,H1T,State Of Alaska
 ac9ba2,Bell,H1T,Washoe County Sheriffs Office
 ac9ba5,Md Helicopters Inc,H1T,St Louis County (mo) Police Dept
 ac9baf,Mcdonnell Douglas Helicopter,H1T,St Louis County Police Department
 ac9bbc,Bell,H1T,Brevard County Sheriffs Office
-ac9be9,Sikorsky,H2T,Monroe County Sheriffs Office
+ac9be9,Agustawestland Philadelphia,H2T,Monroe County Florida
 ac9bf0,Bell,H1T,Sacramento County Sheriffs Department
-ac9bfb,Bell,H1T,San Juan County Sheriffs Department New Mexico
+ac9bfb,Bell Textron Canada Ltd,H1T,San Juan County
 ac9bfd,Bell,H1T,St Lucie County Sheriffs Dept
 ac9c03,Bell,H1T,Merced County Sheriffs Office
 ac9c09,Bell,H1T,St Lucie County Sheriffs Office
 ac9c0a,Bell,H1T,Bernalillo County Sheriffs Department
-ac9c28,Bell,H1T,Indian River County Sheriffs Office
+ac9c28,Bell,H1T,Indian River County Sheriff's Office
 ac9c2e,Sikorsky,,Monroe County Sheriffs Office
 ac9c4e,Bell,H1T,Sarasota County Sheriffs Office
 ac9c67,Bell,H1T,Martin County Sheriffs Office
@@ -1199,13 +1200,13 @@ ac9e2e,Bell,H1T,Knox County Sheriffs Department
 ac9f65,Md Helicopters Inc,H1T,Prince Georges County Police Department
 aca042,Bell,H1T,Chelan County Sheriffs Office
 aca117,Piper,L1P,State Of Utah
-aca1ef,Dji,H4E,Miami Dade Police Dept
+aca1ef,Dji,H4E,Miami-dade Sheriff's Office
 aca240,Dji,H4E,Orange County Sheriff's Office
 aca31c,Md Helicopters Inc,H1T,Prince Georges County Police Dept
 aca5f7,Dji,H4E,Orange County Sheriffs Office
 aca9ae,Dji,H4E,Orange County Sheriffs Office
 acaad2,Bell,H1T,Harris County Sheriff's Office
-acb1c5,Bell Helicopter Textron Canada,H1T,State Of Maine
+acb1c5,Bell Helicopter Textron Canada,,State Of Maine
 acb1f5,Bell Helicopter Textron Canada,H2T,New York City Police Department
 acb245,Bell,H1T,San Juan County Sheriff Dept
 acb4d3,Dji,H4E,Orange County Sheriffs Office
@@ -1293,90 +1294,118 @@ addba5,Eurocopter,H1T,County Of Riverside
 addf5c,Eurocopter,H1T,County Of Riverside California
 ade313,Eurocopter,H1T,County Of Riverside California
 adee38,Airbus Helicopters Inc,H1T,County Of Riverside California
+ae6357,Lakota,,State of Utah
+ae6359,Airbus,,State of Utah
+a007e5,Kodiak Aircraft Co Inc,L1T,Maricopa County
 a00808,Airbus Helicopters Inc,H1T,Department Of Homeland Security
-a00578,Textron Aviation Inc,L2T,Department Of Homeland Security
+a00a21,Textron Aviation Inc,L1T,Hillsborough County Sheriffs Office
 a00a76,Cessna,L2J,Wyoming Department Of Transportation
 a00c63,Mcdonnell Douglas Helicopter,H1T,Chatham County
 a00e2d,Cessna,L2J,Wyoming Department Of Transportation
-a010bb,Textron Aviation Inc,L2T,Department Of Homeland Security
 a014e6,Textron Aviation Inc,L1P,Department Of The Interior
 a0159b,Cessna,L1T,Wyoming Department Of Transportation
 a018e5,Cessna,L1P,Department Of Emergency Svcs & Public Protection
+a01d92,Dji,H4E,Shelbyville Police Dep
 a02187,Beech,L2P,Alabama Department Of Transportation
 a01ee6,Bell,H1T,County Of San Diego
 a02053,Cessna,L1P,Department Of Emergency Svc & Public Protection
-a022c0,Robinson Helicopter,H1P,City Of El Monte
+a02598,Robinson Helicopter Company,H1P,State Of Alaska
 a022e9,Hawker Beechcraft Corp,L2T,Dept Of Homeland Security
 a023bf,Md Helicopters Inc,H1T,City Of Pomona
 a023ff,Bell Helicopter Textron Canada,H1T,County Of Sonoma
+a028c4,Robinson Helicopter Company,H1P,State Of Alaska Department Of Public Safety
 a026a2,Agusta Spa,H2T,City Of Phoenix
+a026e0,Textron Aviation Inc,L1T,Florida Highway Patrol
 a027ab,Cessna,L1P,United States Department Of Interior
-a00399,Airbus Helicopters Inc,H1T,City Of Ontario
+a02cb3,Bell,H1T,Brevard County Sheriffs Office
 a03325,Bell Helicopter Textron Canada,H1T,City Of Stockton
+a0340c,Bell,H1T,Alachua County Sheriffs Office
 a0353f,Textron Aviation Inc,L1P,Minnesota Department Of Public Safety
-a039fc,Cessna,L1T,Federal Bureau Of Investigation
-a03cad,Cessna,L1P,Minnesota Department Of Public Safety
-a03cce,Cessna,L1P,Texas Department Of Public Safety
+a039fc,Cessna,L1T,Us Government
+a03b59,Cessna,L1P,Minnesota Department Of Public Safety
 a03f75,Textron Aviation Inc,L2T,Department Of Homeland Security
+a0455f,Beech,L2T,State Of South Carolina
+a043a9,Textron Aviation Inc,L2T,Department Of Homeland Security
 a0474a,Pilatus Britten-norman Ltd.,L2P,Parish Of East Baton Rouge
+a05073,Cessna,L1P,State Of Wisconsin
 a04ecf,Boeing,L2J,United States Government
 a04ee5,Agustawestland Philadelphia Co,H1T,City Of New York
 a02b2d,Bell,H2T,Us Dept Of The Interior
 a054f5,Agustawestland Philadelphia Co,H1T,City Of New York
-a054fb,Eurocopter,H1T,City Of Albuquerque
+a054fb,Airbus Helicopters Inc,H1T,City Of Albuquerque
+a05545,Dji,H4E,St Charles Parish Sheriffs Office
 a05abc,Cessna,L1P,United States Department Of Interior
+a05ada,Skydio Inc,H4E,Charlotte County Property Appraiser
 a0589a,Dji,H4E,Region 21 Emergency Management Agency
+a06195,Yuneec,H6E,Ashland Boyd County Catlettsburg Office
+a0642c,Cirrus Design Corp,L1P,Minnesota State Patrol
 a0644d,Eurocopter,H1T,Texas Department Of Public Safety
+a06961,Dji,H8E,Northern Nevada Public Health
 a06653,Airbus Helicopters Inc,H1T,Austin Police Dept
 a06788,Airbus Helicopters,H1T,Office Of Vector Surveillance And Control
 a0678e,Airbus Helicopters,H1T,City Of Albuquerque
+a06ca7,Dji,H4E,Navajo County Probation
 a06abb,Gulfstream Aerospace,L2J,Seminole Tribe Of Florida
+a07232,Textron Aviation Inc,L2T,Department Of Homeland Security
 a077bd,Cessna,L1P,Ashland/boyd County Regional Airport Authority
 a076b5,Hughes,H1T,Desoto County Sherriffs Dept
+a05279,Kodiak Aircraft Co Inc,L1T,Minnesota Department Of Transportation
 a05293,Bell,H1T,City Of Newark
 a07ccb,Robinson Helicopter Company,H1P,City Of Lakewood
+a08526,Dji,H4E,State Of Michigan
+a082ba,Dji,H8E,Baker Valley Vector Control District
 a083f5,Cessna,L1P,U S Department Of The Interior
 a08ebe,Cub Crafters Inc,L1P,Us Department Of The Interior
+a0953a,Airbus Helicopters Inc,H1T,City Of Dallas
+a09b86,Cessna,L1P,Avco Patrol Llc
+a0a003,Bell,H1P,Aerial Patrol Resource Llc
+a0a5ca,Cessna,L1P,Guardian Aerial Patrol Llc
 a0aa61,Lockheed,L4T,Us Customs & Border Protection
 a0b08c,Dji,H6E,Little River Drainage District
 a0ae18,Lockheed,L4T,Us Customs & Border Protection
+a0af01,Textron Aviation Inc,L2T,Department Of Homeland Security
 a0b3fd,Dji,H8E,Little River Drainage District
+a0b447,Parkman David A Jr,L1P,Dawn Patrol Llc
 a0b1cf,Lockheed,L4T,Us Customs & Border Protection
-a0b586,Lockheed,L4T,Us Customs & Border Protection
 a0b702,Eurocopter Deutschland Gmbh,H2T,Texas Department Of Public Safety
-a0b902,Airbus Helicopters Inc,H1T,City Of Riverside
 a0b93d,Lockheed,L4T,United States Customs And Border Protection
 a0bcf4,Lockheed,L4T,United States Customs And Border Protection
 a0be70,Cessna,L1P,Texas Department Of Transportation
-a0c2df,Bell,H1P,Pinellas County
+a0c2df,Airbus Helicopters Inc,H1T,Pinellas County
 a0c0ab,Lockheed,L4T,United States Customs And Border Protection
 a0c160,Bell,H1T,Commonwealth Of Kentucky
 a0c227,Cessna,L1P,Texas Department Of Transportation
 a0c462,Lockheed,L4T,Us Customs & Border Protection
 a0c568,Bell Helicopter Textron Canada,H1T,Administracion De Los Servicios Generales
 a0a152,Bell,H2T,County Of Los Angeles
-a0a177,Beech,L1P,Minnesota Department Of Transportation
+a0a1eb,Bell,H1T,Lake County Sheriffs Office
 a0d049,Bell,H1T,City Of Dallas
 a0d06c,Bell,H1T,City Of Dallas
 a0d13d,Dji,H4E,California State Parks
+a0cf3b,Bell,H1T,Citrus County Sheriffs Office
 a0cf44,Beechcraft Corp,L2T,Department Of Homeland Security
 a0d491,Firefly Balloons Inc,L0?,City Of Riverton
+a0d1bc,Textron Aviation Inc,L1P,Florida State Guard
+a0db11,Sikorsky,H2T,Charlotte County Sherrifs Department
+a0dd51,Parrot,H4E,Manatee County Fl Government
+a0e23b,Diamond Aircraft Ind Inc,L1P,Utah State Univeristy
 a0e824,Dehavilland,L4T,United States Government
-a0ebdc,Sikorsky,H2T,Us Department Of Homeland Security
 a0ece7,Bell Helicopter Textron Canada,H2T,Administracion De Los Servicios Generales
 a0c8d1,Sikorsky,H2T,County Of Los Angeles
+a0f421,Mcdonnell Douglas Helicopter,H1T,Commonweath Of Massachusetts
 a0f47b,Airbus Helicopters Inc,H1T,City Of San Antonio Texas
 a0f4bf,Md Helicopters Inc,H2T,County Of Gwinnett Georgia
 a0f703,Textron Aviation Inc,L1P,California Department Of Parks And Recreation
 a0f740,Hawker Beechcraft Corp,L2T,Department Of Homeland Security
 a0f9b2,Textron Aviation Inc,L2T,Department Of Homeland Security
 a0f9b5,Beech,L2T,United States Department Of Interior
+a0fa58,Cessna,L1P,Burlington Technical Center
 a1058a,Bell Helicopter Textron Canada,H2T,Administracion De Los Servicios Generales
 a1059b,Gippsaero Pty Ltd,L1P,County Of San Bernardino
 a10941,Robinson Helicopter Co,H1T,City Of Fontana California
+a10be1,Textron Aviation Inc,L2T,Department Of Homeland Security
 a110af,Bell Helicopter Textron Canada,H2T,Administracion De Los Servicios Generales
-a0effb,Dji,H4E,City Of Wilmington
-a0f075,Raytheon Aircraft Company,L1P,Minnesota Department Of Transportation
+a110bd,Dji,H4E,Town Of Bolton Massachusetts
 a11ae9,Costruzioni Aeronautiche Tecna,L2P,Michigan Department Of Natural Resources
 a11f93,Cessna,L1P,North Carolina Dept Of Enviroment & Natural Resour
 a11d65,Dji,H4E,City Of Burleson
@@ -1384,11 +1413,17 @@ a123f3,Cessna,L1P,Texas Department Of Public Safety
 a120a0,Eurocopter,H1T,Us Department Of Homeland Security
 a1216c,Cessna,L1P,Fort Leavenworth Flying Activity
 a12234,Cessna,L1P,Commonwealth Of Massachusetts
+a1271f,Skydio Inc,H4E,Manatee County Fl Goverment
 a1246b,Textron Aviation Inc,L2T,Dept Of Homeland Security
 a12b75,Bell,H1P,Aviation Maintenance Technology
+a129ab,Cessna,L1P,Michigan State Police
+a12c8b,Socata,L1T,Sacramento County Sheriffs Office
+a133d5,Cessna,L1P,Avco Patrol Llc
 a134a6,Dehavilland,L4T,United States Government
+a13a5b,Leading Edge Aerial Tech Inc,H6E,Four Rivers Vector Control District
 a136fe,Gulfstream Aerospace,L2J,Missile Defense Agency (mda)
 a1420a,Airbus Helicopters Inc,H1T,Department Of Homeland Security
+a14a13,Cessna,L1P,Barr Air Patrol Llc
 a14ec7,Piper,L1P,Coffey County Airport
 a14bd6,Eurocopter,H1T,U S Dept Of Homeland Security
 a150ff,Airbus Helicopters Inc,H1T,Department Of Homeland Security
@@ -1397,11 +1432,12 @@ a156fb,Eurocopter,H1T,Us Department Of Homeland Security
 a157f0,Cub Crafters Inc,L1P,Us Department Of The Interior
 a15ab2,Eurocopter,H1T,Us Department Of Homeland Security
 a15ac9,Cessna,L1P,County Of Butte
-a15ae2,Cub Crafters Inc,L1P,U S Department Of The Interior
 a15c88,Hawker Beechcraft Corp,L2T,Department Of Homeland Security
 a13ef1,Mcdonnell Douglas Helicopter,H1T,City And County Of Honolulu
 a13f88,Cessna,L1P,Tennessee Dept Of Saftey & Homeland Security
 a16975,Pilatus Flugzeugwerke Ag,L1T,Us Department Of The Interior
+a16f3b,Dji,H4E,State Of Michigan
+a16d1e,Airbus Helicopters Inc,H1T,Maryland Natural Resources Police
 a16da1,American Eurocopter Corp,H1T,Texas Dept Of Public Safety
 a16f99,American Eurocopter Corp,H1T,Department Of Homeland Security
 a16fce,Cub Crafters Inc,L1P,U S Department Of The Interior
@@ -1410,9 +1446,9 @@ a178fd,Bell,H2T,Us Department Of State
 a18164,Airbus Helicopters Inc,H1T,Department Of Homeland Security
 a17e8e,Textron Aviation Inc,L2T,Department Of Homeland Security
 a18580,Airbus Helicopters Inc,H1T,Department Of Homeland Security
-a18238,Pipistrel Lsa S R L,L1E,City Of Mendota
-a18290,Hughes Helicopters Inc,H1T,County Of Kern
-a185ef,Pipistrel Lsa S R L,L1E,City Of Mendota
+a18238,Pipistrel Lsa S R L,L1E,City Of Reedley
+a185ef,Pipistrel Lsa S R L,L1E,City Of Reedley
+a189aa,Cessna,L1P,Barr Air Patrol Llc
 a18ae3,Cessna,L1P,City Of Sacramento
 a16772,Dji,H4E,Effingham County Emergency Management Agency
 a167d1,Vulcanair,L2P,South Carolina Department Of Natural Resources
@@ -1420,222 +1456,324 @@ a167d3,Sikorsky,H2T,Us Department Of State
 a001bb,Beechcraft Corp,L2T,Trinity River Authority Of Texas
 a001de,Hawker Beechcraft Corp,L2T,Commmonwealth Of Virginia
 a192aa,Beech,L2T,Navajo Nation
-a192c0,Cessna,L1P,Oklahoma Department Of Public Safety
+a192c0,Cessna,L1T,Oklahoma Department Of Public Safety
 a19333,Raytheon Aircraft Company,L2T,North Dakota Department Of Transportation
 a1938a,Beech,L2T,Texas Dept Of Criminal Justice
+a198bc,Cessna,L1P,Avco Patrol Llc
+a19a2e,Textron Aviation Inc,L1T,California Highway Patrol
 a19aa1,Raytheon Aircraft Company,L2T,North Dakota Department Of Transportation
 a19f67,Airbus Helicopters Inc,H1T,Department Of Homeland Security
-a1a29e,Eurocopter,H1T,Texas Department Of Public Safety
 a1a51e,Skydio,H4E,Manatee County Fl Government
-a1a8df,Bell,H1T,City Of Fort Worth
-a1a8f4,Bell Helicopter Textron,H1T,Grand River Dam Authority
+a1a524,Bell Helicopter Textron Canada,H1T,Florida State Guard
 a1a9d9,Bell,H1T,United States Department Of Interior
 a1a9df,Cessna,L1P,County Of Santa Barbara
 a1a9f2,Bell,H1T,County Of Ocean
+a1aa43,Cessna,L1P,Office Of Aviation Services
 a1af06,Cessna,L1P,Van Wert County Regional Airport Authority
+a1ac92,Bell Helicopter Textron Canada,H1T,Florida State Guard
 a1ad98,Bell,H1T,U S Dept Of State Inl/a
-a1adc3,Eurocopter,H1T,Texas Department Of Public Safety
+a1b021,Cessna,L1T,Us Government
+a1b3d9,Md Helicopters Inc,H1T,Yavapai County
+a1b4bb,Gippsaero Pty Ltd,L1P,Modesto Police Department
+a190bf,Textron Aviation Inc,L2T,Idaho Transportation Department
 a1bcfb,Airbus Helicopters Inc,H1T,Deparment Of Homeland Security
+a1bb5e,Kodiak Aircraft Co Inc,L1T,Commonwealth Of Virginia
+a1bfcd,Cessna,L1P,Avco Patrol Llc
 a1bdcc,Bell Helicopter Textron Canada,H2T,County Of Fairfax
-a1bec9,Cessna,L1P,Sherrifs Office Kane County Utah
+a1bec9,Cessna,L1T,Sherrifs Office Kane County Utah
 a1c183,Bell Helicopter Textron Canada,H2T,County Of Fairfax
 a1c5f2,Airbus Helicopters Inc,H1T,Lapd Air Support Division
 a1c9a3,Beech,L2T,Navajo Nation
 a1c9f0,Beech,L2T,San Bernardino Co Sherriffs Dept
 a1cdd4,Cessna,L1T,Texas Dept Of Public Safety
-a1d2bb,Beech,L2T,Department Of Justice
 a1d0ad,Cub Crafters Inc,L1P,Us Dept Of The Interior
-a1d160,Bell,H1T,U S Dept Of State Inl/a
 a1d5ed,Piper,L1P,Clarksdale-coahoma County Airport
-a1d850,Dji,H4E,Manatee County Florida Govt
+a1d632,Dji,H4E,City Of Shoreview
 a1d898,Beechcraft Corp,L2T,Department Of Homeland Security
-a1d8ce,Bell,H1T,U S Dept Of State Inl/a
 a1dcb0,Pilatus Aircraft Ltd,L1T,Texas Department Of Public Safety
+a1e1a9,Saxon,L1P,Georgia Institure Of Technology
 a1e24a,Mcdonnell Douglas Helicopter,H1T,City Of Oakland
 a1e5b3,Airbus Helicopters Inc,H1T,Lapd Air Support Division
+a1e915,Hylio Inc,H8E,Office Of Aviation Services
 a1ed21,Airbus Helicopters Inc,H1T,Lapd Air Support Division
 a1f0d8,Airbus Helicopters Inc,H1T,Lapd Air Support Division
 a1f48f,Airbus Helicopters Inc,H1T,Lapd Air Support Division
 a1f846,Airbus Helicopters Inc,H1T,Lapd Air Support Division
+a1fc32,Airbus Helicopters Inc,H1T,Hillsborough County Sheriff
+a1fcc1,Airbus Helicopters Inc,H1T,Texas Department Of Public Safety
 a20129,Dji,H4E,Town Of West Seneca Police Dept
 a1ffb4,Eurocopter,H1T,City Of Los Angeles
 a1ffe9,Cessna,L1T,North Dakota Dept Of Transportation
 a204e6,Cessna,L1P,Yokota Flight Training Center
 a2036b,Eurocopter,H1T,City Of Los Angeles
+a20403,Dji,H4E,St Charles Parish Sheriffs Office
 a1dffb,Bell,H2T,Department Of Interior
+a208d5,Bell Helicopter Textron Canada,H1T,Georgia Department Of Public Safety
 a2097b,Airbus Helicopters Inc,H1T,Lapd Air Support Division
+a209ea,Skydio Inc,H4E,Manatee County Fl Government
+a20f1b,Agustawestland Philadelphia,H2T,National Nuclear Security Administration
 a20f61,Textron Aviation Inc,L2T,National Nuclear Security Administration
 a20f84,Textron Aviation Inc,L2T,National Nuclear Security Administration
 a20fca,Textron Aviation Inc,L2T,National Nuclear Security Administration
 a210e8,Cub Crafters Inc,L1P,Us Department Of The Interior
+a210e9,Airbus Helicopters Inc,H1T,City Of Los Angeles
 a21144,Cub Crafters Inc,L1P,U S Department Of The Interior
 a2167b,Beech,L1P,Village Of Choudrant
-a21539,Bell,H1T,U S Dept Of State Inl/a
 a21e0e,Raytheon Aircraft Company,L2T,Utah Department Of Transportation
-a2256b,Airbus Helicopters Inc,H1T,City Of Houston
-a22640,Airbus Helicopters Inc,H1T,Mayor And City Council Of Baltimore
+a21b1b,Airbus Helicopters Inc,H1T,Erie County Sheriffs Office
+a2220b,Cessna,L1P,Avco Patrol Llc
+a2256b,Airbus Helicopters Inc,H1T,Texas Department Of Public Safety
+a22591,Cessna,L1P,Barr Air Patrol Llc
+a2283b,Dji,H4E,Village Of Wilmette
+a22d18,Cessna,L1P,State Of Wisconsin
 a22adf,Quest Aircraft Company Llc,L1T,Idaho Transportation Department
 a20648,Schleicher,L0?,Nevada State Parks
 a23148,Bell Helicopter Textron Canada,H1T,City Of Omaha
+a236bd,Agustawestland Philadelphia,H2T,National Nuclear Security Administration
+a236d9,Cessna,L1P,Mt Vernon Airport Authority
 a234cc,Dji,H4E,Manatee County Fl Government
 a2376d,American Eurocopter Corp,H1T,Department Of Homeland Security
-a23909,Douglas,L2P,City Of Santa Monica
+a23809,Inspired Flights Tech Inc,H6E,Manatee County Fl Goverment
+a23909,Douglas,L2T,City Of Santa Monica
+a23954,Inspired Flights Tech Inc,H6E,Manatee County
 a23963,Cessna,L1P,United States Department Of Interior
 a23dff,Cessna,L1P,Southern Illinois Airport Authority
 a23b34,Pipistrel Lsa S R L,L1E,City Of Reedley
 a23ce3,Pilatus Aircraft Ltd,L1T,Texas Department Of Public Safety
 a23eeb,Pipistrel Lsa S R L,L1E,City Of Reedley
 a2409a,Eurocopter,H1T,Texas Department Of Public Safety
-a242b7,Cessna,L2P,Southern Illinois Airport Authority
-a248ec,Cessna,L1P,Eastern West Virginia Regional Airport Authority
+a24515,Cessna,L1P,Barr Air Patrol Llc
 a2490c,Cessna,L1P,Michigan Dept Of Natural Resources
-a2467e,Cessna,L1P,Alaska Department Of Public Safety
+a2467e,Cessna,L1T,Alaska Department Of Public Safety
 a24744,Air Tractor Inc,L1T,Chambers County
+a24b98,Pilatus Aircraft Ltd,L1T,Us Government
 a24f4b,Bell,H1T,U S Dept Of State Inl/a
+a22ec6,Kodiak Aircraft Co Inc,L1T,Minnesota Department Of Transportation
 a22ee2,Bell Helicopter Textron Canada,H1T,Georgia Department Of Natural Resources
-a25912,Bell,H1T,U S Dept Of State Inl/a
-a26437,Bell,H1T,U S Dept Of State Inl/a
+a25bfd,Textron Aviation Inc,L2T,Department Of Homeland Security
+a265a1,Beech Aircraft Corporation,L2J,Southwest Tech Center
 a273ee,Balloon Works,L0?,City Of Riverton
+a272c7,Bell,H1P,Pinellas County
+a27379,Dji,H8E,Madison County
 a275b6,Bell,H1T,Florence County Sherrifs Dept
+a2796d,Textron Aviation Inc,L1P,State Of Alabama
 a25661,Bell Helicopter Textron Canada,H1T,Georgia Department Of Natural Resources
-a280c0,E-flite,L1E,U S Dept Of The Interior
 a283cf,Eurocopter Deutschland Gmbh,H2T,Metrohealth System
 a283e0,Airbus Helicopters Inc,H1T,Department Of Homeland Security
 a28477,E-flite,L1E,U S Dept Of The Interior
+a28726,Freefly Systems,H4E,State Of Michigan
 a28786,Eurocopter Deutschland Gmbh,H2T,Metrohealth System
 a28b3d,Eurocopter Deutschland Gmbh,H2T,Metrohealth System
 a28b9c,Cessna,L1P,Richland County Sheriffs Department
 a28ed8,Bell,H1T,Dale County Sheriffs Office
+a28fb0,Leading Edge Aerial Tech Inc,H6E,Clark County Department Of Public Works
+a29451,Cessna,L1P,Barr Air Patrol Llc
+a2945a,Leading Edge Aerial Tech Inc,H6E,Calcasieu Parish Police Jury
 a29500,Airbus Helicopters Inc,H1T,Department Of Homeland Security
+a291ac,Airbus Helicopters Inc,H1T,Broward County Sheriffs Office
 a298ec,Piper,L1P,City Of Westfield
+a29674,Dji,H4E,Illinois Department Of Natural Resources
 a298fe,American Eurocopter Corp,H1T,Department Of Homeland Security
 a299f9,Airbus Helicopters Inc,H1T,Lapd Air Support Division
-a2a0f4,Sikorsky,H2T,Us Department Of Homeland Security
+a29cd1,Airbus Helicopters Inc,H1T,Broward County Sheriffs Office
+a29d72,Cessna,L1P,Florida Highway Patrol
+a29df0,Dji,H8E,Mitchell Tech
+a2a40e,Dji,H4E,New Castle County Police Department
 a2a20a,Bell,H1T,Department Of Public Safety
-a27dd8,Bell,H2T,Office Of Defense Cooperation/sco-ury
 a27de0,Bell Helicopter Textron Canada,H1T,Georgia Department Of Natural Resources
+a2a9da,Sikorsky,H2T,Us Department Of State Inl/a
+a2a7d6,Airbus Helicopters Inc,H1T,Texas Parks And Wildlife Department
+a2a8ce,Sikorsky,H2T,Us Department Of State Inl/a
 a2abd1,Cessna,L1P,Indiana Department Of Administration
 a2b186,Clinton L Allen,L1P,Springfield Branson National Airport
 a2b56d,Bell,H2T,Us Department Of State
-a2b98c,Cessna,L1P,State Of Alaska Department Of Public Safety
+a2b936,Aerospatiale,H1T,City Of Burbank
+a2b98c,Cessna,L1T,State Of Alaska Department Of Public Safety
 a2baa0,Iniziative Industriali Italian,L1P,Port Of Tillamook Bay
+a2baad,Bell Textron Canada Ltd,H2T,State Of Delaware
 a2be77,Sikorsky,H2T,Health Care District Of Palm Beach County
 a2c469,Cub Crafters Inc,L1P,Us Department Of The Interior
 a2c7ef,Boeing,L2J,U.s. Marshals Service
 a2c934,Bell Helicopter Textron Canada,H1T,City Of Sacramento
-a2a5ff,Cessna,L1P,Commonwealth Of Virginia
 a2cee8,Dji,H4E,City Of Kings Mountain
+a2cef1,Bell Textron Canada Ltd,H2T,Tennessee Department Of Safety & Homeland Security
+a2d1bf,Dji,H4E,New Castle County Police Dept
 a2d346,Bell,H2T,City Of San Diego
+a2d88b,Boeing,L2J,U S Marshall Serv Justice & Alien Trans Sys(jpats)
+a2d6fc,Dji,H4E,St Chalres Parish Sheriffs Office
 a2d6fd,Bell,H2T,City Of San Diego
 a2dab4,Sikorsky,H2T,City Of San Diego
+a2de75,Bell,H1T,Kentucky State Police
+a2e0d4,Cessna,L1P,Barr Air Patrol Llc
+a2e22c,Bell Textron Canada Ltd,H2T,Kentucky State Police
 a2e6ac,Cessna,L1P,Lawton Metropolitan Area Airport Authority
+a2e522,Bell,H1T,Citrus County Sheriffs Office
 a2e8f6,Cub Crafters Inc,L1P,Us Department Of The Interior
 a2ec85,Eurocopter,H1T,County Of Sacramento
+a2f1e5,Bell Textron Canada Ltd,H2T,Sarasota County Sheriffs Office
 a2cc9e,Eurocopter,H1T,City Of Long Beach
-a2ccde,Quest Aircraft Company Llc,L1T,Georgia Department Of Natural Resources
+a2ccee,Piper,L1P,Lane Community Colleg
 a2f8c8,Airbus Helicopters Inc,H1T,Department Of Homeland Security
+a2facf,Cessna,L1P,Barr Air Patrol Llc
 a303b7,Piper,L1P,Jacksonville Airport Authority
+a301a7,Dji,H4E,South Kingstown Police Department
+a30499,Cessna,L1P,State Of Wisconsin Department Of Administration
+a30b31,Cessna,L1P,Eagle Sky Patrol
 a30d0d,American Eurocopter Corp,H1T,City Of Philadelphia
 a30d54,Airbus Helicopters Inc,H1T,Department Of Homeland Security
 a30fb0,Bell Textron Canada Ltd,H1T,Clayton County Georgia
 a30fdf,Hughes Helicopters Inc,H1T,County Of Kern
 a310c4,Airbus Helicopters Inc,H1T,City Of Philadelphia
+a31744,Hughes Helicopters Inc,H1T,Kings County Sheriffs Office
+a317cd,Cessna,L1P,Kings County Sheriff's Office
 a2f41d,Eurocopter,H1T,City Of Long Beach
 a18e80,Hawker Beechcraft Corp,L2T,N C Dept Of Transportation
 a18ea7,Textron Aviation Inc,L1P,United States Department Of The Interior
 a18f2d,Hawker Beechcraft Corp,L2T,Commonwealth Of Virginia
-a32231,Textron Aviation Inc,L1T,California Highway Patrol
-a32309,Cessna,L1T,Department Of Justice
+a32068,Beech,L2T,Highway 16 Ranch Llc
 a323be,Mcdonnell Douglas Helicopter,H1T,City And County Of Honolulu
-a324c0,American Eurocopter Corp,H1T,City Of Tulsa
 a32741,Agusta Aerospace Corp,H2T,Los Angeles City
 a32775,Mcdonnell Douglas Helicopter,H1T,City And County Of Honolulu
 a32877,Airbus Helicopters Inc,H1T,City Of Tulsa
 a32af8,Agusta Spa,H2T,Los Angeles City
 a32b8d,Dji,H4E,Manatee County Fl Government
+a32c0b,Cessna,L1P,Harris County Sheriff's Office
 a330c9,Socata,L1P,United States Of America Owner
 a32eaf,Agustawestland Philadelphia,H2T,City Of Los Angeles
-a3323f,Boeing,L2J,National Nuclear Security Administration
+a32f4f,American Eurocopter Corp,H1T,Miami-dade Sheriff's Office
 a33266,Agusta Spa,H2T,City Of Los Angeles
+a33306,Eurocopter France,H1T,Miami-dade Sheriff's Office
 a3332e,Bell,H1T,City Of Tucson
-a3361d,Bell Helicopter Textron Canada,H1T,City Of Los Angeles
+a3361d,Bell Textron Canada Ltd,H1T,City Of Los Angeles
+a336bd,Airbus Helicopters Inc,H1T,Miami-dade Sheriffs Office
 a3398f,Kubicek Factory S R O,L0?,City Of Riverton
+a339d4,Bell Textron Canada Ltd,H1T,City Of Los Angeles
 a33a12,Iai Ltd,L2J,Seminole Tribe Of Florida Dba
+a33a74,Airbus Helicopters Inc,H1T,Miami-dade Sheriffs Office
 a33aff,Leonardo Spa,H2T,County Of Travis
+a33e2b,Airbus Helicopters Inc,H1T,Miami-dade Sheriffs Office
+a33e46,Textron Aviation Inc,L1P,State Of Wisconsin
 a33eb6,Leonardo Spa,H2T,County Of Travis
+a33f05,Sikorsky,H2T,Us Department Of State Inl/a
+a341e2,Airbus Helicopters Inc,H1T,Miami-dade Sheriffs Office
+a34253,Bell,H1T,San Bernardino Co Sheriffs Department
 a3426d,Leonardo Spa,H2T,County Of Travis
 a31e37,Airbus Helicopters Inc,H1T,City Of Ontario
 a31e89,Cessna,L2P,Tennessee Technology Center At Morristown
 a31ed5,Bell,H1T,Commonwealth Of Virginia
+a34a94,Cessna,L1P,Barr Air Patrol Llc
 a34b45,Cessna,L1P,Ohio Department Of Public Safety
 a34bac,Boeing,L2J,Us Marshals Service Justice Prisoner &
-a3522f,Aerospatiale/alenia,L2T,Us Department Of Justice
+a35332,Cirrus Design Corp,L1P,Dawn Patrol Llc
 a35683,Bell,H1T,City Of Jacksonville
-a361a8,Bell,H1T,City Of Jacksonville
+a3449a,Cessna,L1P,Avco Patrol Llc
 a344e5,General Atomics,L1J,Department Of Homeland Security
-a345bf,Bell Helicopter Textron Canada,H1T,County Of Charleston
+a36fd7,Cirrus Design Corp,L1P,Highway Aero Llc
+a37285,Skydio Inc,H4E,Wilmington Police Department
 a3731f,Cessna,L1P,County Of Henrico Virginia
+a37327,Dji,H8E,Minnesota Cultivated Wild Rice Council
+a37390,Partenavia S.p.a.,L2P,Barr Air Patrol Llc
 a37799,Airbus Helicopters Inc,H1T,Department Of Homeland Security
 a3804c,Cessna,L1P,City Of Liberal
 a38744,Cessna,L2J,U S Department Of Homeland Security
 a385e3,American Eurocopter Llc,H1T,City Of Anaheim
 a38c3d,Cub Crafters Inc,L1P,Us Dept Of The Interior
+a390d3,Cessna,L1P,Barr Air Patrol Llc
 a3917e,Eurocopter,H1T,Texas Department Of Public Safety
-a36c7f,Cessna,L1P,U S Department Of State
 a36d4d,Textron Aviation Inc,L1P,Department Of The Interior
-a36d52,Cessna,L1P,United States Department Of Interior
 a36dd3,Cessna,L1P,Commonwealth Of Virginia
+a395df,Sikorsky,H2T,Us Department Of State Inl/a
 a39718,Schweizer,H1P,City Of Oakland
 a39c45,Piper,L1P,Flora Airport Authority
 a39a9c,Dji,H4E,Manatee County Florida Government
 a39f96,Airbus Helicopters Inc,H1T,Department Of Homeland Security
+a3a46e,Yuneec,H6E,Ashland Boyd County
 a3a1d2,Lockheed,L1J,Jackson County Airport
+a3a4c8,Autel Robotics,H4E,Ashland Boyd County
+a3a677,Dji,H8E,State Of Michigan Department Of Natural Resources
 a3ad38,Hawker Beechcraft Corp,L2T,Us Special Operations Command
+a3b29d,Dji,H4E,State Of Michigan
+a3b193,Autel Robotics,H4E,Ashland Boyd County Catlettsburg Office
+a3b6fb,Hylio Inc,H8E,Carrington Research Extension Center
+a3b3f7,Dji,H4E,State Of Michigan Department Of Natural Resources
+a3b49d,Kodiak Aircraft Co Inc,L1T,Missouri Department Of Conservation
 a3b51b,Eurocopter,H1T,Erie County
+a3b8d2,Airbus Helicopters Inc,H1T,Erie County Sheriffs Office
 a394c9,Bell,H1T,United States Department Of Interior
+a39534,Israel Aircraft Industries,L2J,Polytech Adult Education
+a39552,Kodiak Aircraft Co Inc,L1T,Commonwealth Of Virginia
+a3be97,Bell Textron Canada Ltd,H1T,City Of Omaha
+a3bec9,Cessna,L2P,Oklahoma State Bureau Of Narcotics And Dangerous
 a3c2af,New Piper Aircraft Inc,L1P,United States Of America
-a3da5b,Cessna,L1P,City Of Lancaster California
+a3c633,Airbus Helicopters Inc,H1T,Department Of Homeland Security
+a3cbf4,Cessna,L1P,Avco Patrol Llc
+a3d131,Sikorsky,H2T,Us Department Of State Inl/a
 a3d792,Bell Textron Canada Ltd,H1T,Leon County Florida
 a3bbab,Dehavilland,L4T,United States Government
 a3bcaa,Luke Ervin G,L1P,Port Of Tillamook Bay
 a3bcd1,Bell,H1T,Commonwealth Of Virginia
-a3e533,Hawker Beechcraft Corp,L2T,Us Special Operations Command
 a3e5f1,American Eurocopter Corp,H1T,Mississippi Department Of Public Safety
 a3e624,Raytheon Aircraft Company,L2T,Us Special Operations Command
 a3e627,Airbus Helicopters Inc,H1T,Texas Parks & Wildlife Dept
-a3e8c4,Cessna,L1P,Civil Air Patrol
 a3e916,American Eurocopter Llc,H1T,U S Dept Of The Interior
-a3ecba,Eurocopter,H1T,City Of Phoenix
+a3e9a8,Eurocopter Deutschland Gmbh,H2T,Mississippi Department Of Public Safety
 a3f24a,Draganfly Innovations,H4E,Great Basin Unified Apcd
 a3f372,Cessna,L1P,Us Department Of Homeland Security
-a3f071,Eurocopter,H1T,City Of Phoenix
+a3f105,Kodiak Aircraft Co Inc,L1T,State Of Montana Department
 a3f66c,Cessna,L1P,Us Department Of Homeland Security
-a3f547,Bell,H1T,Department Of Public Safety
-a3f8fe,Bell,H1T,Louisiana Department Of Public Safety
+a3f6b9,Cessna,L1P,Barr Air Patrol Llc
+a3f542,Bell,H1T,Department Of Public Safety
+a3f547,Bell Textron Canada Ltd,H1T,Louisiana State Police
+a3f8f9,Bell,H1T,Desoto Parish Sheriff Office
+a3f8fe,Bell Textron Canada Ltd,H1T,Louisiana State Police
 a3fc14,Eurocopter,H1T,Lake County Indiana
 a3fc2a,Cub Crafters Inc,L1P,U S Department Of The Interior
 a3fcb5,Bell,H1T,Louisiana Department Of Public Safety
 a3ffe6,Cessna,L1P,Michigan Dept Of Natural Resources
 a4006c,Bell,H1T,Louisiana Department Of Public Safety
 a4093e,Cessna,L1P,Illinois Department Of Transportation
-a3e450,Textron Aviation Inc,L1P,Commonwealth Of Virginia
+a3e457,Cessna,L1P,Barr Air Patrol Llc
 a3e475,Sikorsky,H2T,Us Department Of State
-a4242a,Bell,H1T,Us Department Of State Inl/a
-a427e1,Bell,H1T,Us Department Of Stateinl/a
+a41043,Cessna,L1P,Barr Air Patrol Llc
+a41116,Textron Aviation Inc,L1P,State Of Montana Dept Of Natural Resources
+a41146,Textron Aviation Inc,L2T,State Of New York
+a4114b,Leading Edge Aerial Tech Inc,H6E,Polk County A Political Subdivision Of
+a411c2,Airbus Helicopters Inc,H1T,Texas Department Of Public Safety
+a414cd,Textron Aviation Inc,L1P,State Of Montana Dept Of Natural Resources
+a417b1,Cessna,L1P,Barr Air Patrol Llc
+a417f4,Skydio Inc,H4E,Manatee County Govt
+a4182c,Wingtra,H2E,Manatee County Fl Government
+a419bc,Skydio,H4E,Manatee County Government Public Works
+a41e9b,Dji,H4E,City Of Covington
+a41b68,Cessna,L1P,Barr Air Patrol Llc
+a41f1f,Cessna,L1P,Barr Air Patrol Llc
+a42668,Hylio Inc,H8E,Bannock County
+a426e6,Leading Edge Aerial Tech Inc,H6E,City Of Cheyenne
+a42796,Md Helicopters Llc,H1T,City Of Atlanta
+a42834,Skydio,H4E,Manatee County Fl Government
+a4284d,Skydio,H4E,Manatee County Fl Government
 a42b1a,Yuneec,H6E,Manatee County Fl Government
 a42f78,Md Helicopters Inc,H2T,Tennessee Valley Authority
+a40ad0,Cessna,L1P,Barr Air Patrol Llc
 a40afa,Sikorsky,H2T,Us Department Of State
 a40bcf,Bell,H1T,Commonwealth Of Virginia
 a43488,American Eurocopter Corp,H1T,Oklahoma Department Of Public Safety
+a4356b,Airbus Helicopters Inc,H1T,Department Of Homeland Security
 a437d9,American Champion Aircraft,L1P,City Of Bakersfield California
+a438cb,Md Helicopters Llc,H1T,City Of Atlanta
 a43dab,Cessna,L2J,U S Department Of Homeland Security
-a446db,Cessna,L1P,Department Of The Interior
+a43fa2,Bell,H1T,Henry County Sheriffs Office
+a446db,Cessna,L1T,Department Of The Interior
 a45232,Cessna,L1P,Dept Of The Interior
-a45317,Bell,H1T,Us Department Of State Inl/a
+a4320f,Cessna,L1P,Avco Patrol Llc
+a45e0e,Bell,H1T,State Of Colorado Department Of Public Safety
+a45e31,Bell,H1T,State Of Colorado Department Of Public Safety
 a46140,Airbus Helicopters Inc,H1T,Department Of Homeland Security
+a462dd,Airbus Helicopters Inc,H1T,City Of San Antonio
+a47536,Cessna,L1P,New Garden Township
 a47372,Bell,H1T,County Of Volusia
-a47847,Piper,L1P,United States Department Of Interior
 a48019,Bell,H1T,County Of Cape May
+a48793,Textron Aviation Inc,L1P,State Of Montana Dept Of Natural Resources
 a4906a,American Eurocopter Llc,H1T,Department Of Homeland Security
 a490b0,American Eurocopter Llc,H1T,Department Of Homeland Security
 a490d3,American Eurocopter Llc,H1T,Department Of Homeland Security
@@ -1659,52 +1797,68 @@ a31b98,Bell,H1T,Commonwealth Of Kentucky
 a31bcf,Hawker Beechcraft Corp,L2T,North Carolina Dept Transportation
 a4b055,Cessna,L1P,Fall River County Emergency Management
 a4acdd,Balony Kubicek Spol Sro,L0?,City Of Riverton
+a4b107,Bell Textron Canada Ltd,H1T,St Johns County Sheriff Office
 a4b171,Airbus Helicopters Deutschland,H1T,Dare County
 a4b187,Bell Textron Canada Ltd,H2T,North Carolina State Highway Patrol
 a4b484,Bell,H2T,North Slope Borough
-a4b525,Cessna,L2P,Missouri Department Of Conservation
 a4b558,Bell Helicopter Textron Canada,H1T,City Of Omaha
+a4b5c3,Bell,H2T,Florida State Guard
 a4bae2,Eurocopter,H1T,Department Of Homeland Security
 a4b960,Lockheed,L4T,United States Customs And Border Protection
-a4be49,Eurocopter,H1T,U S Dept Of Homeland Security
 a4bef8,Eurocopter,H1T,U S Dept Of Homeland Security
-a4bbd6,Beech,L2T,Eastern West Virginia Regional Airport Authority
 a4bbd9,Piper,L1P,Delaware State Universtiy
-a4bc6e,Cessna,L1P,Department Of Justice
 a4c246,Eurocopter,H1T,U S Dept Of Homeland Security
-a4c2dc,Eurocopter,H1T,U S Dept Of Homeland Security
 a4c0f3,American Eurocopter Llc,H1T,Texas Department Of Public Safety
 a4c670,Eurocopter,H1T,U S Dept Of Homeland Security
+a4c41a,Bell Textron Canada Ltd,H1T,North Carolina State Highway Patrol
 a4c4a8,Bell Textron Canada Ltd,H1T,Tennessee Valley Authority
 a4c6d7,Bell,H1T,County Of Contra Costa
+a4c6fa,Bell Helicopter Textron Canada,H1T,Flagler County Sheriffs Office
 a4c748,Bell Textron Canada Ltd,H1T,Grand River Dam Authority
+a4c7d9,Bell Helicopter Textron Canada,H1T,Orange County Sheriff's Office
 a4c7eb,Bell,H1T,Charlotte Mecklenburg Polic Deptartment
 a4c836,Bell,H1T,County Of Onondaga
 a4c83a,Bell Helicopter Textron Canada,H1T,Stanislaus County
-a4c842,Bell,H1T,Rhode Island Airport Corporation
 a4ca8e,Bell Helicopter Textron Canada,H1T,County Of Contra Costa
+a4caa7,Kodiak Aircraft Co Inc,L1T,City Of San Jose
+a4cbed,Eurocopter,H1T,County Of Santa Clara
 a4cbf6,Raytheon Aircraft Company,L2T,Us Department Of State
 a4cbf9,Hawker Beechcraft Corp,L2T,North Slope Borough
 a4cc16,Bell Textron Canada Ltd,H1T,Tennessee Valley Authority
-a4ac07,Eurocopter,H1T,Texas Department Of Public Safety
+a4d16b,Cessna,L1P,Barr Air Patrol Llc
+a4ce5c,Pilatus Aircraft Ltd,L1T,Us Government
+a4ac24,Bell Textron Canada Ltd,H2T,Commonwealth Of Virgina Dept Of State Police
 a4d452,Textron Aviation Inc,L2T,Department Of Homeland Security
 a4daa7,Cameron Balloons Us,L0?,Byrd Polar Research Center
+a4db92,Bell Helicopter Textron Canada,H2T,Georgia Dept Of Public Safety
 a4dc0b,Bell,H2T,City Of Houston
 a4dc24,Textron Aviation Inc,L2T,Department Of Homeland Security
+a4dd4d,Bell Helicopter Textron Canada,H2T,Bernailillo County Sheriffs Office
 a4dd6c,Bell Textron Canada Ltd,H2T,County Of Ventura Sheriffs Office
+a4e019,Airbus Helicopters Inc,H1T,Hillsborough County Sheriffs Office
 a4e604,Piper,L1P,Universtiy Of Illinois
 a4e47b,Auto Gyro Gmbh,G1P,City Of Tomball
+a4e82d,Cessna,L1P,Avco Patrol Llc
+a4f8f2,Cessna,L1P,Barr Air Patrol Llc
 a4f670,Textron Aviation Inc,L2T,Department Of Homeland Security
 a502c4,Cessna,L1P,Montana Dept Of Transportation
 a4ff6f,Textron Aviation Inc,L2T,Department Of Homeland Security
 a50320,Boeing,L4P,Port Of Tillamook Bay
+a50351,Bell Textron Canada Ltd,H1T,King County Sheriffs Office
 a50432,Cessna,L1P,Missouri Dept Of Transportation
 a5085e,Lockheed,L4T,United States Customs And Border Protection
+a511e7,Cessna,L1P,Avco Patrol Llc
 a50e9f,Textron Aviation Inc,L1P,City Of Portland
+a518a2,Naval Aircraft Factory,L1P,City Of Foley
+a515ab,Bell Textron Canada Ltd,H2T,Louisiana State Police
+a515ac,Cessna,L1T,State Of Oregon
+a5173e,Bell,H2T,State Of New York
 a51e93,Bell Helicopter Textron Canada,H2T,Tennessee Valley Authority
 a51ecb,Bell Textron Canada Ltd,H2T,Tennessee Valley Authority
 a4fac3,Lockheed,L4T,United States Department Of Commerce
 a4fb3c,Cessna,L1P,City Of Mesa Arizona
+a52353,Bell Textron Canada Ltd,H1T,Charleston County Sheriffs Office
+a52450,Freefly Systems,H4E,Manatee County Fl Government
 a524db,Bell Textron Canada Ltd,H2T,Tennessee Valley Authority
 a524dd,Textron Aviation Inc,L1T,Texas Department Of Public Safety
 a5286f,Lockheed,L4T,United States Customs And Border Protection
@@ -1713,85 +1867,109 @@ a53d54,Cub Crafters Inc,L1P,U S Department Of The Interior
 a5471d,Bell,H1T,Us Dept Of State
 a52242,Lockheed,L4T,United States Department Of Commerce
 a55027,Boeing,L2J,City Of Brownsville Texas
-a5685a,Eurocopter,H1T,U S Dept Of Homeland Security
+a55f4a,Dji,H4E,New Castle County Police Department (de)
 a56d86,Bell,H1T,County Of San Diego
 a573d3,Cessna,L1P,County Of San Joaquin
+a57650,Airbus Helicopters Inc,H1T,Mayor And City Council Of Baltimore
 a57d1e,Piper,L1P,Coffey County Airport
+a57a07,Airbus Helicopters Inc,H1T,Mayor And City Council Of Baltimore
 a57b35,Hawker Beechcraft Corp,L2T,U S Special Operations Command
-a57b65,Eurocopter,H1T,Mayor And City Council Of Baltimore
-a57f1c,Eurocopter,H1T,Mayor And City Council Of Baltimore
-a58175,Eurocopter,H1T,Mayor And City Council Of Baltimore
-a584b4,Eurocopter,H1T,United States Of America
+a57dbe,Airbus Helicopters Inc,H1T,Mayor And City Council Of Baltimore
+a58997,Dji,H6E,Native Ecosystems Protection And Management
 a590f8,Navmar Applied Sciences Corp,L1P,Mississippi State Univ Raspet Flight Research Lab
+a59edb,Hylio Inc,H4E,City Of Moriarty New Mexico
+a5a1e2,Textron Aviation Inc,L1T,State Of Iowa
 a5a252,Robinson Helicopter Co,H1T,City Of Fontana California
+a5a83a,Cessna,L1P,Wiggins Air Patrol Llc
+a5a545,Hylio Inc,H4E,City Of Moriarty New Mexico
 a5b334,Cessna,L1T,United States Department Of State
+a5b045,Bell Helicopter Textron Canada,H1T,Georgia Dept Of Public Safety
 a5b109,Navmar Applied Sciences Corp,L1P,Mississippi St Univ Raspet Flight Research Lab
+a5bb67,Cessna,L1P,Barr Air Patrol Llc
 a598bf,Dehavilland,L2T,United States Department Of Commerce
+a5c713,Dji,H4E,Coeur D' Alene Tribe
 a5c983,Airbus Helicopters Inc,H1T,Lapd Air Support Division
 a5ce68,Cessna,L1P,U S Department Of The Interior
+a5d1c9,Boeing,L2J,U S Department Of Homeland Security
+a5d580,Boeing,L2J,Us Department Of Homeland Security
+a5d8f1,Leading Edge Aerial Tech Inc,H6E,Utah County Health Dept
+a5dec0,Cessna,L1P,American Aerial Patrol Llc
 a5df42,Dji,H4E,Macon-bibb County Emergency Management Agency
+a5df6e,Hylio Inc,H8E,Alabama Dept Of Conversvation & Natural Resources
 a5e2bb,Airbus Helicopters Inc,H1T,Department Of Homeland Security
 a5bfd7,Bell,H1P,Pinellas County
-a5c017,Cessna,L1P,City Of Palm Springs
+a5e8f5,Dji,H8E,Sullivan County Office Of Emergency Management
+a5e901,Hylio Inc,H6E,Douglas County Colorado
 a5e9d5,Partenavia Spa,L2P,Ohio Division Of Wildlife
 a5ea33,Lockheed,L4T,U S Customs & Border Protection
+a5f0e4,Dji,H4E,Village Of Wilmette
 a5f9f0,Phillips,L1P,Berkeley County Airport
+a60301,Ea Vision,H4E,Carson Valley Conservation District
 a6034b,Airbus Helicopters,H1T,County Of Butte
 a5e7bd,Dehavilland,L2T,United States Department Of Commerce
 a61154,Partenavia Spa,L2P,Ohio Department Of Natural Resources
 a629b1,Cessna,L1P,Univ Of Illinois Bd Of Trustees
+a627ef,Leading Edge Aerial Tech Inc,H6E,Utah County Health Dept
 a62b61,Pilatus,L1T,Us Department Of Homeland Security
 a6303b,Piper,L1P,Univeristy Of Oklahoma
+a63208,Dji,H4E,New Castle County Police Dept (de)
+a6323a,Dji,H4E,New Castle County Police Dept (de)
+a6326c,Dji,H4E,New Castle County Police Dept (de)
 a60f3c,Gulfstream Aerospace,L2J,United States Department Of Commerce
 a60f58,Dehavilland,L2T,United States Department Of Interior
 a4a994,Cessna,L1P,Salem Airport Authority
-a63b2c,Bell,H1T,Ohio Department Of Natural Resources
 a63bad,Md Helicopters Inc,H2T,Tennessee Valley Authority
-a63ec8,Cessna,L1P,City Of Mesa
 a63f2a,Md Helicopters Inc,H1T,City Of Pasadena
+a64264,Airbus Helicopters Inc,H1T,Louisville/jefferson County Metro Government
+a64989,Pilatus,L1T,Florida Highway Patrol
+a64f93,Beechcraft Corp,L2T,Florida State Guard
 a64d15,Bell Textron Canada Ltd,H1T,City Of Fort Worth
 a652e8,Cessna,L1P,Richland County Finance Department
 a65150,Bell Helicopter Textron Canada,H1T,Manatee County Sherriffs Office
 a6515b,Mcdonnell Douglas Helicopter,H1T,City Of Mesa
-a65180,Textron Aviation Inc,L1P,Dale County Sherriffs Office
+a65180,Textron Aviation Inc,L1P,State Of Connecticut
 a657c9,Cessna,L1T,City Of Anaheim
-a65ca8,Bell,H1T,Westchester County Department Of Public Safety
-a638a9,Cessna,L1P,Oklahoma Department Of Public Safety
+a65bbe,Bell Textron Canada Ltd,H1T,Spokane County Sheriffs Office
+a63856,Agustawestland Philadelphia,H2T,Seminole Tribe Of Florida
 a638ad,Bell Textron Canada Ltd,H1T,City Of New Orleans
+a638d5,Airbus Helicopters Inc,H1T,City On Ontario
 a663fd,Cessna,L1P,Michigan Department Of Natural Resources
 a66521,Cessna,L1P,Dept Of The Interior
 a662b8,Mcdonnell Douglas Helicopter,H1T,City Of Oakland
 a667be,Bell,H1T,U S Department Of State Inl/a
+a6666f,Bell,H1T,City Of Detroit
 a66b77,Cessna,L1P,Us Department Of Homeland Security
-a6692b,Raytheon Aircraft Company,L2T,Us Special Operations Command
+a66c16,Cessna,L1P,Avco Patrol Llc
 a66a94,Bell,H1T,City Of Tampa
 a66ddd,Bell,H1T,City Of Detroit
 a672d4,Piper,L1P,West Texas Weather Modification Association
 a672dd,Cessna,L1P,Commonwealth Of Virginia
 a67313,Dehavilland,L1P,Us Department Of The Interior
-a6718e,Cessna,L1P,Department Of Justice
+a670cb,Textron Aviation Inc,L1P,State Of Alabama
+a670dd,Airbus Helicopters Inc,H1T,Office Of Aviation Services
 a67194,Bell,H1T,City Of Detroit
 a67a32,Cessna,L1P,Commonwealth Of Kentucky
+a67aa3,Cessna,L1P,Barr Air Patrol Llc
+a679c3,Leading Edge Aerial Tech Inc,H4E,Williams County Vector Control District No 1
 a67c51,Textron Aviation Inc,L2T,Department Of Homeland Security
+a681c1,Cessna,L1P,Barr Air Patrol Llc
 a681e2,Cessna,L1P,Us Department Of Homeland Security
+a68219,Cessna,L1P,Barr Air Patrol Llc
+a67f83,Bell Textron Canada Ltd,H1T,Volusia Sheriffs Office
 a68657,Cessna,L1P,Michigan Dept Of Natural Resources
 a660b4,Cessna,L1P,Department Of Public Safety
-a68b50,Bell,H1T,U S Department Of State Inl/a
+a68b47,Cessna,L1P,Barr Air Patrol Llc
 a68ba3,Eurocopter,H1T,U S Dept Of Homeland Security
 a68bd9,Eurocopter,H1T,U S Dept Of Homeland Security
-a68bdb,Eurocopter,H1T,U S Dept Of Homeland Security
 a68be0,Eurocopter,H1T,U S Dept Of Homeland Security
-a68be9,Eurocopter,H1T,U S Dept Of Homeland Security
 a68c27,Bell,H1T,U S Department Of State Inl/a
 a68c40,Bell,H1T,Us Department Of State Inl/a
 a68c4e,Bell,H1T,U S Department Of State Inl/a
 a6894b,Airbus Helicopters,H1T,City Of San Antonio Texas
-a68960,Cessna,L1P,Department Of Justice
 a6903d,Cessna,L1P,Us Department Of Homeland Security
 a68cec,Piper Aircraft Inc,L1P,Central Washington Univ
-a68cf6,Dji,H4E,Led Fast Start
-a68dee,Mcdonnell Douglas Helicopter,H1T,City Of Hawthorne
-a694c4,Md Helicopters Inc,H1T,City Of Huntington Beach
+a68dbb,Cessna,L1P,Barr Air Patrol Llc
+a68e87,Dji,H4E,Town Of Gilbert
 a69526,Cub Crafters Inc,L1P,U S Department Of The Interior
 a69aab,Piper,L2P,Alabama Law Enforement Agency
 a698f2,Eurocopter,H1T,City Of Fresno
@@ -1805,51 +1983,62 @@ a6a990,Md Helicopters Inc,H1T,City Of Houston
 a6a7e2,Kodiak Aircraft Co Inc,L1T,Minnesota Department Of Natural Resources
 a6ab99,Quest Aircraft Company Llc,L1T,Minnesota Department Of Natural Resources
 a6b361,Cessna,L1P,Southern Arkansas Univ Tech
+a6b0d4,American Eurocopter Corp,H1T,El Dorado County Sheriffs Office
 a6b22a,Md Helicopters Inc,H2T,Tennessee Valley Authority
 a6b601,Md Helicopters Inc,H2T,City Of Virginia Beach
 a6bb20,Cessna,L1P,Fort Leavenworth Flying Activity
 a6b9d4,Hitson Stan,H1P,Port Of Tillamook Bay
 a6c043,Cub Crafters Inc,L1P,U.s. Department Of The Interior
 a6c08e,Airbus Helicopters Inc,H1T,Department Of Homeland Security
-a6d4de,Cessna,L1P,City Of Phoenix
+a6c092,Airbus Helicopters Inc,H1T,Fresno Police Department
+a6c370,Cessna,L1P,City Of Hawthorne
+a6c800,Bell Textron Canada Ltd,H1T,Westchester County Department Of Public Safety
+a6cb2b,Cessna,L1P,Barr Air Patrol Llc
 a6d58b,Dehavilland,L4T,United States Government
-a6d306,Cessna,L1P,Department Of Justice
+a6aefc,Textron Aviation Inc,L2T,Kentucky State Police
+a6aff0,Bell Textron Canada Ltd,H1T,Commonwealth Of Virginia
 a6dc39,Textron Aviation Inc,L2T,Department Of Homeland Security
-a6dcb9,Beech,L2T,Jefferson County
 a6dcea,Pilatus,L1T,Us Department Of Homeland Security
 a6e281,Cessna,L1P,Meridian Airport Authority
-a6e5b4,Cessna,L1P,Southern Illonois Airport Authority
-a6e860,Robinson Helicopter Company,H1P,Yavapai County
+a6e66d,Cessna,L1P,Metro Technology Aviation Campus
 a6ebd5,Cessna,L1P,United States Department Of The Interior
-a6f3ec,Cessna,L1P,South Carolina Department Of Natural Resources
 a6f8b0,Cessna,L1P,Colorado Parks And Wildlife
+a6f8b5,Cessna,L1P,Barr Air Patrol Llc
+a6f6fe,Diamond Aircraft Ind Gmbh,L2P,San Joaquin County Sheriffs Office
 a6fadd,Bell,H1T,County Of San Diego
+a6d731,Bell,H1T,Indiana State Police
+a7005d,Textron Aviation Inc,L2J,Kansas Highway Patrol
 a700a7,Bell Textron Canada Ltd,H1T,Ohio Dept Of Natural Resources
 a70361,Beech,L2T,Choctaw Nation Of Oklahoma
 a70362,Md Helicopters Inc,H2T,City Of Columbus
 a703d2,Gulfstream Aerospace,L2J,Department Of Defense Missile Defense Agency
 a70a11,Piper,L1P,Ward County Irrigation District #1
-a70718,Cessna,L2J,Choctaw Nation Of Oklahoma
-a70719,Bell Textron Canada Ltd,H1T,City Of Columbus
+a70713,Bell Textron Canada Ltd,H1T,Orange County Sheriff's Office
+a70719,Bell Textron Canada Ltd,H1T,City Of Columbus Ohio
 a70789,Gulfstream Aerospace,L2J,Department Of Defense Missile Defense Agency
 a70896,Dji,H6E,Tennessee Valley Authority
+a70e34,Cessna,L1P,Lm Air Patrol Service Inc
 a70b40,Gulfstream Aerospace,L2J,Department Of Defense Missile Defense Agency
+a70e86,Textron Aviation Inc,L2J,Choctaw Nation Of Oklahoma
 a71466,Cessna,L1P,Metro Technology Centers
 a715f5,Md Helicopters Inc,H2T,City Of Columbus
+a71749,American Eurocopter Corp,H1T,Harris County Sheriffs Office
+a71774,Airbus Helicopters Inc,H1T,Texas Dept Of Public Safety
 a71c09,Piper,L1P,Coffey County Airport
 a719ac,Md Helicopters Inc,H2T,City Of Columbus
 a71fc4,Piper,L1P,Alaska Department Of Public Safety
+a7211a,Bell Textron Canada Ltd,H1T,City Of Columbus Ohio
 a6fe32,Beech,L2T,Minnesota Department Of Transportation
-a6fe61,Cub Crafters Inc,L1P,Us Department Of The Interior
-a728e8,Bombardier Inc,L2T,Us Department Of State
 a72aa1,Hawker Beechcraft Corp,L2T,Us Department Of Homeland Security
 a72bed,Textron Aviation Inc,L2J,Tennessee Valley Authority
+a72c3f,Cessna,L1P,Illinois State Police
 a73224,Bombardier Inc,L2T,Us Department Of State
 a73d07,Cessna,L1P,United States Department Of Interior
 a739a7,Physical Sciences Inc,H4E,Louisville Metro Government
 a739cb,Physical Sciences Inc,H4E,Louisville Metro Government
 a739e1,Quest Aircraft Co Inc,L1T,State Of Washington
 a73a0b,Physical Sciences Inc,H4E,Louisville Metro Government
+a73ab5,Textron Aviation Inc,L2T,State Of New Mexico
 a741e5,Cub Crafters Inc,L1P,Us Department Of The Interior
 a742e9,Bombardier Inc,L2T,Us Dept Of State
 a744a7,American Eurocopter Corp,H1T,Seminole Tribe Of Florida
@@ -1857,35 +2046,41 @@ a744b7,Bombardier Inc,L2T,Us Department Of State
 a74abe,Physical Sciences Inc,H4E,Louisville Metro Goverment
 a7486e,Bombardier Inc,L2T,Us Department Of State
 a7260e,Dehavilland,L2T,United States Department Of Commerce
-a74e7e,Bombardier Inc,L2T,Us Department Of State
+a75230,Sikorsky,H2T,Us Department Of State Inl/a
+a7591f,Pilatus Aircraft Ltd,L1T,Louisiana State Police
 a75920,Aero Commander,L2P,Department Of Public Safety
 a76288,Cessna,L1P,Washington County
+a76a27,Costruzioni Aeronautiche Tecna,L2P,Tennessee Valley Authority
+a76c6f,Autel Robotics,H4E,Village Of Lake Villa Police Department
 a770a6,Dji,H4E,Fort Bend County Levee Improvement District No 2
 a74c11,Piper,L1P,South Texas Weather Modification Association
 a74ccf,Agustawestland Spa,H2T,Seminole Tribe Of Florida Dba
 a74d8d,Dehavilland,L2T,United States Department Of Commerce
+a77ab4,Textron Aviation Inc,L2T,San Bernardino County California
+a780ed,Piper,L1T,County Of Henrico Va
+a77ed1,Airbus Helicopters Inc,H1T,City Of San Antonio
 a78223,Dji,H4E,Manatee County Fl Government
 a7883a,Lockheed/coleman Warbird Museu,L1J,City Of Big Spring Texas
 a785e9,Diamond Aircraft Ind Inc,L1P,Middle Tennessee State Univ
 a799e1,Dji,H4E,City Of Woodland Public Works Dept
-a79aa9,Cessna,L1P,Minnesota Department Of Public Safety
-a7976c,Bombardier Inc,L2T,Us Department Of State
 a7a61e,Bell Helicopter Textron Canada,H1T,Westchester County Dept Of Public Safety Trnspn
 a7a6e5,Dji,H4E,Oneida County
 a7a9d4,Pilatus,L1T,Us Department Of Homeland Security
 a7b7cc,Bell,H1T,County Of Kern
 a7bb2c,Dji,H4E,Northeast Ohio Regional Sewer District
 a79b15,Dehavilland,L4T,United States Government
+a79b92,Textron Aviation Inc,L1T,State Of California
 a636ea,Bell,H1T,City Of Atlanta
 a6371a,Cessna,L1P,Virginia Department Of Aviation
 a7c77e,Dassault Aviation,L2J,Chickasaw Nation
+a7c7fc,Textron Aviation Inc,L1T,Kansas Highway Patrol
+a7c8d2,Bell Textron Canada Ltd,H2T,South Carolina Law Enforcement Division
 a7c8e2,Cessna,L1P,Flying Aggies
 a7c92a,Beech,L1P,Autry Technology Center
 a7c933,Wilcoxon,L1P,Port Of Tillamook Bay
-a7cc0c,Dji,H4E,Montgomery County Correctional Facility
 a7d2a3,Dassault Aviation,L2J,Chickasaw Nation
 a7d8f5,Cessna,L1P,County Of Henrico Virginia
-a7d731,Dji,H4E,Montgomery County Correctional Facility
+a7dae8,Bell Textron Canada Ltd,H1T,Manatee County Sheriffs Office
 a7df01,Bac Jet Provost,L1J,Tennessee Technology Center At Morristown
 a7e1c0,Dji,H4E,City Of Beverly
 a7e2ec,Textron Aviation Inc,L1T,State Of Alaska
@@ -1893,115 +2088,121 @@ a7e7f0,Eurocopter,H1T,U S Dept Of Homeland Security
 a7e847,Eurocopter,H1T,U S Dept Of Homeland Security
 a7e869,Eurocopter,H1T,Us Department Of Homeland Security
 a7eb79,Eurocopter,H1T,Us Department Of Homeland Security
-a7ec31,Eurocopter,H1T,Us Department Of Homeland Security
 a7ea97,Dji,H4E,Lafourche Parish Government
-a7c5a3,Aviat Aircraft Inc,L1P,Oklahoma Department Of Public Safety
 a7c624,Airbus Helicopters Inc,H1T,City Of Ontario
 a7c6a5,Eurocopter,H1T,Texas Department Of Public Safety
 a7f195,Eurocopter,H1T,Us Department Of Homeland Security
 a7f266,Piper,L1P,City Of Westfield
 a7eebe,Hawker Beechcraft Corp,L2T,Us Department Of Homeland Security
-a7f655,Bell,H1T,United States Department Of Interior
+a7f9df,Cessna,L1P,Highway Jet League Flyers Brotherhood Llc
 a80103,Cessna,L1P,U S Department Of Interior
 a7ff7a,Dji,H4E,Office Of Homeland Security
 a806ff,Bell,H1T,Williamson County Sherrif's Office
 a80c75,Beech,L2T,United States Department Of Interior
 a80cab,Cub Crafters Inc,L1P,U S Department Of Interior
+a80cd2,Bell Textron Canada Ltd,H1T,Volusia Sheriffs Office
+a7ec9c,Cessna,L1P,Barr Air Patrol Llc
 a816bc,Pilatus Aircraft Ltd,L1T,City Of Phoenix
 a816fa,Cessna,L1P,Department Of Public Safety
 a81c6f,Airbus Helicopters Inc,H1T,Department Of Homeland Security
 a81a73,Airbus Helicopters Inc,H1T,City Of Phoenix
-a81aff,Eurocopter,H1T,County Of Santa Clara
 a81b70,Arcturus Uav Llc,L1P,Idaho National Labortory
 a81e2a,Airbus Helicopters Inc,H1T,City Of Phoenix
-a81efe,Eurocopter Deutschland Gmbh,H2T,Mississippi Department Of Public Safety
+a81f8e,Scoda Aeronautica Ltda,L1P,Ventura Coastal Highway Llc
+a821e1,Airbus Helicopters Inc,H1T,City Of Phoenix
+a82598,Airbus Helicopters Inc,H1T,City Of Phoenix
+a828e5,Sikorsky,H2T,Us Department Of State Inl/a
+a8294f,Airbus Helicopters Inc,H1T,City Of Phoenix
 a82a19,Dji,H4E,City Of Blue Ash
 a82c86,Bell,H1T,United States Department Of Interior
 a83356,Cessna,L1P,Michigan Dept Of Natural Resources
 a83411,Bell,H1T,Bowie County
+a83e3b,Pilatus Aircraft Ltd,L1T,City Of Phoenix
 a8426d,Beechcraft Corp,L2T,Department Of Homeland Security
 a84307,Eurocopter,H1T,County Of Oakland
-a84640,Dji,H4E,Manatee County Fl Government
 a846be,Eurocopter,H1T,County Of Oakland
+a846dd,Cessna,L1P,Kentucky State Police
 a84ef6,Cessna,L1P,Commonwealth Of Massachusetts
 a85305,Cessna,L1P,Us Department Of The Interior
+a85072,Cessna,L1P,Guilford County
 a85741,Hawker Beechcraft Corp,L2T,Us Special Operations Command
+a85e61,Textron Aviation Inc,L1P,Florida State Guard
 a85bd4,Dji,H4E,Manatee County Fl Government
+a83b9a,Cessna,L1P,Barr Air Patrol Llc
 a83c55,Bell,H1T,City Of Tuscaloosa
 a83c79,Airbus Helicopters Inc,H1T,Missouri Department Of Conservation
 a83d03,Bell,H1T,City Of Tuscaloosa
 a867cc,Bell,H1T,City Of Memphis
-a8657e,Boeing,L2J,U S Marshals Service
 a86b87,Cessna,L1P,Jasper Co Airport Authority
 a8695d,American Eurocopter Corp,H1T,City Of Fontana California
-a87a31,Hawker Beechcraft Corp,L2T,U S Special Operations Command
 a878e1,Cub Crafters Inc,L1P,U S Dept. Of The Interior Office Of Aviation Svcs
 a8649b,Hawker Beechcraft Corp,L2T,Us Special Operations Command
 a88e03,Dji,H4E,City Of Blue Ash
 a890a3,Airbus Helicopters Inc,H1T,Department Of Homeland Security
 a890bd,Dji,H4E,Kentucky Division Of Waste Management
-a891f6,Md Helicopters Inc,H1T,City Of Riverside
 a89703,Bell,H1T,Louisville Metro Government
 a8a2ac,Cessna,L1P,Helena Vocational Technical Center
 a8a2bd,Monocoupe,L1P,Metropolitan Airport Authority
 a8a2d9,Cessna,L1P,Meridian Airport Authority
+a88ae1,Piper,L1P,Coldpatrol Llc
 a88b1e,Gippsaero Pty Ltd,L1P,Ohio Department Of Public Safety
+a88b45,Cessna,L1P,Barr Air Patrol Llc
 a8b939,Eurocopter,H1T,Lapd Air Support Division
 a8bcf0,Eurocopter,H1T,Lapd Air Support Division
-a8c45e,Bell Helicopter Textron Canada,H1T,City Of Los Angeles
 a8c9fd,Cessna,L1P,Commonwealth Of Massachusetts
 a8c77e,Textron Aviation Inc,L1P,Henrico County
 a8c815,Eurocopter,H1T,Lapd Air Support Division
-a8caa7,Dji,H4E,City Of Wilmington
-a8caac,Dji,H4E,City Of Wilmington
-a8cacd,Dji,H4E,City Of Wilmington
-a8cadc,Dji,H4E,City Of Wilmington
-a8cb0e,Dji,H4E,City Of Wilmington
-a8cba4,Dji,H4E,City Of Wilmington
-a8cbcc,Dji,H4E,City Of Wilmington
+a8cce3,Cessna,L1P,Barr Air Patrol Llc
 a8cbce,Dji,H4E,Delaware Emergency Management Agency
-a8cbdd,Dji,H4E,City Of Wilmington
-a8cbfb,Dji,H4E,City Of Wilmington
 a8cc7b,Dji,H4E,City Of Wilmington
-a8cc9e,Dji,H4E,City Of Wilmington
-a8cca8,Dji,H4E,City Of Wilmington
-a8ccc3,Dji,H4E,City Of Wilmington
 a8d90f,Cessna,L1P,Meridian Airport Authority
+a8df6d,Bell,H1T,Spartanburg County Sheriffs Office
+a8dc75,Airbus Helicopters Inc,H1T,Kansas Highway Patrol
+a8dd00,Bell Textron Canada Ltd,H1T,San Diego County Sheriffs Department
 a8dd09,Dji,H4E,Metro Parks Tacoma
 a8dd56,Bell,H1T,Department Of Public Safety
 a8e2db,Bell,H1T,Kootenai County Regional Air Support
 a8ec40,Cessna,L1P,Us Department Of Homeland Security
+a8ec53,Airbus Helicopters Inc,H1T,Texas Department Of Public Safety
 a8ee76,Dji,H4E,Delaware Department Of Transportation
 a8f4e6,Dji,H4E,Oklahoma Department Of Corrections
 a8f91d,Piper,L2P,Plaquemines Parish Government
 a8f967,Cessna,L1P,City Of Newport News
 a8fc4a,Bell,H1T,Louisville Metro Government
+a8fba4,Sikorsky,H2T,Us Department Of State Inl/a
 a9000a,Bell,H1T,City Of Jackson Tennessee
 a90049,Bell,H1T,City Of Jackson Tennessee
 a90097,Airbus Helicopters Inc,H1T,Department Of Homeland Security
+a8da93,Bell,H1T,State Of North Carolina
 a9079f,Md Helicopters Llc,H1T,City Of Huntington Beach
 a90b56,Md Helicopters Llc,H1T,City Of Huntington Beach
+a90f0d,Md Helicopters Llc,H1T,City Of Huntington Beach
+a912b9,Xag,H4E,Renville County Swcd
 a913a4,Cessna,L1T,United States Department Of State
 a915d4,Dji,H4E,Commonwealth Of Kentucky
+a91f9b,Cessna,L1P,Barr Air Patrol Llc
+a91ecb,Dji,H4E,Solano County Mad
+a901ac,Cessna,L1T,Estate Of Jon Freeman
 a92e57,Piper,L1P,West Texas Weather Modification Association
-a92c4a,Rockwell International,L2T,Sedgwick County Kansas
 a930f1,Piper,L1P,Jacksonville Airport Authority
 a941c7,Draganfly Innovations Inc,H4E,Great Basin Unified Apcd
 a9479c,American Eurocopter Corp,H1T,Department Of Homeland Security
 a94805,American Eurocopter Corp,H1T,Department Of Homeland Security
 a945b8,Dji,H4E,City Of Greenville
+a945e4,Hylio Inc,H8E,Columbia Drainage Vector Control District
 a94aea,American Eurocopter Corp,H1T,Department Of Homeland Security
+a94d9f,Bell,H1T,Brunswick County Sheriffs Office
 a7c321,North American,L1P,City Of Big Spring Texas
 a95520,Quest Aircraft Company Llc,L1T,United States Dept Of The Interior
 a95844,Partenavia Spa,L2T,United States Department Of Interior
+a95970,Conner Michael A,L1P,High Patrol Llc
 a95bfb,Quest Aircraft Company Llc,L1T,United States Dept Of The Interior
 a95f88,Beech,L2P,North Dakota Attorney Generals Office
-a95c15,Cessna,L1P,Burlington Technical Center
-a95d1d,Bell,H1T,Metro-nashville P D
 a95dbb,Eurocopter,H1T,Texas Department Of Public Safety
 a96338,Bell,H1T,Us Department Of State
 a96089,Sikorsky,H2T,Department Of Homeland Security
 a960d4,Bell,H1T,Metro-nashville P D
+a96199,Boeing,L2J,Us Department Of Homeland Security
 a961b5,Airbus Helicopters Inc,H1T,City Of Los Angeles
 a965f1,Bell,H1T,Us Department Of State
 a96440,Sikorsky,H2T,Department Of Homeland Security
@@ -2009,40 +2210,49 @@ a9648b,Bell,H1T,Metro-nashville Pd
 a9656c,Airbus Helicopters Inc,H1T,City Of Los Angeles
 a9697f,Gippsaero Pty Ltd,L1P,City Of Houston
 a967be,Dehavilland,L4T,United States Government
+a967fe,Cessna,L1P,Tulare County Sheriff
+a96907,Boeing,L2J,Us Department Of Homeland Security
 a96beb,Found Acft Canada Inc,L1P,U S Dept Of The Interior
 a96bee,Britten-norman,L2P,St Bernard Parish Government
 a9715f,Ghan William W,L1P,City Of Springfield
-a97023,Eurocopter,H1T,City Of San Diego
 a97245,Quest Aircraft Company Llc,L1T,U S Department Of The Interior
 a97316,Gulfstream Aerospace Corp,L2J,United States Government
 a9738f,Eurocopter,H1T,East Bay Regional Park District
+a9742c,Boeing,L2J,Us Department Of Homeland Security
 a97710,Found Acft Canada Inc,L1P,Us Department Of The Interior
-a97791,Eurocopter,H1T,City Of San Diego
+a95316,Sikorsky,H2T,Florida State Guard
 a97c0c,Quest Aircraft Company Llc,L1T,United States Dept Of The Interior
-a97da1,Eurocopter,H1T,City Of San Diego
+a97d56,Bell Textron Canada Ltd,H1T,Chino Police Department
 a98104,Pilatus Aircraft Ltd,L2J,Nevada Department Of Transportation
+a98438,Bell Helicopter Textron Canada,H1T,Department Of Highway Safety And Motor Vehicles
 a98ae8,Cessna,L1P,United States Department Of Interior
-a99251,Cessna,L1P,Shoshone Paiute Tribes Of The Duck Vly Indian Res
+a98c51,Cessna,L1P,Barr Air Patrol Llc
+a98c81,Bell Textron Canada Ltd,H1T,Rockland County New York
 a98f5d,Cessna,L1P,Ohio Department Of Public Safety
 a99257,Hawker Beechcraft Corp,L2T,Us Department Of Homeland Security
+a992b0,Bell Helicopter Textron Canada,H1T,City Of Dallas
 a9936a,Found Acft Canada Inc,L1P,Us Department Of The Interior
-a996cb,Cessna,L1T,Ohio Department Of Public Safety
+a99644,Airbus Helicopters Inc,H1T,Hillsborough County Sheriffs Office
+a996cb,Textron Aviation Inc,L1T,Ohio Department Of Public Safety
+a997ac,Bell Textron Canada Ltd,H2T,Minnesota State Patrol
+a99a21,Bell Textron Canada Ltd,H1T,Volusia Sheriffs Office
+a9a067,Cessna,L1P,Avco Patrol Llc
 a97a71,Airbus Helicopters Inc,H1T,Ohio Department Of Public Safety
 a97a73,Iai Ltd,L2J,Seminole Tribe Of Florida
 a97aa3,Bell,H1T,King County Department Of Public Safety
+a97b52,Bell Textron Canada Ltd,H2T,State Of Delaware
 a9a38b,Dehavilland,L1P,U S Dept Of The Interior
+a9a725,Piper,L1P,New Garden Township
 a9a3e5,Bell Helicopter Textron Canada,H1T,City And County Of Denver Colorado
-a9a470,American Eurocopter Corp,H1T,City Of Oklahoma City
+a9a449,Bell Helicopter Textron Canada,H1T,Tennessee Highway Patrol Department Of Safety
 a9a742,Cessna,L1P,Department Of The Interior
-a9a74e,Bombardier Inc,L2T,United States Government
-a9a87f,Cessna,L1P,Us Department Of The Interior
+a9a87f,Cessna,L1T,Us Department Of The Interior
 a9a88c,Dji,H4E,City Of Peoria Arizona
 a9a8d4,Cessna,L1P,Commonwealth Of Massachusetts
 a9ac8b,Cessna,L1P,Elmendorf Afb
 a9aeb0,Quest Aircraft Company Llc,L1T,United States Dept Of The Interior
 a9afa9,Piper,L2P,Commonwealth Of Kentucky
 a9b8ca,Bell,H2T,Dept Of Homeland Security
-a9b8ed,Bell,H2T,Dept Of Homeland Security
 a9b933,Bell,H2T,Dept Of Homeland Security
 a9b956,Bell,H2T,Dept Of Homeland Security
 a9bc6c,Cessna,L1P,Washington State Dept Of Transp
@@ -2056,27 +2266,31 @@ a9c0d0,Sikorsky,H2T,Department Of Homeland Security
 a9c0d1,Sikorsky,H2T,Department Of Homeland Security
 a9c0d3,Sikorsky,H2T,Department Of Homeland Security
 a9c0d4,Sikorsky,H2T,Department Of Homeland Security
-a9c143,Cessna,L1P,United States Department Of Interior
+a9c143,Cessna,L1T,United States Department Of Interior
+a9c606,Pilatus Aircraft Ltd,L1T,Us Government
 a9a1f0,Airbus Helicopters Inc,H1T,Ohio Department Of Public Safety
 a9a1f2,Leonardo Spa,H2T,Seminole Tribe Of Florida Dba
+a9cbc8,Bell Helicopter Textron Canada,H1T,Tennessee Highway Patrol Department Of Safety
+a9cfe6,Leading Edge Aerial Tech Inc,H6E,Mississippi State Univ Agricultural Autonomy Inst
 a9d35a,Cessna,L1P,United States Department Of The Interior
-a9d7ad,Cessna,L1P,Southern Illinois Airport Authority
-a9d84a,Cessna,L1P,Michigan Department Of Natural Resources
-a9de4f,Cessna,L1P,United States Department Of Interior
 a9e154,Quest Aircraft Company Llc,L1T,United States Dept Of The Interior
 a9e556,Cessna,L1P,Mt Vernon Airport Authority
-a9e5a6,Cessna,L1P,Henrico County
 a9e74c,Cessna,L1P,County Of Santa Cruz
 a9e8c3,Boeing,L2J,U S Marshals Service
+a9e8c8,Cessna,L1P,Avco Patrol Llc
 a9f008,Bell,H1P,City Of Los Angeles
 a9c9af,Airbus Helicopters,H1T,Lee County Sheriffs Office
-a9f289,Cessna,L1P,United States Department Of Interior
-a9f347,Bell,H1T,Tennessee Department Of Safety
+a9f289,Cessna,L1T,United States Department Of Interior
+a9f36e,Airbus Helicopters Inc,H1T,City Of Oklahoma City
 a9f673,Airbus Helicopters Inc,H1T,Department Of Homeland Security
 a9f7db,Lockheed,L4T,United States Customs And Border Protection
+aa049f,Cessna,L1P,Avco Patrol Llc
+aa016d,Leading Edge Aerial Tech Inc,H6E,Solano County Mad
+aa0fff,Boeing,L4J,
+aa0d4a,Textron Aviation Inc,L2J,State Of Texas
 aa13f8,Cessna,L1P,United States Department Of Interior
 a9f031,Gulfstream Aerospace,L2J,Missile Defense Agency (mda)
-aa203c,Schweizer,H1P,City Of Jacksonville
+a9f046,Beech,L2T,Monroe County Sheriff's Office
 aa1dcc,Eurocopter,H1T,Us Department Of Homeland Security
 aa2183,Eurocopter,H1T,Us Department Of Homeland Security
 aa21f5,Unmanned Aerial Solutions Llc,H6E,City Of Alexandria
@@ -2086,41 +2300,49 @@ aa2592,Airbus Helicopters Inc,H1T,Department Of Homeland Security
 aa28f1,American Eurocopter Llc,H1T,Us Department Of Homeland Security
 aa2ca8,Eurocopter,H1T,Us Department Of Homeland Security
 aa3409,Cessna,L1P,United States Department Of Interior
-aa34bc,Cessna,L1P,Oneill Airport Authority
 aa37c0,Quest Aircraft Company Llc,L1T,United States Department Of The Interior
-aa4245,Bell,H1T,Tennessee Dept Of Safety And Homeland Security
-aa4cac,Cessna,L1P,United States Department Of Interior
+aa1929,Cessna,L1P,Barr Air Patrol Llc
+aa41cb,Textron Aviation Inc,L1P,Florida State Guard
+aa426c,Airbus Helicopters Inc,H1T,City Of Oklahoma City
+aa4cac,Cessna,L1T,United States Department Of Interior
 aa52f1,Dji,H4E,City Of Borger
-aa5240,Textron Aviation Inc,L1P,Commonwealth Of Virginia
 aa52b5,Dji,H4E,Delaware Dept Of Transportation
 aa5812,Cessna,L1P,City Of Cleveland
+aa5990,Cessna,L1P,Barr Air Patrol Llc
 aa62f6,Quest Aircraft Company Llc,L1T,United States Dept Of Interior
 aa6491,Lockheed,L4T,Us Customs & Border Protection
 aa3fe2,Cessna,L1P,Arkansas Department Of Transportation
 aa40ed,Partenavia Spa,L2T,Tennessee Wildlife Resources Agency
-aa69c4,Bell,H1T,Tennessee Dept Of Safety
+aa6c48,Piper,L2P,Highway Whisperer Llc
 aa6b06,Sikorsky,H2T,Us Department Of State
 aa6eb5,Sikorsky,H2T,Us Department Of State
 aa76be,Freefly Systems Inc,H6E,Us Food And Drug Administration
 aa75c0,Beech,L2T,South Dakota Department Of Transportation
 aa7663,Dji,H4E,Us Food And Drug Administration
+aa786b,Textron Aviation Inc,L1P,Sacramento County Sheriff's Office
 aa78ae,Cub Crafters Inc,L1P,Us Department Of The Interior
 aa79e7,Bell,H2T,Us Department Of State
 aa7ebe,Cessna,L1P,U S Department Of The Interior
 aa7d46,Eurocopter,H1T,Us Department Of Homeland Security
+aa81d0,Piper,L1P,State Of Alaska
 aa837b,Dji,H4E,Department Of Enviromental Quality Montana
 aa8448,Textron Aviation Inc,L2T,Nevada Department Of Transportation
 aa6761,Beech,L2T,Arkansas Department Of Transportation
 aa9143,Bell Helicopter Textron Canada,H2T,Tennessee Department Of Safety & Homeland Security
 aa97f0,Cessna,L1P,Allen County Regional Airport Authority
+aa9459,Airbus Helicopters Inc,H1T,Broward County Sheriffs Office
+aa9bc3,Bell Textron Canada Ltd,H2T,State Of Arizona Department Of Public Safety
+aaa34e,Cessna,L2J,7 Highway Investors Llc
 aaad92,Piper,L1P,United States Department Of Interior
-aaadf1,Curtiss Wright,L2P,City Of Monroe Nc
 aab55b,Bell,H2T,Us Department Of State
 aab2fa,Raytheon Aircraft Company,L2T,Us Special Operations Command
 aab811,Eurocopter,H1T,Us Department Of Homeland Security
+aab8c2,Bell Textron Canada Ltd,H2T,Tennessee Department Of Safety & Homeland Security
+aabe2f,Cessna,L1P,Van Wert County Regional Airport Aurthoirty
 aabbc8,Eurocopter,H1T,Us Department Of Homeland Security
 aac265,Piper,L1P,West Texas Weather Modification Association
 aabf7f,Eurocopter,H1T,Us Department Of Homeland Security
+aac59d,Cessna,L1P,Avco Patrol Llc
 aac336,Eurocopter,H1T,Us Department Of Homeland Security
 aac6e0,Found Acft Canada Inc,L1P,U S Department Of The Interior
 aac6ed,Eurocopter,H1T,Us Department Of Homeland Security
@@ -2129,7 +2351,7 @@ aace5b,Eurocopter,H1T,Us Department Of Homeland Security
 aae1f2,Bombardier Inc,L2T,Us Department Of State
 aae6b7,Bombardier Inc,L2T,Us Department Of Homeland Security
 aaea6e,Bombardier Inc,L2T,Department Of Homeland Security
-aaed42,Eurocopter,H1T,Baltimore County Government
+aaed42,Airbus Helicopters Inc,H1T,Baltimore County Maryland
 aaee25,Bombardier Inc,L2T,Department Of Homeland Security
 aaf0f9,Eurocopter,H1T,Baltimore County Government
 aaf1dc,Bombardier Inc,L2T,Us Department Of Homeland Security
@@ -2144,12 +2366,11 @@ ab015b,Dji,H4E,Delaware Department Of Transportation
 ab0174,Dji,H4E,Delaware Dept Of Transporation
 ab0194,Dji,H4E,Delaware Department Of Transportation
 ab01ad,Dji,H4E,Delaware Department Of Transportation
+ab09c3,Textron Aviation Inc,L2T,State Of Tennessee
 ab0a7f,Bombardier Inc,L2T,Us Department Of Homeland Security
 ab0dc2,Textron Aviation Inc,L2T,Department Of Homeland Security
-ab0e98,Mcdonnell Douglas Helicopter,H1T,City Of Riverside
-ab135f,Bell,H1T,Us Dept Of State Inl/a
+ab0eb6,Xag,H4E,Southern Ute Indian Tribe Range Division
 ab1365,Bell,H1T,Us Dept Of State Inl/a
-ab1385,Bell,H1T,Us Dept Of State Inl/a
 ab1375,Bell,H1T,Us Dept Of State Inl/a
 ab11c9,Bell Textron Canada Ltd,H2T,Maricopa County
 ab1508,Bell,H2T,Department Of Justice
@@ -2172,39 +2393,37 @@ ab2c8a,American Eurocopter Corp,H1T,Texas Department Of Public Safety
 ab0849,Textron Aviation Inc,L2T,Pennsylvania Dept Of Transportation
 ab333c,Dehavilland,L2T,Us Special Operations Command
 ab3343,Dehavilland,L2T,Us Special Operations Command
+ab3198,Bell,H1T,Tennessee Dept Of Safety And Homeland Security
 ab31be,Sikorsky,H2T,Department Of Homeland Security
 ab374a,Bell,H1T,Us Dept Of State Inl/a
+ab34ac,Vulcanair,L2P,Barr Air Patrol Llc
 ab35db,Airbus Helicopters Inc,H1T,East Bay Regional Park District
-ab3ac1,Bell,H1T,Us Dept Of State Inl/a
-ab3aae,Bell,H1T,Us Dept Of State Inl/a
-ab3ab3,Bell,H1T,Us Dept Of State Inl/a
 ab3b54,Bell,H1T,Us Dept Of State Inl/a
 ab3861,Bell Textron Canada Ltd,H2T,Arizona Department Of Public Safety
 ab3e67,Bell,H1T,Us Dept Of State Inl/a
-ab3ea7,Bell,H1T,Us Dept Of State Inl/a
-ab3f61,Bell,H1T,Us Dept Of State Inl/a
+ab3c6b,Textron Aviation Inc,L1P,Washington State Patrol
 ab3ce3,Sikorsky,H2T,Department Of Homeland Security
 ab4225,Bell,H1T,Us Department Of State
 ab4254,Bell,H1T,Us Department Of State
 ab430b,Piper,L2P,City Of Stuttgart
+ab3fd1,Cessna,L1P,Barr Air Patrol Llc
 ab4176,Airbus Helicopters Inc,H1T,Texas Department Of Public Safety
-ab417d,Dji,H4E,County Of Oneida
 ab4573,Dji,H4E,Town Of Medley Florida
 ab4b8d,Pilatus Aircraft Ltd,L2J,North Slope Borough Department Of Search & Rescue
+ab4c9b,Airbus Helicopters,H1T,Texas Department Of Public Safety
 ab5112,Dji,H4E,Delaware Department Of Correction
 ab4f3a,Aeromot,L1P,Dubois County Airport Authority
 ab50bc,Dji,H4E,Delaware Department Of Correction
 ab50d5,Dji,H4E,Delaware Department Of Correction
+ab5286,Hawker Beechcraft Corp,L2T,Us Department Of Justice
 ab532d,Sikorsky,H2T,Department Of Homeland Security
-ab5428,Dji,H8E,County Of Oneida
 ab2f7a,Cessna,L1P,Kentucky Department Of Aviation
 ab5ab9,Boeing Of Canada/dehav Div,L2T,Us Special Operations Command
 ab5b37,Bell,H2T,United States Department Of State
+ab5874,Cessna,L1P,Barr Air Patrol Llc
 ab593d,Sikorsky,H2T,Department Of Homeland Security
 ab5a2d,Dji,H4E,City Of Henderson Department Of Utility Services
 ab6462,Sikorsky,H2T,Department Of Homeland Security
-ab6471,Cessna,L1P,Kansas State Univ Salina
-ab6828,Cessna,L1P,Kansas State Univ Salina
 ab710b,Cessna,L1P,U S Department Of The Interior
 ab7294,Dji,H4E,Columbus Office Of Homeland Security
 ab76f5,Sikorsky,H2T,Department Of Homeland Security
@@ -2213,114 +2432,160 @@ ab81b0,Dji,H4E,County Of Wayne It Dept
 ab876e,Aerospatiale,H1T,Us Department Of Homeland Security
 ab8b25,Aerospatiale,H1T,Us Department Of Homeland Security
 ab8edc,Eurocopter,H1T,Us Department Of Homeland Security
-ab8fb2,Sikorsky,H2T,Us Department Of Homeland Security
 ab9074,Airbus Helicopters Inc,H1T,Texas Department Of Public Safety
 ab9293,Eurocopter,H1T,Us Department Of Homeland Security
 ab935e,Textron Aviation Inc,L1P,Kansas State Univeristy
 ab964a,Eurocopter,H1T,Us Department Of Homeland Security
+ab9c45,Cessna,L1P,Eagle Sky Patrol
 ab9d73,Piper,L1P,Dubois County Airport Authority
 ab9a01,Eurocopter,H1T,Us Department Of Homeland Security
+ab9b6d,Dji,H4E,St Charles Parish Sheriffs Office
+aba145,Cessna,L1P,Coles County Airport Authority
 ab9db8,Eurocopter,H1T,Us Department Of Homeland Security
 aba16f,Eurocopter,H1T,Us Department Of Homeland Security
 aba199,Dji,H4E,Delaware Department Of Transportation
 aba77f,Eurocopter,H1T,Us Department Of Homeland Security
+abac9c,Dji,H4E,Utah County Health Department
 abb1d5,Bell Helicopter,H2T,Us Department Of State Inl/a
 abb23a,Bell Helicopter,H2T,U S Department Of State Inl/a
 abb268,Bell Helicopter,H2T,U S Department Of State Inl/a
-abb5c5,Bell Helicopter,H2T,U S Department Of State Inl/a
 abb2a4,Eurocopter,H1T,Us Department Of Homeland Security
 abb9d5,Piper,L1P,West Texas Weather Modification Association
 abb65b,Eurocopter,H1T,Us Department Of Homeland Security
 abbc85,Beech,L2T,United States Department Of State
 abbdc9,Eurocopter,H1T,Us Department Of Homeland Security
 abc2fb,Gulfstream Aerospace,L2J,Seminole Tribe Of Florida
+abc5ab,Sikorsky,H2T,County Of San Diego
+abcc03,Hylio Inc,H8E,Tennessee Valley Authority
+abc8e1,Cessna,L1P,Barr Air Patrol Llc
+aba4ff,Cessna,L1P,American Aerial Patrol Llc
+abd2a3,Sikorsky,H2T,Us Department Of State Inl/a
+abd2a8,Cessna,L1P,Barr Air Patrol Llc
 abd664,Dji,H4E,Michigan Dept Of Natural Resources
 abd7aa,Dji,H4E,Delaware Department Of Transportation
 abe484,Dji,H4E,Delaware Department Of Transportation
+abe35e,Cessna,L1P,Michigan Dept Of Natural Resources
 abeda5,Airbus Helicopters Inc,H1T,Lee County Mosquitto Control District
 abeebf,Dji,H4E,Adams County
-abcd07,Textron Aviation Inc,L2T,Department Of Homeland Security
+abcd9f,Kodiak Aircraft Co Inc,L1T,Missouri State Highway Patrol
+abf6a5,Leonardo Spa,H2T,Health Care District Of Palm Beach County
+abf7f8,Textron Aviation Inc,L2T,Pennsylvania State Police
 abfdb7,Dji,H4E,Michigan Department Of Natural Resources
 abfdde,Dji,H4E,Delaware Department Of Correction
+ac0876,Cessna,L2P,Marion County Sheriffs Office
 ac06f0,Boeing,L2J,United States Government
 ac08f9,Sikorsky,H2T,Us Department Of State
 ac09ff,Rockwell,L2T,Beaufort County Council
 ac0e0a,Dji,H4E,Michigan Department Of Natural Resources
+ac0e7c,Kodiak Aircraft Co Inc,L1T,Commonwealth Of Virginia
+ac1267,Dji,H4E,Craig Co Sheriffs Office
 ac1948,Dji,H4E,Michigan Department Of Natural Resources
-abf404,Gippsaero Pty Ltd,L1P,Modesto Police Department
 ac1e32,Beech,L2T,Oklahoma Department Of Transportation
 ac1f37,Dji,H4E,Delaware Department Of Transportation
 ac1f50,Dji,H4E,Delaware Department Of Transportation
+ac21a6,Partenavia Spa,L2P,Barr Air Patrol Llc
 ac2320,Airbus Helicopters Inc,H1T,City Of San Diego
 ac26a5,Dji,H4E,Delaware Department Of Transportation
+ac26d7,Airbus Helicopters Inc,H1T,City Of San Diego
 ac2700,Md Helicopters Inc,H2T,Tennessee Valley Authority
+ac2a8e,Airbus Helicopters Inc,H1T,City Of San Diego
+ac2e45,Airbus Helicopters Inc,H1T,City Of San Diego Police Air Support Unit
+ac317e,Bell,H1T,Polk County
 ac39c7,Dji,H4E,St Louis County Mn
 ac3a12,Dji,H4E,St Louis County Mn
+ac3f5e,Cessna,L1P,Barr Air Patrol Llc
 ac1c61,Beech,L2P,City Of Big Spring Texas
+ac4fe1,Dji,H8E,Twin Falls County Pest Abatement District
 ac4ccd,Dji,H4E,Alamosa County
 ac4cd7,Sikorsky,H2T,Us Department Of State
 ac4d2a,Dji,H4E,Delaware Department Of Transportation
 ac4e56,Leading Edge Aerial Tech Inc,H6E,Twin Falls County Pest Abatement District
 ac51a5,Airbus Helicopters Inc,H1T,Department Of Homeland Security
+ac51f3,Pilatus Aircraft Ltd,L1T,Riverside County Sheriffs Office California
 ac5893,Dji,H4E,County Of Siskiyou
-ac5d96,Eurocopter,H1T,U S Dept Of Homeland Security
+ac63da,Eurocopter,H1T,State Of Montana
+ac64ef,Sikorsky,H2T,Florida State Guard
 aade5d,Bell,H1T,City Of Pasadena
-aadf2a,Cessna,L1P,South Carolina Department Of Natural Resources
+aadf2a,Cessna,L1T,South Carolina Department Of Natural Resources
 ac700a,Yuneec,H4E,City Of Jenks
 ac734b,Autel Robotics,H4E,Eastside Departments Group Enforcement
 ac7371,Dji,H4E,Center For Disaster Risk Policy
 ac73c1,Yuneec,H6E,City Of Jenks
 ac7499,Bell,H1T,Tn Dept Of Public Safety
+ac749a,Airbus Helicopters Inc,H1T,City Of Tulsa
 ac7728,Dji,H4E,Center For Disaster Risk Policy
 ac7778,Yuneec,H4E,City Of Jenks
+ac7d0a,Cessna,L1P,State Of Alaska Department Of Public Safety
 ac7b2f,Yuneec,H4E,City Of Jenks
+ac8132,Bombardier Inc,L2J,United States Government
+ac8155,Bombardier Inc,L2J,United States Government
 ac7ee6,Yuneec,H6E,City Of Jenks
-ac84e9,Bombardier Inc,L2J,United States Government
 ac829d,Yuneec,H4E,City Of Jenks
 ac82d8,Bell,H1T,Maine Department Of Conservation
 ac835d,Bell,H1T,Georgia Department Of Public Safety
 ac8654,Autel Robotics,H4E,City Of Jenks Oklahoma
 ac8714,Bell,H1T,Georgia Department Of Public Safety
 ac8a0b,Autel Robotics,H4E,City Of Jenks
-ac8fc3,Bell,H2T,Us Department Of State Inl/a
+ac8a78,Bell Textron Canada Ltd,H1T,City Of Peoria
+ac8acf,Piper,L1P,State Of Alaska Department Of Public Safety
 ac8fe6,Bell,H2T,Us Department Of State Inl/a
 ac8d00,Bell,H1T,Beaufort County Council
 ac8e82,Bell,H1T,Georgia Department Of Public Safety
-ac6d5c,Textron Aviation Inc,L2T,Department Of Homeland Security
+ac6d25,Morris,L1P,Montrose Regional Airport
 ac6d90,Cessna,L1P,Oklahoma Department Of Public Safety
 ac6e92,American Eurocopter Llc,H1T,Texas Department Of Public Safety
+ac6eca,Carter William T,L1P,Highway Whisperer Llc
 ac9a33,Bell,H2T,Us Department Of State Inl/a
 ac97f7,Md Helicopters Inc,H1T,Prince Georges County
+ac9d1b,Airbus Helicopters Inc,H1T,Teton County Wyoming
+ac9a6e,Bell Helicopter Textron Canada,H2T,Estado Libre Asociado De Puerto Rico
 ac9a70,Bell Textron Canada Ltd,H1T,Anne Arundel County Maryland
 ac9a96,Airbus Helicopters Deutschland,H2T,Collier County Emergency Medical Service
-ac9a9e,Eurocopter Deutschland Gmbh,H2T,Collier County Ems
+ac9abe,Airbus Helicopters Inc,H1T,County Of Hawaii
 ac9ad2,Dji,H4E,Anoka County Emergency Management
-ac9ae5,Bell,H1T,County Of Hawaii
 ac9b46,Rockwell International,L2T,County Of Kern
+ac9b4e,Skydio,H4E,Sarasota County Emergency Services
+ac9b5b,Skydio,H4E,Sarasota County Emergency Services
 ac9b6a,Bell,H1T,Ky Lexington Fayette Urban Co Pd
+ac9b6e,Skydio,H4E,Sarasota County Emergency Services
+ac9b75,Parrot Drones Sas,H4E,Sarasota County Emergency Services
 ac9ba8,Piper,L2P,Lee County Port Authority
-ac9ba9,Sikorsky,H2T,Health Care District Of Palm Beach County
+ac9ba9,Leonardo Spa,H2T,Health Care District Palm Beach County
 ac9bae,Md Helicopters Inc,H1T,Prince Georges County
+ac9be7,Airbus Helicopters Inc,H1T,City Of Riverside
+ac9c18,Bell,H1T,Town Of Montague
+ac9c24,Parrot Drones Sas,H4E,Sarasota County Emergency Services
+ac9c35,Airbus Helicopters Inc,H1T,Flagler County Florida
 ac9c37,Bell,H1T,City Of Chicago
 ac9c3f,Md Helicopters Inc,H2T,City Of Virginia Beach
+ac9c45,Bell Textron Canada Ltd,H2T,Cook County Sheriff's Office
+ac9c59,Dji,H4E,Montpelier Police Dept
 ac9c5f,Robinson Helicopter Co,H1T,Polk County Sheriffs Office
 ac9c61,American Eurocopter Llc,H1T,Placer County Public Financing Authority
+ac9c6e,Skydio,H4E,Sarasota County Emergency Services
 ac9c9f,Bell,H1T,City Of Chicago
+ac9caf,Bell Textron Canada Ltd,H2T,City Of Chicago Department Of Police
+ac9cb0,Bell Textron Canada Ltd,H1T,City Of Chicago
+ac9cb1,Bell Textron Canada Ltd,H1T,City Of Chicago
 aca19a,Dji,H4E,County Of Sisiyou
 ac9efd,Airbus Helicopters Inc,H1T,Kern County Sheriffs Office
 ac9f21,Bell,H1T,Lexington Fayette Urban County
-ac9f6a,Dji,H4E,Manatee County Fl
-ac9fe7,Dji,H4E,Manatee County Fl Government
 aca539,Pankuch Peter J,L1P,Port Of Tillamook Bay
 aca53e,Bell,H2T,Us Department Of State Inl/a
 aca2b4,Airbus Helicopters Inc,H1T,Kern County Sheriffs Office
+aca317,Sikorsky,H2T,Health Care District Of Palm Beach County
 aca3c6,Eurocopter,H1T,Lapd Air Support Division
 aca615,Swift Radioplanes Llc,L1E,Center For Disaster Risk Policy
 acac23,Dji,H4E,Manatee County Fl Government
+acaa57,Bell Helicopter Textron Canada,H1T,State Of Maine
 acaa8f,Dji,H4E,Manatee County Fl Government
+acab35,Cessna,L1P,Barr Air Patrol Llc
 acb076,General Atomics,L1J,Department Of Homeland Security
 acae3e,Bell,H1T,City Of Sacramento
 acae93,Bell,H1T,City Of Sacramento
+acaeec,Cessna,L1P,Barr Air Patrol Llc
+acaf18,Hylio Inc,H6E,Shawnee County
+acb45d,Cessna,L1P,Avco Patrol Llc
 acb0ac,Hawker Beechcraft Corp,L2T,Dept Of Homeland Security
 acb0cb,General Atomics,L1J,Department Of Homeland Security
 acb0e0,Sikorsky,H1T,North Slope Borough
@@ -2330,16 +2595,19 @@ acb1a0,General Atomics,L1J,Department Of Homeland Security
 acb1ad,General Atomics,L1J,Department Of Homeland Security
 acb202,General Atomics,L1J,Department Of Homeland Security
 acb234,General Atomics,L1J,Department Of Homeland Security
+acb2a3,Cessna,L1P,Barr Air Patrol Llc
+acb496,Beech,L2T,California Highway Patrol
 acb5c2,Autel Robotics,L4E,Spencer Municipal Utilities
 acbb24,Bell,H2T,Us Department Of State Inl/a
-ac950f,Piper,L2P,Florida Dept Of Hwy Safety & Motor Vehicles
+ac953d,Textron Aviation Inc,L2J,State Of Florida
 acc0a7,Bell,H2T,Us Department Of State Inl/a
-acc4ae,Dji,H4E,Manatee County Fl Government
 acc1f9,Beech,L2T,Arizona Department Of Public Safety
 acc283,Dji,H4E,Manatee County Fl Government
+acc32a,Bell Textron Canada Ltd,H2T,City Of New York Police Department
 acc375,Mcdonnell Douglas Helicopter,H1T,County Of Fresno
 acc37f,Bell Helicopter Textron Canada,H1T,Georgia Department Of Public Saftey
 acc5b0,Beechcraft Corp,L2T,Arizona Dept Of Transportation
+acc6e1,Bell Textron Canada Ltd,H2T,City Of New York Police Dept
 acc72c,Mcdonnell Douglas Helicopter,H1T,County Of Fresno
 acc736,Bell Helicopter Textron Canada,H1T,Georgia Department Of Public Safety
 accdea,Dji,H4E,Charlotte County Property Appraiser
@@ -2347,24 +2615,34 @@ accea4,Bell Helicopter Textron Canada,H2T,Georgia Dept Of Public Safety
 acd25b,Bell Helicopter Textron Canada,H1T,Georgia Department Of Public Safety
 acd93e,Airbus Helicopters Inc,H1T,Department Of Homeland Security
 acd9c9,Bell,H1T,Georgia Department Of Public Safety
+acdffd,Airbus Helicopters Inc,H1T,Department Of Homeland Security
+ace0d3,Airbus Helicopters Inc,H1T,Metro Nashville Police
+ace158,Airbus Helicopters Inc,H1T,Texas Department Of Public Safety
 ace5fe,Robinson Helicopter Company,H1P,City Of Lakewood
 ace747,Bell,H1T,Georgia Department Of Public Safety
+acf456,Cessna,L1P,Barr Air Patrol Llc
+acf11c,Dji,H6E,Douglas County Health Dept
 acf13e,Dji,H4E,Orange County Sherriffs Office
+ad0296,Cessna,L1P,Barr Air Patrol Llc
 ad05c6,Cessna,L1P,Alaska Department Of Public Safety
 ad0a2c,Cessna,L1P,United States Department Of Interior
 ad0788,Dji,H4E,Orange County Seriffs Office
+ad112d,Dji,L4J,Rochester Inst Of Tech Uas Drone Research Lab
 ad1672,Skydio,H4E,Manatee County Fl Government
+ad1ad4,Cessna,L1P,Meridian Airport Authority
 ad1bc9,Cessna,L1P,Idaho Transportation Department
-ad19f8,Bell Textron Canada Ltd,H2T,State Of Arizona Department Of Public Safety
 ad1f85,Bell,H1T,Us Department Of State Inl/a
+ad1d1a,Leading Edge Aerial Tech Inc,H6E,Lee County Hyacinth Control District
 ad1e56,Leading Edge Aerial Tech Inc,H6E,United States Dept Of Agric Agric Research Svc
 ad2266,Cessna,L1P,Alaska Department Of Public Safety
 ad1fe5,Bell,H1T,Us Department Of State Inl/a
+ad2505,Bell,H1T,Spalding County Sheriffs Office
 ad27bb,Dji,H4E,Village Of Wilmette
 ad27ed,Dji,H4E,Village Of Wilmette
 ad2806,Dji,H4E,Village Of Wilmette
-ad0c18,Bell,H1T,City Of Philadelphia
+ad2c7e,Kodiak Aircraft Co Inc,L1T,State Of New York
 ad37d8,Bombardier Inc,L2J,United States Government
+ad3574,Airbus Helicopters,H2T,County Of Los Angeles Sheriffs Dept
 ad35a2,American Eurocopter Corp,H1T,County Of Los Angeles
 ad3600,Leading Edge Aerial Tech Inc,H6E,Caddo Parish
 ad389e,Md Helicopters Inc,H1T,City Of Cleveland
@@ -2372,57 +2650,71 @@ ad3900,Parrot,H4E,Manatee County Fl Government
 ad3919,Parrot,H4E,Manatee County Fl Government
 ad3959,American Eurocopter Corp,H1T,County Of Los Angeles
 ad395a,Eurocopter,H2T,County Of Los Angeles
+ad39e3,Airbus Helicopters Inc,H1T,City Of Riverside
 ad3e74,Dji,H4E,Mcdonough County Health Department
+ad3f58,Cessna,L1P,Barr Air Patrol Llc
 ad3c55,Md Helicopters Inc,H1T,City Of Cleveland
 ad3ce5,Eurocopter,H2T,County Of Los Angeles
 ad40c7,American Eurocopter Corp,H1T,County Of Los Angeles
 ad4181,Skydio,H4E,Manatee County Fl Government
 ad447e,American Eurocopter Corp,H1T,County Of Los Angeles
 ad4835,American Eurocopter Corp,H1T,County Of Los Angeles
+ad4b3c,Cessna,L1T,Us Government
 ad4bec,American Eurocopter Corp,H1T,County Of Los Angeles
 ad4cb0,Cessna,L1T,Texas Department Of Public Safety
 ad4fa3,American Eurocopter Corp,H1T,County Of Los Angeles
 ad535a,American Eurocopter Corp,H1T,County Of Los Angeles
-ad561c,Pilatus Aircraft Ltd,L1T,Colorado State Patrol
 ad5711,American Eurocopter Corp,H1T,County Of Los Angeles
+ad57b4,Kodiak Aircraft Co Inc,L1T,State Of New York
 ad57ca,Bell Helicopter Textron Canada,H2T,U S Department Of Justice
-ad3397,Bell,H1T,City Of Philadelphia
+ad336f,Bell Textron Canada Ltd,H1T,Missouri State Highway Patrol Aircraft Division
 ad5d21,American Eurocopter Corp,H1T,County Of Los Angeles
 ad60d8,American Eurocopter Corp,H1T,County Of Los Angeles
-ad6665,Cessna,L1P,United States Department Of Interior
+ad6665,Cessna,L1T,United States Department Of Interior
 ad648f,American Eurocopter Corp,H1T,County Of Los Angeles
 ad68df,Eurocopter,H1T,County Of Los Angeles
-ad6e27,Cessna,L1P,City Of Phoenix
-ad6ede,Skydio,H4E,Manatee County Fl
+ad6ea1,Skydio,H4E,Manatee County
+ad6ede,Skydio,H4E,Manatee County Fl Government
+ad74f2,Cessna,L1P,Avco Patrol Llc
+ad73a0,Piper,L1P,Univeristy Of North Dakota
 ad7404,Eurocopter,H1T,County Of Los Angeles
+ad7b9d,Textron Aviation Inc,L1T,Texas Department Of Public Safety
+ad7ee5,Cessna,L1T,Us Government
+ad7f28,Dji,H4E,St Charles Parish Sheriffs Office
 ad7f73,Skydio,H4E,Manatee County Fl Government
 ad7fae,Skydio,H4E,Manatee County Fl Government
-ad7fbd,Leading Edge Aerial Tech Inc,H6E,Bannock County
+ad8547,Boeing,L2J,National Nuclear Security Administration
 ad855a,Dji,H4E,City Of Shoreview
 ad8861,Raytheon Aircraft Company,L2T,State Of Illinois
+ad8888,Cessna,L1T,Us Government
+ad88fa,Cessna,L1P,Illinois State Police
 ad8d71,Cessna,L1T,United States Of America
+ad8bb2,Cessna,L1P,Polk County Sheriffs Office
 ad989b,Cessna,L1P,Louisiana Department Of Public Safety
 ad971a,Textron Aviation Inc,L2T,South Dakota Department Of Transportation
 ad9bb2,Alaska Ctr For Unmanned Acft,H6E,Univeristy Of Alaska Fairbanks Acuasi
 ada05c,Beech,L2T,City Of Marshall
+ada0ef,Cessna,L1P,Wiggins Air Patrol Llc
 ad9eca,Bell Helicopter Textron Canada,H1T,Maricopa County
 ad81b0,Cessna,L1P,Kern County Sheriffs Department
 ad82d3,Bell,H1T,County Of Ocean
-adabe1,Cessna,L1P,Kansas Highway Patrol
 adacb8,Bell,H1T,Marshall County Sheriff Office
 adacc6,Boeing,L2J,National Nuclear Security Administration
-adaf83,Cessna,L1P,Department Of Justice
+adaee5,Cessna,L1P,State Of Alaska
 adaf98,Airbus Helicopters Inc,H1T,California Highway Patrol
 adafe0,Raytheon Aircraft Company,L2T,State Of Il Dot
-adb434,Bell Helicopter Textron Canada,H1T,City Of Dallas
+adb44c,Sikorsky,H2T,Monroe County Sheriffs Office
 adb706,Airbus Helicopters Inc,H1T,California Highway Patrol
+adb803,Sikorsky,H2T,Monroe County Sheriffs Office
 adbabd,Airbus Helicopters,H1T,California Highway Patrol
 adbaf3,Glenn W Anderson,L1E,Kentucky Transportation Cabinet
 adc0c5,Cessna,L1P,Choctaw Nation Of Oklahoma
 adbe74,Airbus Helicopters,H1T,California Highway Patrol
 adbecc,Bell,H2T,Department Of Justice
+adc22b,Airbus Helicopters Inc,H1T,California Highway Patrol
 adc232,Dji,H4E,Alabama Department Of Transportation
 adc261,Glenn W Anderson,H4E,Kentucky Transportation Cabinet
+adc362,Cessna,L1T,Us Government
 adc79e,Cessna,L1P,Madera County Sheriffs Office
 adc53a,Dji,H4E,City Of Warrenton Missouri
 adc5ae,Cessna,L1P,Mobile County Health Department
@@ -2432,9 +2724,11 @@ adcbcc,Dji,H4E,State Of Michigan Department Of Natural Resources
 adc92d,Hughes,H1T,County Council Of Beaufort County South Carolina
 adc999,Airbus Helicopters Inc,H1T,California Highway Patrol
 adc9a0,Dji,H4E,Alabama Department Of Transportation
+adca7a,Kodiak Aircraft Co Inc,L1T,State Of New York
 adcadb,Sikorsky,H2T,Us Department Of State
-adcd3e,Dji,H4E,City Of Wilmington
 adcd57,Dji,H4E,Alabama Department Of Transportation
+adce0b,Cessna,L1P,Avco Patrol Llc
+adce15,Bell Textron Canada Ltd,H2T,San Diego County Sherriffs Department
 adce96,General Atomics,L1J,Department Of Homeland Security
 add2b8,Sikorsky,H2T,Us Department Of State
 add2bb,Dji,H4E,Salt River Police Department
@@ -2447,16 +2741,19 @@ add94c,Piper,L1P,County Of Galveston
 add73d,Dji,H4E,Village Of Key Biscayne
 add75f,Raytheon Aircraft Company,L2T,State Of Illinois
 add775,Bell Helicopter Textron Canada,H1T,Georgia Department Of Public Safety
+add7f8,Cessna,L1P,Illinois State Police
 add883,Bell,H1T,City Of Sacramento
 addad5,Dji,H4E,Alabama Department Of Transportation
-addb67,Cessna,L1P,Mississippi Dept Of Public Safety
 addee2,Bell,H2T,U S Department Of Justice
 ade8ae,Cessna,L1P,City Of Albuquerque
 ade6b0,Airbus Helicopters Deutschland,H2T,County Of Riverside California
+adebdb,Cessna,L1P,State Of Wisconsin Department Of Administration
 ade930,Cessna,L1P,Iowa State Patrol
 ade988,Leading Edge Aerial Tech Inc,H6E,Washington County
+adea75,Airbus Helicopters Inc,H1T,Riverside County Sheriffs Department
+adf037,Cessna,L1P,Dubois County Airport Authority
 adf3b5,Cessna,L1P,United States Department Of Interior
-adf0a8,Bell Helicopter Textron Canada,H1T,Tennessee Highway Patrol Department Of Safety
 adf1a4,Dji,H6E,City Of Maricopa Police Department
 adf1ef,Airbus Helicopters Inc,H1T,County Of Riverside California
-ac6c18,Bell,H2T,State Of New York
+adf218,Leading Edge Aerial Tech Inc,H6E,Tennessee Valley Authority
+ac6c18,Airbus Helicopters Inc,H1T,State Of New York

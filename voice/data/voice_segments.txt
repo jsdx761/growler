@@ -1,0 +1,1012 @@
+# ============================================================================
+# Pre-Recorded Voice Segments Manifest
+#
+# Each non-comment, non-blank line defines a segment to generate.
+# Format: segment_id|text_to_speak
+#
+# Segments are combined at runtime on Android to form complete announcements.
+# The segment_id is used as the filename (segment_id.wav) and as the lookup
+# key in the app.
+#
+# Two kinds of entries:
+#   - COMPLETE SENTENCES: Used when the full combination matches, giving
+#     the most natural prosody (e.g. "radar_ka_34_7" for "K A band 34.7 Radar")
+#   - ATOMIC SEGMENTS: Individual words/phrases concatenated at runtime as
+#     fallback when no complete sentence exists for the combination.
+# ============================================================================
+
+# ════════════════════════════════════════════════════════════════════════════
+# COMPLETE SENTENCES — Radar Alerts
+# Pattern: [band] [frequency] Radar
+# ════════════════════════════════════════════════════════════════════════════
+
+# ── Ka band with frequency (most common radar alert) ──────────────────────
+
+radar_ka_33_4|K    A  band thirty three point four Radar
+radar_ka_33_5|K    A  band thirty three point five Radar
+radar_ka_33_6|K    A  band thirty three point six Radar
+radar_ka_33_7|K    A  band thirty three point seven Radar
+radar_ka_33_8|K    A  band thirty three point eight Radar
+radar_ka_33_9|K    A  band thirty three point nine Radar
+radar_ka_34_0|K    A  band thirty four Radar
+radar_ka_34_1|K    A  band thirty four point one Radar
+radar_ka_34_2|K    A  band thirty four point two Radar
+radar_ka_34_3|K    A  band thirty four point three Radar
+radar_ka_34_4|K    A  band thirty four point four Radar
+radar_ka_34_5|K    A  band thirty four point five Radar
+radar_ka_34_6|K    A  band thirty four point six Radar
+radar_ka_34_7|K    A  band thirty four point seven Radar
+radar_ka_34_8|K    A  band thirty four point eight Radar
+radar_ka_34_9|K    A  band thirty four point nine Radar
+radar_ka_35_0|K    A  band thirty five Radar
+radar_ka_35_1|K    A  band thirty five point one Radar
+radar_ka_35_2|K    A  band thirty five point two Radar
+radar_ka_35_3|K    A  band thirty five point three Radar
+radar_ka_35_4|K    A  band thirty five point four Radar
+radar_ka_35_5|K    A  band thirty five point five Radar
+radar_ka_35_6|K    A  band thirty five point six Radar
+radar_ka_35_7|K    A  band thirty five point seven Radar
+radar_ka_35_8|K    A  band thirty five point eight Radar
+radar_ka_35_9|K    A  band thirty five point nine Radar
+radar_ka_36_0|K    A  band thirty six Radar
+
+# ── K band with frequency ─────────────────────────────────────────────────
+
+radar_k_24_0|K band twenty four Radar
+radar_k_24_1|K band twenty four point one Radar
+radar_k_24_2|K band twenty four point two Radar
+radar_k_24_3|K band twenty four point three Radar
+
+# ── X band with frequency ─────────────────────────────────────────────────
+
+radar_x_10_5|X band ten point five Radar
+radar_x_10_6|X band ten point six Radar
+
+# ── Pop K band with frequency ─────────────────────────────────────────────
+
+radar_pop_k_24_0|Pop K band twenty four Radar
+radar_pop_k_24_1|Pop K band twenty four point one Radar
+radar_pop_k_24_2|Pop K band twenty four point two Radar
+radar_pop_k_24_3|Pop K band twenty four point three Radar
+
+# ── Band-only sentences (no frequency) ────────────────────────────────────
+
+radar_x|X band Radar
+radar_k|K band Radar
+radar_ka|K    A  band Radar
+radar_pop_k|Pop K band Radar
+radar_mrcd|M R C D Radar
+radar_mrct|M R C T Radar
+radar_gt3|G T 3 Radar
+radar_gt4|G T 4 Radar
+
+# ── Laser ─────────────────────────────────────────────────────────────────
+
+radar_laser|Laser
+
+# ════════════════════════════════════════════════════════════════════════════
+# COMPLETE SENTENCES — Camera / Mark Alerts with Bearing
+# Pattern: [type] at [bearing] o'clock
+# Distance is appended as an atomic segment when present.
+# ════════════════════════════════════════════════════════════════════════════
+
+# ── Speed Cam ─────────────────────────────────────────────────────────────
+
+camera_speed_cam_1|Speed Cam at 1 o'clock
+camera_speed_cam_2|Speed Cam at 2 o'clock
+camera_speed_cam_3|Speed Cam at 3 o'clock
+camera_speed_cam_4|Speed Cam at 4 o'clock
+camera_speed_cam_5|Speed Cam at 5 o'clock
+camera_speed_cam_6|Speed Cam at 6 o'clock
+camera_speed_cam_7|Speed Cam at 7 o'clock
+camera_speed_cam_8|Speed Cam at 8 o'clock
+camera_speed_cam_9|Speed Cam at 9 o'clock
+camera_speed_cam_10|Speed Cam at 10 o'clock
+camera_speed_cam_11|Speed Cam at 11 o'clock
+camera_speed_cam_12|Speed Cam at 12 o'clock
+
+# ── Red Light Cam ─────────────────────────────────────────────────────────
+
+camera_red_light_cam_1|Red Light Cam at 1 o'clock
+camera_red_light_cam_2|Red Light Cam at 2 o'clock
+camera_red_light_cam_3|Red Light Cam at 3 o'clock
+camera_red_light_cam_4|Red Light Cam at 4 o'clock
+camera_red_light_cam_5|Red Light Cam at 5 o'clock
+camera_red_light_cam_6|Red Light Cam at 6 o'clock
+camera_red_light_cam_7|Red Light Cam at 7 o'clock
+camera_red_light_cam_8|Red Light Cam at 8 o'clock
+camera_red_light_cam_9|Red Light Cam at 9 o'clock
+camera_red_light_cam_10|Red Light Cam at 10 o'clock
+camera_red_light_cam_11|Red Light Cam at 11 o'clock
+camera_red_light_cam_12|Red Light Cam at 12 o'clock
+
+# ── User Mark ─────────────────────────────────────────────────────────────
+
+camera_user_mark_1|User Mark at 1 o'clock
+camera_user_mark_2|User Mark at 2 o'clock
+camera_user_mark_3|User Mark at 3 o'clock
+camera_user_mark_4|User Mark at 4 o'clock
+camera_user_mark_5|User Mark at 5 o'clock
+camera_user_mark_6|User Mark at 6 o'clock
+camera_user_mark_7|User Mark at 7 o'clock
+camera_user_mark_8|User Mark at 8 o'clock
+camera_user_mark_9|User Mark at 9 o'clock
+camera_user_mark_10|User Mark at 10 o'clock
+camera_user_mark_11|User Mark at 11 o'clock
+camera_user_mark_12|User Mark at 12 o'clock
+
+# ── Lockout ───────────────────────────────────────────────────────────────
+
+camera_lockout_1|Lockout at 1 o'clock
+camera_lockout_2|Lockout at 2 o'clock
+camera_lockout_3|Lockout at 3 o'clock
+camera_lockout_4|Lockout at 4 o'clock
+camera_lockout_5|Lockout at 5 o'clock
+camera_lockout_6|Lockout at 6 o'clock
+camera_lockout_7|Lockout at 7 o'clock
+camera_lockout_8|Lockout at 8 o'clock
+camera_lockout_9|Lockout at 9 o'clock
+camera_lockout_10|Lockout at 10 o'clock
+camera_lockout_11|Lockout at 11 o'clock
+camera_lockout_12|Lockout at 12 o'clock
+
+# ════════════════════════════════════════════════════════════════════════════
+# COMPLETE SENTENCES — Aircraft Organization + Type Pairs
+# Pattern: [org category] [aircraft type]
+# Bearing and distance are appended as atomic segments.
+# ════════════════════════════════════════════════════════════════════════════
+
+aircraft_police_helicopter|Police Helicopter
+aircraft_police_airplane|Police Airplane
+aircraft_police_drone|Police Drone
+aircraft_police_aircraft|Police Aircraft
+
+aircraft_sheriff_helicopter|Sheriff Helicopter
+aircraft_sheriff_airplane|Sheriff Airplane
+aircraft_sheriff_drone|Sheriff Drone
+aircraft_sheriff_aircraft|Sheriff Aircraft
+
+aircraft_highway_patrol_helicopter|Highway Patrol Helicopter
+aircraft_highway_patrol_airplane|Highway Patrol Airplane
+aircraft_highway_patrol_drone|Highway Patrol Drone
+aircraft_highway_patrol_aircraft|Highway Patrol Aircraft
+
+aircraft_state_police_helicopter|State Police Helicopter
+aircraft_state_police_airplane|State Police Airplane
+aircraft_state_police_drone|State Police Drone
+aircraft_state_police_aircraft|State Police Aircraft
+
+aircraft_state_trooper_helicopter|State Trooper Helicopter
+aircraft_state_trooper_airplane|State Trooper Airplane
+aircraft_state_trooper_drone|State Trooper Drone
+aircraft_state_trooper_aircraft|State Trooper Aircraft
+
+aircraft_state_government_helicopter|State Government Helicopter
+aircraft_state_government_airplane|State Government Airplane
+aircraft_state_government_drone|State Government Drone
+aircraft_state_government_aircraft|State Government Aircraft
+
+aircraft_county_government_helicopter|County Government Helicopter
+aircraft_county_government_airplane|County Government Airplane
+aircraft_county_government_drone|County Government Drone
+aircraft_county_government_aircraft|County Government Aircraft
+
+aircraft_city_government_helicopter|City Government Helicopter
+aircraft_city_government_airplane|City Government Airplane
+aircraft_city_government_drone|City Government Drone
+aircraft_city_government_aircraft|City Government Aircraft
+
+aircraft_homeland_security_helicopter|Homeland Security Helicopter
+aircraft_homeland_security_airplane|Homeland Security Airplane
+aircraft_homeland_security_drone|Homeland Security Drone
+aircraft_homeland_security_aircraft|Homeland Security Aircraft
+
+aircraft_border_patrol_helicopter|Border Patrol Helicopter
+aircraft_border_patrol_airplane|Border Patrol Airplane
+aircraft_border_patrol_drone|Border Patrol Drone
+aircraft_border_patrol_aircraft|Border Patrol Aircraft
+
+aircraft_customs_helicopter|Customs Helicopter
+aircraft_customs_airplane|Customs Airplane
+aircraft_customs_drone|Customs Drone
+aircraft_customs_aircraft|Customs Aircraft
+
+aircraft_federal_government_helicopter|Federal Government Helicopter
+aircraft_federal_government_airplane|Federal Government Airplane
+aircraft_federal_government_drone|Federal Government Drone
+aircraft_federal_government_aircraft|Federal Government Aircraft
+
+aircraft_military_helicopter|Military Helicopter
+aircraft_military_airplane|Military Airplane
+aircraft_military_drone|Military Drone
+aircraft_military_aircraft|Military Aircraft
+
+aircraft_special_operations_helicopter|Special Operations Helicopter
+aircraft_special_operations_airplane|Special Operations Airplane
+aircraft_special_operations_drone|Special Operations Drone
+aircraft_special_operations_aircraft|Special Operations Aircraft
+
+aircraft_national_guard_helicopter|National Guard Helicopter
+aircraft_national_guard_airplane|National Guard Airplane
+aircraft_national_guard_drone|National Guard Drone
+aircraft_national_guard_aircraft|National Guard Aircraft
+
+aircraft_fire_department_helicopter|Fire Department Helicopter
+aircraft_fire_department_airplane|Fire Department Airplane
+aircraft_fire_department_drone|Fire Department Drone
+aircraft_fire_department_aircraft|Fire Department Aircraft
+
+aircraft_emergency_services_helicopter|Emergency Services Helicopter
+aircraft_emergency_services_airplane|Emergency Services Airplane
+aircraft_emergency_services_drone|Emergency Services Drone
+aircraft_emergency_services_aircraft|Emergency Services Aircraft
+
+aircraft_transportation_helicopter|Transportation Helicopter
+aircraft_transportation_airplane|Transportation Airplane
+aircraft_transportation_drone|Transportation Drone
+aircraft_transportation_aircraft|Transportation Aircraft
+
+aircraft_fish_and_wildlife_helicopter|Fish and Wildlife Helicopter
+aircraft_fish_and_wildlife_airplane|Fish and Wildlife Airplane
+aircraft_fish_and_wildlife_drone|Fish and Wildlife Drone
+aircraft_fish_and_wildlife_aircraft|Fish and Wildlife Aircraft
+
+aircraft_natural_resources_helicopter|Natural Resources Helicopter
+aircraft_natural_resources_airplane|Natural Resources Airplane
+aircraft_natural_resources_drone|Natural Resources Drone
+aircraft_natural_resources_aircraft|Natural Resources Aircraft
+
+aircraft_park_service_helicopter|Park Service Helicopter
+aircraft_park_service_airplane|Park Service Airplane
+aircraft_park_service_drone|Park Service Drone
+aircraft_park_service_aircraft|Park Service Aircraft
+
+aircraft_nuclear_security_helicopter|Nuclear Security Helicopter
+aircraft_nuclear_security_airplane|Nuclear Security Airplane
+aircraft_nuclear_security_drone|Nuclear Security Drone
+aircraft_nuclear_security_aircraft|Nuclear Security Aircraft
+
+aircraft_energy_helicopter|Energy Authority Helicopter
+aircraft_energy_airplane|Energy Authority Airplane
+aircraft_energy_drone|Energy Authority Drone
+aircraft_energy_aircraft|Energy Authority Aircraft
+
+aircraft_private_contractor_helicopter|Private Contractor Helicopter
+aircraft_private_contractor_airplane|Private Contractor Airplane
+aircraft_private_contractor_drone|Private Contractor Drone
+aircraft_private_contractor_aircraft|Private Contractor Aircraft
+
+aircraft_unidentified_helicopter|Unidentified Helicopter
+aircraft_unidentified_airplane|Unidentified Airplane
+aircraft_unidentified_drone|Unidentified Drone
+aircraft_unidentified_aircraft|Unidentified Aircraft
+
+# ════════════════════════════════════════════════════════════════════════════
+# COMPLETE SENTENCES — Report Display Names with "now" (re-announcements)
+# ════════════════════════════════════════════════════════════════════════════
+
+report_speed_trap_now|Speed Trap now
+report_accident_now|Accident now
+report_construction_now|Construction now
+report_emergency_vehicle_now|Emergency Vehicle now
+report_lane_closed_now|Lane Closed now
+report_stopped_vehicle_now|Stopped Vehicle now
+report_pothole_now|Pothole now
+report_road_obstacle_now|Road Obstacle now
+report_ice_on_road_now|Ice on Road now
+report_oil_on_road_now|Oil on Road now
+report_flooding_now|Flooding now
+report_road_hazard_now|Road Hazard now
+report_animal_on_road_now|Animal on Road now
+report_missing_sign_now|Missing Sign now
+report_shoulder_hazard_now|Shoulder Hazard now
+report_fog_now|Fog now
+report_hail_now|Hail now
+report_heavy_rain_now|Heavy Rain now
+report_heavy_snow_now|Heavy Snow now
+report_weather_hazard_now|Weather Hazard now
+report_hazard_now|Hazard now
+report_standstill_traffic_now|Standstill Traffic now
+report_heavy_traffic_now|Heavy Traffic now
+report_moderate_traffic_now|Moderate Traffic now
+report_traffic_jam_now|Traffic Jam now
+
+# ════════════════════════════════════════════════════════════════════════════
+# COMPLETE SENTENCES — System Status / Event Announcements
+# ════════════════════════════════════════════════════════════════════════════
+
+status_radar_on|Radar detector is on
+status_radar_back_on|Radar detector is back on
+status_radar_off|Radar detector is off
+status_waze_on|Waze alerts are on
+status_waze_back_on|Waze alerts are back on
+status_waze_off|Waze alerts are off
+status_waze_all_clear|Waze alerts are all clear now
+status_aircraft_on|Aircraft alerts are on
+status_aircraft_back_on|Aircraft alerts are back on
+status_aircraft_off|Aircraft alerts are off
+status_aircraft_all_clear|Aircraft alerts are all clear now
+status_location_off|Location is off
+status_location_back_on|Location is back on
+status_network_offline|Network is offline, alerts are paused
+status_network_online|Network is back online
+
+# ════════════════════════════════════════════════════════════════════════════
+# ATOMIC SEGMENTS — Individual building blocks for concatenation fallback
+# Used when no complete sentence exists for the combination.
+# ════════════════════════════════════════════════════════════════════════════
+
+# ── Radar Band Names ───────────────────────────────────────────────────────
+
+band_x|X band
+band_k|K band
+band_ka|K    A  band
+band_pop_k|Pop K band
+band_mrcd|M R C D
+band_mrct|M R C T
+band_gt3|G T 3
+band_gt4|G T 4
+
+# ── Radar Alert Classes ────────────────────────────────────────────────────
+
+class_radar|Radar
+class_laser|Laser
+
+# ── Camera / Mark Alert Types ──────────────────────────────────────────────
+
+type_speed_cam|Speed Cam
+type_red_light_cam|Red Light Cam
+type_user_mark|User Mark
+type_lockout|Lockout
+
+# ── Waze / Crowdsourced Report Display Names ───────────────────────────────
+
+report_speed_trap|Speed Trap
+report_accident|Accident
+report_construction|Construction
+report_emergency_vehicle|Emergency Vehicle
+report_lane_closed|Lane Closed
+report_stopped_vehicle|Stopped Vehicle
+report_pothole|Pothole
+report_road_obstacle|Road Obstacle
+report_ice_on_road|Ice on Road
+report_oil_on_road|Oil on Road
+report_flooding|Flooding
+report_road_hazard|Road Hazard
+report_animal_on_road|Animal on Road
+report_missing_sign|Missing Sign
+report_shoulder_hazard|Shoulder Hazard
+report_fog|Fog
+report_hail|Hail
+report_heavy_rain|Heavy Rain
+report_heavy_snow|Heavy Snow
+report_weather_hazard|Weather Hazard
+report_hazard|Hazard
+report_standstill_traffic|Standstill Traffic
+report_heavy_traffic|Heavy Traffic
+report_moderate_traffic|Moderate Traffic
+report_traffic_jam|Traffic Jam
+
+# ── Aircraft Types ─────────────────────────────────────────────────────────
+
+aircraft_airplane|Airplane
+aircraft_helicopter|Helicopter
+aircraft_drone|Drone
+aircraft_aircraft|Aircraft
+
+# ── Aircraft Organization Categories ──────────────────────────────────────
+
+org_police|Police
+org_sheriff|Sheriff
+org_highway_patrol|Highway Patrol
+org_state_police|State Police
+org_state_trooper|State Trooper
+org_state_government|State Government
+org_county_government|County Government
+org_city_government|City Government
+org_homeland_security|Homeland Security
+org_border_patrol|Border Patrol
+org_customs|Customs
+org_federal_government|Federal Government
+org_military|Military
+org_special_operations|Special Operations
+org_national_guard|National Guard
+org_fire_department|Fire Department
+org_emergency_services|Emergency Services
+org_transportation|Transportation
+org_fish_and_wildlife|Fish and Wildlife
+org_natural_resources|Natural Resources
+org_park_service|Park Service
+org_nuclear_security|Nuclear Security
+org_energy|Energy Authority
+org_private_contractor|Private Contractor
+org_unidentified|Unidentified
+
+# ── Aircraft Manufacturers (top 20) ───────────────────────────────────────
+
+mfg_bell|Bell
+mfg_cessna|Cessna
+mfg_airbus|Airbus
+mfg_eurocopter|Eurocopter
+mfg_piper|Piper
+mfg_beech|Beechcraft
+mfg_sikorsky|Sikorsky
+mfg_md_helicopters|M D Helicopters
+mfg_boeing|Boeing
+mfg_bombardier|Bombardier
+mfg_hughes|Hughes
+mfg_robinson|Robinson
+mfg_pilatus|Pilatus
+mfg_dji|D J I
+mfg_textron|Textron
+mfg_lockheed|Lockheed
+mfg_dehavilland|De Havilland
+mfg_general_atomics|General Atomics
+mfg_agusta|Agusta
+mfg_mcdonnell_douglas|McDonnell Douglas
+
+# ── Clock Bearings ─────────────────────────────────────────────────────────
+
+bearing_1|at 1 o'clock
+bearing_2|at 2 o'clock
+bearing_3|at 3 o'clock
+bearing_4|at 4 o'clock
+bearing_5|at 5 o'clock
+bearing_6|at 6 o'clock
+bearing_7|at 7 o'clock
+bearing_8|at 8 o'clock
+bearing_9|at 9 o'clock
+bearing_10|at 10 o'clock
+bearing_11|at 11 o'clock
+bearing_12|at 12 o'clock
+
+# ── Distance Phrases ──────────────────────────────────────────────────────
+
+dist_0_1|zero point one mile away
+dist_0_2|zero point two mile away
+dist_0_3|zero point three mile away
+dist_0_4|zero point four mile away
+dist_0_5|zero point five mile away
+dist_0_6|zero point six mile away
+dist_0_7|zero point seven mile away
+dist_0_8|zero point eight mile away
+dist_0_9|zero point nine mile away
+dist_1_0|one mile away
+dist_1_1|one point one miles away
+dist_1_2|one point two miles away
+dist_1_3|one point three miles away
+dist_1_4|one point four miles away
+dist_1_5|one point five miles away
+dist_1_6|one point six miles away
+dist_1_7|one point seven miles away
+dist_1_8|one point eight miles away
+dist_1_9|one point nine miles away
+dist_2_0|two miles away
+dist_2_1|two point one miles away
+dist_2_2|two point two miles away
+dist_2_3|two point three miles away
+dist_2_4|two point four miles away
+dist_2_5|two point five miles away
+dist_2_6|two point six miles away
+dist_2_7|two point seven miles away
+dist_2_8|two point eight miles away
+dist_2_9|two point nine miles away
+dist_3_0|three miles away
+dist_3_1|three point one miles away
+dist_3_2|three point two miles away
+dist_3_3|three point three miles away
+dist_3_4|three point four miles away
+dist_3_5|three point five miles away
+dist_3_6|three point six miles away
+dist_3_7|three point seven miles away
+dist_3_8|three point eight miles away
+dist_3_9|three point nine miles away
+dist_4_0|four miles away
+dist_4_1|four point one miles away
+dist_4_2|four point two miles away
+dist_4_3|four point three miles away
+dist_4_4|four point four miles away
+dist_4_5|four point five miles away
+dist_4_6|four point six miles away
+dist_4_7|four point seven miles away
+dist_4_8|four point eight miles away
+dist_4_9|four point nine miles away
+dist_5_0|five miles away
+
+# ── Radar Frequency Phrases ───────────────────────────────────────────────
+
+freq_33_4|thirty three point four
+freq_33_5|thirty three point five
+freq_33_6|thirty three point six
+freq_33_7|thirty three point seven
+freq_33_8|thirty three point eight
+freq_33_9|thirty three point nine
+freq_34_0|thirty four
+freq_34_1|thirty four point one
+freq_34_2|thirty four point two
+freq_34_3|thirty four point three
+freq_34_4|thirty four point four
+freq_34_5|thirty four point five
+freq_34_6|thirty four point six
+freq_34_7|thirty four point seven
+freq_34_8|thirty four point eight
+freq_34_9|thirty four point nine
+freq_35_0|thirty five
+freq_35_1|thirty five point one
+freq_35_2|thirty five point two
+freq_35_3|thirty five point three
+freq_35_4|thirty five point four
+freq_35_5|thirty five point five
+freq_35_6|thirty five point six
+freq_35_7|thirty five point seven
+freq_35_8|thirty five point eight
+freq_35_9|thirty five point nine
+freq_36_0|thirty six
+freq_24_0|twenty four
+freq_24_1|twenty four point one
+freq_24_2|twenty four point two
+freq_24_3|twenty four point three
+freq_10_5|ten point five
+freq_10_6|ten point six
+
+# ── Road Type Phrases ─────────────────────────────────────────────────────
+
+road_highway|on highway
+road_freeway|on freeway
+road_interstate|on interstate
+road_road|on road
+road_street|on street
+road_avenue|on avenue
+road_boulevard|on boulevard
+road_drive|on drive
+road_lane|on lane
+road_hidden_highway|hidden on highway
+road_hidden_freeway|hidden on freeway
+road_hidden_interstate|hidden on interstate
+road_hidden_road|hidden on road
+road_hidden_street|hidden on street
+road_hidden_avenue|hidden on avenue
+road_hidden_boulevard|hidden on boulevard
+road_hidden_drive|hidden on drive
+road_hidden_lane|hidden on lane
+
+# ── Report + Road Type Complete Sentences ─────────────────────────────────
+# 450 combinations of report type + road type as single natural utterances
+# to avoid runtime concatenation artifacts.
+
+report_speed_trap_road_highway|Speed Trap on Highway
+report_speed_trap_road_freeway|Speed Trap on Freeway
+report_speed_trap_road_interstate|Speed Trap on Interstate
+report_speed_trap_road_road|Speed Trap on Road
+report_speed_trap_road_street|Speed Trap on Street
+report_speed_trap_road_avenue|Speed Trap on Avenue
+report_speed_trap_road_boulevard|Speed Trap on Boulevard
+report_speed_trap_road_drive|Speed Trap on Drive
+report_speed_trap_road_lane|Speed Trap on Lane
+report_speed_trap_road_hidden_highway|Speed Trap hidden on Highway
+report_speed_trap_road_hidden_freeway|Speed Trap hidden on Freeway
+report_speed_trap_road_hidden_interstate|Speed Trap hidden on Interstate
+report_speed_trap_road_hidden_road|Speed Trap hidden on Road
+report_speed_trap_road_hidden_street|Speed Trap hidden on Street
+report_speed_trap_road_hidden_avenue|Speed Trap hidden on Avenue
+report_speed_trap_road_hidden_boulevard|Speed Trap hidden on Boulevard
+report_speed_trap_road_hidden_drive|Speed Trap hidden on Drive
+report_speed_trap_road_hidden_lane|Speed Trap hidden on Lane
+report_accident_road_highway|Accident on Highway
+report_accident_road_freeway|Accident on Freeway
+report_accident_road_interstate|Accident on Interstate
+report_accident_road_road|Accident on Road
+report_accident_road_street|Accident on Street
+report_accident_road_avenue|Accident on Avenue
+report_accident_road_boulevard|Accident on Boulevard
+report_accident_road_drive|Accident on Drive
+report_accident_road_lane|Accident on Lane
+report_construction_road_highway|Construction on Highway
+report_construction_road_freeway|Construction on Freeway
+report_construction_road_interstate|Construction on Interstate
+report_construction_road_road|Construction on Road
+report_construction_road_street|Construction on Street
+report_construction_road_avenue|Construction on Avenue
+report_construction_road_boulevard|Construction on Boulevard
+report_construction_road_drive|Construction on Drive
+report_construction_road_lane|Construction on Lane
+report_emergency_vehicle_road_highway|Emergency Vehicle on Highway
+report_emergency_vehicle_road_freeway|Emergency Vehicle on Freeway
+report_emergency_vehicle_road_interstate|Emergency Vehicle on Interstate
+report_emergency_vehicle_road_road|Emergency Vehicle on Road
+report_emergency_vehicle_road_street|Emergency Vehicle on Street
+report_emergency_vehicle_road_avenue|Emergency Vehicle on Avenue
+report_emergency_vehicle_road_boulevard|Emergency Vehicle on Boulevard
+report_emergency_vehicle_road_drive|Emergency Vehicle on Drive
+report_emergency_vehicle_road_lane|Emergency Vehicle on Lane
+report_lane_closed_road_highway|Lane Closed on Highway
+report_lane_closed_road_freeway|Lane Closed on Freeway
+report_lane_closed_road_interstate|Lane Closed on Interstate
+report_lane_closed_road_road|Lane Closed on Road
+report_lane_closed_road_street|Lane Closed on Street
+report_lane_closed_road_avenue|Lane Closed on Avenue
+report_lane_closed_road_boulevard|Lane Closed on Boulevard
+report_lane_closed_road_drive|Lane Closed on Drive
+report_lane_closed_road_lane|Lane Closed on Lane
+report_stopped_vehicle_road_highway|Stopped Vehicle on Highway
+report_stopped_vehicle_road_freeway|Stopped Vehicle on Freeway
+report_stopped_vehicle_road_interstate|Stopped Vehicle on Interstate
+report_stopped_vehicle_road_road|Stopped Vehicle on Road
+report_stopped_vehicle_road_street|Stopped Vehicle on Street
+report_stopped_vehicle_road_avenue|Stopped Vehicle on Avenue
+report_stopped_vehicle_road_boulevard|Stopped Vehicle on Boulevard
+report_stopped_vehicle_road_drive|Stopped Vehicle on Drive
+report_stopped_vehicle_road_lane|Stopped Vehicle on Lane
+report_pothole_road_highway|Pothole on Highway
+report_pothole_road_freeway|Pothole on Freeway
+report_pothole_road_interstate|Pothole on Interstate
+report_pothole_road_road|Pothole on Road
+report_pothole_road_street|Pothole on Street
+report_pothole_road_avenue|Pothole on Avenue
+report_pothole_road_boulevard|Pothole on Boulevard
+report_pothole_road_drive|Pothole on Drive
+report_pothole_road_lane|Pothole on Lane
+report_road_obstacle_road_highway|Road Obstacle on Highway
+report_road_obstacle_road_freeway|Road Obstacle on Freeway
+report_road_obstacle_road_interstate|Road Obstacle on Interstate
+report_road_obstacle_road_road|Road Obstacle on Road
+report_road_obstacle_road_street|Road Obstacle on Street
+report_road_obstacle_road_avenue|Road Obstacle on Avenue
+report_road_obstacle_road_boulevard|Road Obstacle on Boulevard
+report_road_obstacle_road_drive|Road Obstacle on Drive
+report_road_obstacle_road_lane|Road Obstacle on Lane
+report_ice_on_road_road_highway|Ice on Road on Highway
+report_ice_on_road_road_freeway|Ice on Road on Freeway
+report_ice_on_road_road_interstate|Ice on Road on Interstate
+report_ice_on_road_road_road|Ice on Road on Road
+report_ice_on_road_road_street|Ice on Road on Street
+report_ice_on_road_road_avenue|Ice on Road on Avenue
+report_ice_on_road_road_boulevard|Ice on Road on Boulevard
+report_ice_on_road_road_drive|Ice on Road on Drive
+report_ice_on_road_road_lane|Ice on Road on Lane
+report_oil_on_road_road_highway|Oil on Road on Highway
+report_oil_on_road_road_freeway|Oil on Road on Freeway
+report_oil_on_road_road_interstate|Oil on Road on Interstate
+report_oil_on_road_road_road|Oil on Road on Road
+report_oil_on_road_road_street|Oil on Road on Street
+report_oil_on_road_road_avenue|Oil on Road on Avenue
+report_oil_on_road_road_boulevard|Oil on Road on Boulevard
+report_oil_on_road_road_drive|Oil on Road on Drive
+report_oil_on_road_road_lane|Oil on Road on Lane
+report_flooding_road_highway|Flooding on Highway
+report_flooding_road_freeway|Flooding on Freeway
+report_flooding_road_interstate|Flooding on Interstate
+report_flooding_road_road|Flooding on Road
+report_flooding_road_street|Flooding on Street
+report_flooding_road_avenue|Flooding on Avenue
+report_flooding_road_boulevard|Flooding on Boulevard
+report_flooding_road_drive|Flooding on Drive
+report_flooding_road_lane|Flooding on Lane
+report_road_hazard_road_highway|Road Hazard on Highway
+report_road_hazard_road_freeway|Road Hazard on Freeway
+report_road_hazard_road_interstate|Road Hazard on Interstate
+report_road_hazard_road_road|Road Hazard on Road
+report_road_hazard_road_street|Road Hazard on Street
+report_road_hazard_road_avenue|Road Hazard on Avenue
+report_road_hazard_road_boulevard|Road Hazard on Boulevard
+report_road_hazard_road_drive|Road Hazard on Drive
+report_road_hazard_road_lane|Road Hazard on Lane
+report_animal_on_road_road_highway|Animal on Road on Highway
+report_animal_on_road_road_freeway|Animal on Road on Freeway
+report_animal_on_road_road_interstate|Animal on Road on Interstate
+report_animal_on_road_road_road|Animal on Road on Road
+report_animal_on_road_road_street|Animal on Road on Street
+report_animal_on_road_road_avenue|Animal on Road on Avenue
+report_animal_on_road_road_boulevard|Animal on Road on Boulevard
+report_animal_on_road_road_drive|Animal on Road on Drive
+report_animal_on_road_road_lane|Animal on Road on Lane
+report_missing_sign_road_highway|Missing Sign on Highway
+report_missing_sign_road_freeway|Missing Sign on Freeway
+report_missing_sign_road_interstate|Missing Sign on Interstate
+report_missing_sign_road_road|Missing Sign on Road
+report_missing_sign_road_street|Missing Sign on Street
+report_missing_sign_road_avenue|Missing Sign on Avenue
+report_missing_sign_road_boulevard|Missing Sign on Boulevard
+report_missing_sign_road_drive|Missing Sign on Drive
+report_missing_sign_road_lane|Missing Sign on Lane
+report_shoulder_hazard_road_highway|Shoulder Hazard on Highway
+report_shoulder_hazard_road_freeway|Shoulder Hazard on Freeway
+report_shoulder_hazard_road_interstate|Shoulder Hazard on Interstate
+report_shoulder_hazard_road_road|Shoulder Hazard on Road
+report_shoulder_hazard_road_street|Shoulder Hazard on Street
+report_shoulder_hazard_road_avenue|Shoulder Hazard on Avenue
+report_shoulder_hazard_road_boulevard|Shoulder Hazard on Boulevard
+report_shoulder_hazard_road_drive|Shoulder Hazard on Drive
+report_shoulder_hazard_road_lane|Shoulder Hazard on Lane
+report_fog_road_highway|Fog on Highway
+report_fog_road_freeway|Fog on Freeway
+report_fog_road_interstate|Fog on Interstate
+report_fog_road_road|Fog on Road
+report_fog_road_street|Fog on Street
+report_fog_road_avenue|Fog on Avenue
+report_fog_road_boulevard|Fog on Boulevard
+report_fog_road_drive|Fog on Drive
+report_fog_road_lane|Fog on Lane
+report_hail_road_highway|Hail on Highway
+report_hail_road_freeway|Hail on Freeway
+report_hail_road_interstate|Hail on Interstate
+report_hail_road_road|Hail on Road
+report_hail_road_street|Hail on Street
+report_hail_road_avenue|Hail on Avenue
+report_hail_road_boulevard|Hail on Boulevard
+report_hail_road_drive|Hail on Drive
+report_hail_road_lane|Hail on Lane
+report_heavy_rain_road_highway|Heavy Rain on Highway
+report_heavy_rain_road_freeway|Heavy Rain on Freeway
+report_heavy_rain_road_interstate|Heavy Rain on Interstate
+report_heavy_rain_road_road|Heavy Rain on Road
+report_heavy_rain_road_street|Heavy Rain on Street
+report_heavy_rain_road_avenue|Heavy Rain on Avenue
+report_heavy_rain_road_boulevard|Heavy Rain on Boulevard
+report_heavy_rain_road_drive|Heavy Rain on Drive
+report_heavy_rain_road_lane|Heavy Rain on Lane
+report_heavy_snow_road_highway|Heavy Snow on Highway
+report_heavy_snow_road_freeway|Heavy Snow on Freeway
+report_heavy_snow_road_interstate|Heavy Snow on Interstate
+report_heavy_snow_road_road|Heavy Snow on Road
+report_heavy_snow_road_street|Heavy Snow on Street
+report_heavy_snow_road_avenue|Heavy Snow on Avenue
+report_heavy_snow_road_boulevard|Heavy Snow on Boulevard
+report_heavy_snow_road_drive|Heavy Snow on Drive
+report_heavy_snow_road_lane|Heavy Snow on Lane
+report_weather_hazard_road_highway|Weather Hazard on Highway
+report_weather_hazard_road_freeway|Weather Hazard on Freeway
+report_weather_hazard_road_interstate|Weather Hazard on Interstate
+report_weather_hazard_road_road|Weather Hazard on Road
+report_weather_hazard_road_street|Weather Hazard on Street
+report_weather_hazard_road_avenue|Weather Hazard on Avenue
+report_weather_hazard_road_boulevard|Weather Hazard on Boulevard
+report_weather_hazard_road_drive|Weather Hazard on Drive
+report_weather_hazard_road_lane|Weather Hazard on Lane
+report_hazard_road_highway|Hazard on Highway
+report_hazard_road_freeway|Hazard on Freeway
+report_hazard_road_interstate|Hazard on Interstate
+report_hazard_road_road|Hazard on Road
+report_hazard_road_street|Hazard on Street
+report_hazard_road_avenue|Hazard on Avenue
+report_hazard_road_boulevard|Hazard on Boulevard
+report_hazard_road_drive|Hazard on Drive
+report_hazard_road_lane|Hazard on Lane
+report_standstill_traffic_road_highway|Standstill Traffic on Highway
+report_standstill_traffic_road_freeway|Standstill Traffic on Freeway
+report_standstill_traffic_road_interstate|Standstill Traffic on Interstate
+report_standstill_traffic_road_road|Standstill Traffic on Road
+report_standstill_traffic_road_street|Standstill Traffic on Street
+report_standstill_traffic_road_avenue|Standstill Traffic on Avenue
+report_standstill_traffic_road_boulevard|Standstill Traffic on Boulevard
+report_standstill_traffic_road_drive|Standstill Traffic on Drive
+report_standstill_traffic_road_lane|Standstill Traffic on Lane
+report_heavy_traffic_road_highway|Heavy Traffic on Highway
+report_heavy_traffic_road_freeway|Heavy Traffic on Freeway
+report_heavy_traffic_road_interstate|Heavy Traffic on Interstate
+report_heavy_traffic_road_road|Heavy Traffic on Road
+report_heavy_traffic_road_street|Heavy Traffic on Street
+report_heavy_traffic_road_avenue|Heavy Traffic on Avenue
+report_heavy_traffic_road_boulevard|Heavy Traffic on Boulevard
+report_heavy_traffic_road_drive|Heavy Traffic on Drive
+report_heavy_traffic_road_lane|Heavy Traffic on Lane
+report_moderate_traffic_road_highway|Moderate Traffic on Highway
+report_moderate_traffic_road_freeway|Moderate Traffic on Freeway
+report_moderate_traffic_road_interstate|Moderate Traffic on Interstate
+report_moderate_traffic_road_road|Moderate Traffic on Road
+report_moderate_traffic_road_street|Moderate Traffic on Street
+report_moderate_traffic_road_avenue|Moderate Traffic on Avenue
+report_moderate_traffic_road_boulevard|Moderate Traffic on Boulevard
+report_moderate_traffic_road_drive|Moderate Traffic on Drive
+report_moderate_traffic_road_lane|Moderate Traffic on Lane
+report_traffic_jam_road_highway|Traffic Jam on Highway
+report_traffic_jam_road_freeway|Traffic Jam on Freeway
+report_traffic_jam_road_interstate|Traffic Jam on Interstate
+report_traffic_jam_road_road|Traffic Jam on Road
+report_traffic_jam_road_street|Traffic Jam on Street
+report_traffic_jam_road_avenue|Traffic Jam on Avenue
+report_traffic_jam_road_boulevard|Traffic Jam on Boulevard
+report_traffic_jam_road_drive|Traffic Jam on Drive
+report_traffic_jam_road_lane|Traffic Jam on Lane
+
+# ── Aircraft Org + Manufacturer + Type Complete Sentences ─────────────────
+# 193 combinations derived from the actual interesting_aircrafts.csv database
+# to avoid runtime concatenation of org + mfg + type atomic segments.
+
+aircraft_border_patrol_dji_aircraft|Border Patrol DJI Aircraft
+aircraft_border_patrol_lockheed_airplane|Border Patrol Lockheed Airplane
+aircraft_city_government_agusta_helicopter|City Government Agusta Helicopter
+aircraft_city_government_airbus_helicopter|City Government Airbus Helicopter
+aircraft_city_government_beech_airplane|City Government Beechcraft Airplane
+aircraft_city_government_bell_helicopter|City Government Bell Helicopter
+aircraft_city_government_boeing_airplane|City Government Boeing Airplane
+aircraft_city_government_cessna_airplane|City Government Cessna Airplane
+aircraft_city_government_dji_airplane|City Government DJI Airplane
+aircraft_city_government_dji_helicopter|City Government DJI Helicopter
+aircraft_city_government_eurocopter_helicopter|City Government Eurocopter Helicopter
+aircraft_city_government_lockheed_airplane|City Government Lockheed Airplane
+aircraft_city_government_mcdonnell_douglas_helicopter|City Government McDonnell Douglas Helicopter
+aircraft_city_government_md_helicopters_helicopter|City Government MD Helicopters Helicopter
+aircraft_city_government_pilatus_airplane|City Government Pilatus Airplane
+aircraft_city_government_piper_airplane|City Government Piper Airplane
+aircraft_city_government_robinson_helicopter|City Government Robinson Helicopter
+aircraft_city_government_sikorsky_helicopter|City Government Sikorsky Helicopter
+aircraft_city_government_textron_airplane|City Government Textron Airplane
+aircraft_county_government_agusta_helicopter|County Government Agusta Helicopter
+aircraft_county_government_airbus_helicopter|County Government Airbus Helicopter
+aircraft_county_government_beech_airplane|County Government Beechcraft Airplane
+aircraft_county_government_bell_helicopter|County Government Bell Helicopter
+aircraft_county_government_cessna_airplane|County Government Cessna Airplane
+aircraft_county_government_dji_helicopter|County Government DJI Helicopter
+aircraft_county_government_eurocopter_helicopter|County Government Eurocopter Helicopter
+aircraft_county_government_hughes_helicopter|County Government Hughes Helicopter
+aircraft_county_government_lockheed_airplane|County Government Lockheed Airplane
+aircraft_county_government_mcdonnell_douglas_helicopter|County Government McDonnell Douglas Helicopter
+aircraft_county_government_md_helicopters_helicopter|County Government MD Helicopters Helicopter
+aircraft_county_government_piper_airplane|County Government Piper Airplane
+aircraft_county_government_sikorsky_helicopter|County Government Sikorsky Helicopter
+aircraft_county_government_textron_airplane|County Government Textron Airplane
+aircraft_emergency_services_airbus_helicopter|Emergency Services Airbus Helicopter
+aircraft_emergency_services_cessna_airplane|Emergency Services Cessna Airplane
+aircraft_emergency_services_dji_helicopter|Emergency Services DJI Helicopter
+aircraft_emergency_services_pilatus_airplane|Emergency Services Pilatus Airplane
+aircraft_energy_bell_helicopter|Energy Bell Helicopter
+aircraft_energy_dji_helicopter|Energy DJI Helicopter
+aircraft_energy_md_helicopters_helicopter|Energy MD Helicopters Helicopter
+aircraft_energy_textron_airplane|Energy Textron Airplane
+aircraft_federal_government_beech_airplane|Federal Government Beechcraft Airplane
+aircraft_federal_government_bell_helicopter|Federal Government Bell Helicopter
+aircraft_federal_government_boeing_airplane|Federal Government Boeing Airplane
+aircraft_federal_government_bombardier_airplane|Federal Government Bombardier Airplane
+aircraft_federal_government_cessna_airplane|Federal Government Cessna Airplane
+aircraft_federal_government_dehavilland_airplane|Federal Government De Havilland Airplane
+aircraft_federal_government_dji_helicopter|Federal Government DJI Helicopter
+aircraft_federal_government_eurocopter_helicopter|Federal Government Eurocopter Helicopter
+aircraft_federal_government_lockheed_airplane|Federal Government Lockheed Airplane
+aircraft_federal_government_pilatus_airplane|Federal Government Pilatus Airplane
+aircraft_federal_government_piper_airplane|Federal Government Piper Airplane
+aircraft_federal_government_sikorsky_helicopter|Federal Government Sikorsky Helicopter
+aircraft_federal_government_textron_airplane|Federal Government Textron Airplane
+aircraft_highway_patrol_airbus_helicopter|Highway Patrol Airbus Helicopter
+aircraft_highway_patrol_beech_airplane|Highway Patrol Beechcraft Airplane
+aircraft_highway_patrol_bell_aircraft|Highway Patrol Bell Aircraft
+aircraft_highway_patrol_bell_helicopter|Highway Patrol Bell Helicopter
+aircraft_highway_patrol_cessna_aircraft|Highway Patrol Cessna Aircraft
+aircraft_highway_patrol_cessna_airplane|Highway Patrol Cessna Airplane
+aircraft_highway_patrol_eurocopter_helicopter|Highway Patrol Eurocopter Helicopter
+aircraft_highway_patrol_pilatus_airplane|Highway Patrol Pilatus Airplane
+aircraft_highway_patrol_textron_airplane|Highway Patrol Textron Airplane
+aircraft_homeland_security_airbus_helicopter|Homeland Security Airbus Helicopter
+aircraft_homeland_security_beech_airplane|Homeland Security Beechcraft Airplane
+aircraft_homeland_security_bell_helicopter|Homeland Security Bell Helicopter
+aircraft_homeland_security_boeing_airplane|Homeland Security Boeing Airplane
+aircraft_homeland_security_bombardier_airplane|Homeland Security Bombardier Airplane
+aircraft_homeland_security_cessna_airplane|Homeland Security Cessna Airplane
+aircraft_homeland_security_dji_helicopter|Homeland Security DJI Helicopter
+aircraft_homeland_security_eurocopter_helicopter|Homeland Security Eurocopter Helicopter
+aircraft_homeland_security_general_atomics_airplane|Homeland Security General Atomics Airplane
+aircraft_homeland_security_pilatus_airplane|Homeland Security Pilatus Airplane
+aircraft_homeland_security_sikorsky_helicopter|Homeland Security Sikorsky Helicopter
+aircraft_homeland_security_textron_airplane|Homeland Security Textron Airplane
+aircraft_natural_resources_airbus_helicopter|Natural Resources Airbus Helicopter
+aircraft_natural_resources_bell_helicopter|Natural Resources Bell Helicopter
+aircraft_natural_resources_cessna_airplane|Natural Resources Cessna Airplane
+aircraft_natural_resources_dji_helicopter|Natural Resources DJI Helicopter
+aircraft_natural_resources_textron_airplane|Natural Resources Textron Airplane
+aircraft_nuclear_security_agusta_helicopter|Nuclear Security Agusta Helicopter
+aircraft_nuclear_security_boeing_airplane|Nuclear Security Boeing Airplane
+aircraft_nuclear_security_textron_airplane|Nuclear Security Textron Airplane
+aircraft_park_service_airbus_helicopter|Park Service Airbus Helicopter
+aircraft_park_service_cessna_airplane|Park Service Cessna Airplane
+aircraft_park_service_dji_helicopter|Park Service DJI Helicopter
+aircraft_park_service_eurocopter_helicopter|Park Service Eurocopter Helicopter
+aircraft_park_service_textron_airplane|Park Service Textron Airplane
+aircraft_police_airbus_helicopter|Police Airbus Helicopter
+aircraft_police_beech_airplane|Police Beechcraft Airplane
+aircraft_police_bell_aircraft|Police Bell Aircraft
+aircraft_police_bell_helicopter|Police Bell Helicopter
+aircraft_police_cessna_airplane|Police Cessna Airplane
+aircraft_police_dji_aircraft|Police DJI Aircraft
+aircraft_police_dji_airplane|Police DJI Airplane
+aircraft_police_dji_helicopter|Police DJI Helicopter
+aircraft_police_eurocopter_helicopter|Police Eurocopter Helicopter
+aircraft_police_hughes_aircraft|Police Hughes Aircraft
+aircraft_police_hughes_helicopter|Police Hughes Helicopter
+aircraft_police_lockheed_aircraft|Police Lockheed Aircraft
+aircraft_police_mcdonnell_douglas_aircraft|Police McDonnell Douglas Aircraft
+aircraft_police_mcdonnell_douglas_helicopter|Police McDonnell Douglas Helicopter
+aircraft_police_md_helicopters_aircraft|Police MD Helicopters Aircraft
+aircraft_police_md_helicopters_helicopter|Police MD Helicopters Helicopter
+aircraft_police_pilatus_airplane|Police Pilatus Airplane
+aircraft_police_piper_airplane|Police Piper Airplane
+aircraft_police_robinson_helicopter|Police Robinson Helicopter
+aircraft_police_textron_airplane|Police Textron Airplane
+aircraft_private_contractor_bell_helicopter|Private Contractor Bell Helicopter
+aircraft_private_contractor_cessna_airplane|Private Contractor Cessna Airplane
+aircraft_private_contractor_piper_airplane|Private Contractor Piper Airplane
+aircraft_private_contractor_textron_airplane|Private Contractor Textron Airplane
+aircraft_sheriff_airbus_aircraft|Sheriff Airbus Aircraft
+aircraft_sheriff_airbus_helicopter|Sheriff Airbus Helicopter
+aircraft_sheriff_beech_airplane|Sheriff Beechcraft Airplane
+aircraft_sheriff_bell_aircraft|Sheriff Bell Aircraft
+aircraft_sheriff_bell_helicopter|Sheriff Bell Helicopter
+aircraft_sheriff_cessna_aircraft|Sheriff Cessna Aircraft
+aircraft_sheriff_cessna_airplane|Sheriff Cessna Airplane
+aircraft_sheriff_dji_aircraft|Sheriff DJI Aircraft
+aircraft_sheriff_dji_helicopter|Sheriff DJI Helicopter
+aircraft_sheriff_eurocopter_aircraft|Sheriff Eurocopter Aircraft
+aircraft_sheriff_eurocopter_helicopter|Sheriff Eurocopter Helicopter
+aircraft_sheriff_hughes_helicopter|Sheriff Hughes Helicopter
+aircraft_sheriff_lockheed_helicopter|Sheriff Lockheed Helicopter
+aircraft_sheriff_mcdonnell_douglas_helicopter|Sheriff McDonnell Douglas Helicopter
+aircraft_sheriff_md_helicopters_helicopter|Sheriff MD Helicopters Helicopter
+aircraft_sheriff_pilatus_airplane|Sheriff Pilatus Airplane
+aircraft_sheriff_piper_airplane|Sheriff Piper Airplane
+aircraft_sheriff_robinson_helicopter|Sheriff Robinson Helicopter
+aircraft_sheriff_sikorsky_aircraft|Sheriff Sikorsky Aircraft
+aircraft_sheriff_sikorsky_helicopter|Sheriff Sikorsky Helicopter
+aircraft_sheriff_textron_airplane|Sheriff Textron Airplane
+aircraft_special_operations_beech_airplane|Special Operations Beechcraft Airplane
+aircraft_special_operations_boeing_airplane|Special Operations Boeing Airplane
+aircraft_special_operations_dehavilland_airplane|Special Operations De Havilland Airplane
+aircraft_state_government_agusta_helicopter|State Government Agusta Helicopter
+aircraft_state_government_airbus_aircraft|State Government Airbus Aircraft
+aircraft_state_government_airbus_helicopter|State Government Airbus Helicopter
+aircraft_state_government_beech_airplane|State Government Beechcraft Airplane
+aircraft_state_government_bell_aircraft|State Government Bell Aircraft
+aircraft_state_government_bell_airplane|State Government Bell Airplane
+aircraft_state_government_bell_helicopter|State Government Bell Helicopter
+aircraft_state_government_cessna_aircraft|State Government Cessna Aircraft
+aircraft_state_government_cessna_airplane|State Government Cessna Airplane
+aircraft_state_government_dehavilland_airplane|State Government De Havilland Airplane
+aircraft_state_government_dji_aircraft|State Government DJI Aircraft
+aircraft_state_government_dji_helicopter|State Government DJI Helicopter
+aircraft_state_government_eurocopter_helicopter|State Government Eurocopter Helicopter
+aircraft_state_government_hughes_helicopter|State Government Hughes Helicopter
+aircraft_state_government_md_helicopters_helicopter|State Government MD Helicopters Helicopter
+aircraft_state_government_pilatus_airplane|State Government Pilatus Airplane
+aircraft_state_government_piper_aircraft|State Government Piper Aircraft
+aircraft_state_government_piper_airplane|State Government Piper Airplane
+aircraft_state_government_robinson_helicopter|State Government Robinson Helicopter
+aircraft_state_government_sikorsky_helicopter|State Government Sikorsky Helicopter
+aircraft_state_government_textron_airplane|State Government Textron Airplane
+aircraft_state_police_agusta_helicopter|State Police Agusta Helicopter
+aircraft_state_police_airbus_helicopter|State Police Airbus Helicopter
+aircraft_state_police_beech_airplane|State Police Beechcraft Airplane
+aircraft_state_police_bell_helicopter|State Police Bell Helicopter
+aircraft_state_police_cessna_airplane|State Police Cessna Airplane
+aircraft_state_police_dji_aircraft|State Police DJI Aircraft
+aircraft_state_police_dji_helicopter|State Police DJI Helicopter
+aircraft_state_police_eurocopter_helicopter|State Police Eurocopter Helicopter
+aircraft_state_police_hughes_helicopter|State Police Hughes Helicopter
+aircraft_state_police_md_helicopters_helicopter|State Police MD Helicopters Helicopter
+aircraft_state_police_pilatus_airplane|State Police Pilatus Airplane
+aircraft_state_police_piper_airplane|State Police Piper Airplane
+aircraft_state_police_sikorsky_helicopter|State Police Sikorsky Helicopter
+aircraft_state_police_textron_airplane|State Police Textron Airplane
+aircraft_transportation_beech_airplane|Transportation Beechcraft Airplane
+aircraft_transportation_cessna_airplane|Transportation Cessna Airplane
+aircraft_transportation_dji_helicopter|Transportation DJI Helicopter
+aircraft_transportation_eurocopter_helicopter|Transportation Eurocopter Helicopter
+aircraft_transportation_pilatus_airplane|Transportation Pilatus Airplane
+aircraft_transportation_textron_airplane|Transportation Textron Airplane
+aircraft_unidentified_agusta_helicopter|Unidentified Agusta Helicopter
+aircraft_unidentified_airbus_helicopter|Unidentified Airbus Helicopter
+aircraft_unidentified_beech_airplane|Unidentified Beechcraft Airplane
+aircraft_unidentified_bell_aircraft|Unidentified Bell Aircraft
+aircraft_unidentified_bell_helicopter|Unidentified Bell Helicopter
+aircraft_unidentified_boeing_airplane|Unidentified Boeing Airplane
+aircraft_unidentified_cessna_airplane|Unidentified Cessna Airplane
+aircraft_unidentified_dji_aircraft|Unidentified DJI Aircraft
+aircraft_unidentified_dji_airplane|Unidentified DJI Airplane
+aircraft_unidentified_dji_helicopter|Unidentified DJI Helicopter
+aircraft_unidentified_eurocopter_helicopter|Unidentified Eurocopter Helicopter
+aircraft_unidentified_mcdonnell_douglas_helicopter|Unidentified McDonnell Douglas Helicopter
+aircraft_unidentified_pilatus_airplane|Unidentified Pilatus Airplane
+aircraft_unidentified_piper_airplane|Unidentified Piper Airplane
+aircraft_unidentified_sikorsky_helicopter|Unidentified Sikorsky Helicopter
+aircraft_unidentified_textron_airplane|Unidentified Textron Airplane
+
+# ── Connective word ───────────────────────────────────────────────────────
+
+word_now|now

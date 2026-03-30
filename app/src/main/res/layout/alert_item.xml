@@ -7,7 +7,7 @@
     android:paddingLeft="24dp"
     android:paddingRight="24dp"
     android:layout_marginBottom="5dp"
-    android:background="#2C2323"
+    android:background="@color/alert_item_background"
     android:screenOrientation="portrait">
 
 
@@ -37,7 +37,7 @@
         android:layout_marginTop="16dp"
         android:text="Radar"
         android:ellipsize="end"
-        android:singleLine="true"
+        android:maxLines="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frequencyOrDistanceText" />
 
@@ -47,7 +47,7 @@
         android:layout_width="match_parent"
         android:layout_marginStart="114dp"
         android:ellipsize="end"
-        android:singleLine="true"
+        android:maxLines="1"
         android:text="X"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/typeText"
@@ -65,7 +65,7 @@
     <androidx.constraintlayout.widget.Barrier
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#E82727"
+        android:background="@color/barrier_accent"
         app:barrierDirection="top"
         tools:layout_editor_absoluteX="406dp"
         tools:layout_editor_absoluteY="67dp" />

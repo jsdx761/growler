@@ -4,20 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     android:screenOrientation="portrait"
-    tools:context="com.jsd.x761.nexus.AlertsActivity">
+    tools:context="com.jsd.x761.growler.AlertsActivity">
+
+    <ImageView
+        android:id="@+id/networkConnectedImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="36dp"
+        android:src="@drawable/network_24"
+        android:contentDescription="Network"
+        android:visibility="visible"
+        app:tint="@color/status_icon_inactive"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/ds1ConnectedImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:layout_marginStart="36dp"
+        android:layout_marginStart="8dp"
         android:src="@drawable/radar_24"
         android:contentDescription="Radar"
         android:visibility="visible"
-        app:tint="#444444"
-        app:layout_constraintStart_toStartOf="parent"
+        app:tint="@color/status_icon_inactive"
+        app:layout_constraintStart_toEndOf="@id/networkConnectedImage"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
@@ -29,7 +43,7 @@
         android:src="@drawable/report_24"
         android:contentDescription="Reports"
         android:visibility="visible"
-        app:tint="#444444"
+        app:tint="@color/status_icon_inactive"
         app:layout_constraintStart_toEndOf="@id/ds1ConnectedImage"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -42,21 +56,8 @@
         android:src="@drawable/aircraft_24"
         android:contentDescription="Aircrafts"
         android:visibility="visible"
-        app:tint="#444444"
+        app:tint="@color/status_icon_inactive"
         app:layout_constraintStart_toEndOf="@id/reportsActiveImage"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/networkConnectedImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginStart="8dp"
-        android:src="@drawable/network_24"
-        android:contentDescription="Network"
-        android:visibility="visible"
-        app:tint="#444444"
-        app:layout_constraintStart_toEndOf="@id/aircraftsActiveImage"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
@@ -66,10 +67,10 @@
         android:layout_marginTop="12dp"
         android:layout_marginStart="8dp"
         android:src="@drawable/location_24"
-        android:contentDescription="Network"
+        android:contentDescription="Location"
         android:visibility="visible"
-        app:tint="#444444"
-        app:layout_constraintStart_toEndOf="@id/networkConnectedImage"
+        app:tint="@color/status_icon_inactive"
+        app:layout_constraintStart_toEndOf="@id/aircraftsActiveImage"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
@@ -89,8 +90,9 @@
         android:contentDescription="Settings"
         android:src="@drawable/settings_32"
         android:visibility="visible"
-        app:tint="#ffffff"
+        app:tint="@color/status_icon_active"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
