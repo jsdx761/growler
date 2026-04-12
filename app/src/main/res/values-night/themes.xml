@@ -1,6 +1,30 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="Theme.Growler" parent="Theme.AppCompat">
+    <style name="Theme.DS1Pace" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">?attr/colorSurface</item>
 
+        <!-- Pixel Settings neutral palette — dark -->
+        <item name="colorPrimary">#C7C5CA</item>
+        <item name="colorOnPrimary">#303034</item>
+        <item name="colorPrimaryContainer">#47464A</item>
+        <item name="colorOnPrimaryContainer">#E4E1E6</item>
+        <item name="colorSecondary">#C6C5CA</item>
+        <item name="colorOnSecondary">#303034</item>
+        <item name="colorSecondaryContainer">#47464A</item>
+        <item name="colorOnSecondaryContainer">#E2E1E6</item>
+        <item name="colorTertiary">#C6C5CA</item>
+        <item name="colorOnTertiary">#303034</item>
+        <item name="colorTertiaryContainer">#47464A</item>
+        <item name="colorOnTertiaryContainer">#E2E1E6</item>
+        <item name="colorSurface">#1B1B1F</item>
+        <item name="colorOnSurface">#E4E1E6</item>
+        <item name="colorSurfaceVariant">#47464A</item>
+        <item name="colorOnSurfaceVariant">#C8C5D0</item>
+        <item name="colorOutline">#928F99</item>
+        <item name="colorOutlineVariant">#47464A</item>
+    </style>
+
+    <style name="Theme.DS1Pace.Splash" parent="Theme.DS1Pace">
+        <item name="android:windowBackground">#1C1B1F</item>
     </style>
 </resources>

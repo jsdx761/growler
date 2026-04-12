@@ -5,8 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    android:screenOrientation="portrait"
-    tools:context="com.jsd.x761.growler.DS1ScanActivity">
+    tools:context="com.jsd.x761.ds1pace.DS1ScanActivity">
+
+    <include
+        layout="@layout/settings_toolbar"
+        android:id="@+id/settingsToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/useDS1Label"
@@ -15,17 +21,17 @@
         android:paddingTop="20dp"
         android:paddingBottom="20dp"
         android:layout_marginStart="24dp"
-        android:screenOrientation="portrait"
-        android:text="Use DS1 radar detector"
+        android:text="@string/use_ds1_radar"
         android:textSize="16sp"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settingsToolbar"
         app:layout_constraintStart_toStartOf="parent" />
 
 
-    <Switch
+    <com.google.android.material.materialswitch.MaterialSwitch
         android:id="@+id/useDS1Switch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:minHeight="48dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="24dp"
         app:layout_constraintEnd_toEndOf="parent"

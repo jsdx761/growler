@@ -7,9 +7,9 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="status_icon_inactive">#FF444444</color>
-    <color name="status_icon_active">#FFFFFFFF</color>
+    <color name="status_icon_inactive">#FF949494</color>
+    <color name="status_icon_active">#FF333333</color>
     <color name="alert_item_background">#FF2C2323</color>
     <color name="barrier_accent">#FFE82727</color>
-    <color name="hint_text">#FF888888</color>
+    <color name="hint_text">#FF636363</color>
 </resources>

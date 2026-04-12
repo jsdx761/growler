@@ -1,261 +1,277 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    android:screenOrientation="portrait">
+    android:fitsSystemWindows="true">
 
-    <TextView
-        android:id="@+id/useReportsLabel"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
-        android:layout_marginStart="24dp"
-        android:screenOrientation="portrait"
-        android:text="Use crowd-sourced alerts"
-        android:textSize="16sp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_height="wrap_content">
 
-    <Switch
-        android:id="@+id/useReportsSwitch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/reportsURLEdit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="24dp"
-        android:autofillHints=""
-        android:inputType="textUri"
-        android:text="https://www.example.com"
-        android:textSize="16sp"
-        android:hint="https://www.example.com"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/useReportsLabel" />
-
-    <TextView
-        android:id="@+id/reportsURLHint"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:text="Waze server (https://www.waze.com) or proxy server"
-        android:textSize="12sp"
-        android:textColor="@color/hint_text"
-        app:layout_constraintTop_toBottomOf="@id/reportsURLEdit"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/reportsAPIKeyLabel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="20dp"
-        android:paddingBottom="4dp"
-        android:layout_marginStart="24dp"
-        android:text="API key (optional)"
-        android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@id/reportsURLHint"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/reportsAPIKeyLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        app:passwordToggleEnabled="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/reportsAPIKeyLabel">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/reportsAPIKeyEdit"
+        <include
+            layout="@layout/settings_toolbar"
+            android:id="@+id/settingsToolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:autofillHints=""
-            android:inputType="textPassword"
-            android:textSize="16sp" />
+            app:layout_constraintTop_toTopOf="parent" />
 
-    </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:id="@+id/useReportsLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/use_waze_alerts"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/settingsToolbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/useReportsSwitch" />
 
-    <TextView
-        android:id="@+id/reportsAPIKeyHint"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:text="Used to secure access to a proxy server"
-        android:textSize="12sp"
-        android:textColor="@color/hint_text"
-        app:layout_constraintTop_toBottomOf="@id/reportsAPIKeyLayout"
-        app:layout_constraintStart_toStartOf="parent" />
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/useReportsSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/useReportsLabel"
+            app:layout_constraintBottom_toBottomOf="@id/useReportsLabel" />
 
-    <TextView
-        android:id="@+id/reportsEnvLabel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="20dp"
-        android:paddingBottom="4dp"
-        android:layout_marginStart="24dp"
-        android:screenOrientation="portrait"
-        android:text="Region"
-        android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@id/reportsAPIKeyHint"
-        app:layout_constraintStart_toStartOf="parent" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reportsURLLayout"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:hint="@string/waze_url_label"
+            app:layout_constraintTop_toBottomOf="@id/useReportsLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
 
-    <EditText
-        android:id="@+id/reportsEnvEdit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:autofillHints=""
-        android:inputType="text"
-        android:text="na"
-        android:textSize="16sp"
-        android:hint="na"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/reportsEnvLabel" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/reportsURLEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:inputType="textUri"
+                android:textSize="16sp" />
 
-    <TextView
-        android:id="@+id/reportsEnvHint"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:text="na = North America, row = Rest of World"
-        android:textSize="12sp"
-        android:textColor="@color/hint_text"
-        app:layout_constraintTop_toBottomOf="@id/reportsEnvEdit"
-        app:layout_constraintStart_toStartOf="parent" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
-        android:id="@+id/reportsTypesLabel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="20dp"
-        android:paddingBottom="8dp"
-        android:layout_marginStart="24dp"
-        android:text="Alert types"
-        android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@id/reportsEnvHint"
-        app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/reportsURLHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/waze_url_hint"
+            android:textSize="14sp"
+            android:textColor="@color/hint_text"
+            app:layout_constraintTop_toBottomOf="@id/reportsURLLayout"
+            app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/reportsPoliceLabel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="16dp"
-        android:paddingBottom="16dp"
-        android:layout_marginStart="24dp"
-        android:text="Speed traps"
-        android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@id/reportsTypesLabel"
-        app:layout_constraintStart_toStartOf="parent" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reportsAPIKeyLayout"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:hint="@string/api_key_optional"
+            app:endIconMode="password_toggle"
+            app:layout_constraintTop_toBottomOf="@id/reportsURLHint"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
 
-    <Switch
-        android:id="@+id/reportsPoliceSwitch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/reportsTypesLabel" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/reportsAPIKeyEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:inputType="textPassword"
+                android:textSize="16sp" />
 
-    <TextView
-        android:id="@+id/reportsAccidentLabel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="16dp"
-        android:paddingBottom="16dp"
-        android:layout_marginStart="24dp"
-        android:text="Accidents"
-        android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@id/reportsPoliceLabel"
-        app:layout_constraintStart_toStartOf="parent" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-    <Switch
-        android:id="@+id/reportsAccidentSwitch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/reportsPoliceLabel" />
+        <TextView
+            android:id="@+id/reportsAPIKeyHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/api_key_hint"
+            android:textSize="14sp"
+            android:textColor="@color/hint_text"
+            app:layout_constraintTop_toBottomOf="@id/reportsAPIKeyLayout"
+            app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/reportsHazardLabel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="16dp"
-        android:paddingBottom="16dp"
-        android:layout_marginStart="24dp"
-        android:text="Hazards"
-        android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@id/reportsAccidentLabel"
-        app:layout_constraintStart_toStartOf="parent" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reportsEnvLayout"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:hint="@string/region"
+            app:layout_constraintTop_toBottomOf="@id/reportsAPIKeyHint"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
 
-    <Switch
-        android:id="@+id/reportsHazardSwitch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/reportsAccidentLabel" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/reportsEnvEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:inputType="text"
+                android:textSize="16sp" />
 
-    <TextView
-        android:id="@+id/reportsJamLabel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="16dp"
-        android:paddingBottom="16dp"
-        android:layout_marginStart="24dp"
-        android:text="Traffic jams"
-        android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@id/reportsHazardLabel"
-        app:layout_constraintStart_toStartOf="parent" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-    <Switch
-        android:id="@+id/reportsJamSwitch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/reportsHazardLabel" />
+        <TextView
+            android:id="@+id/reportsEnvHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/region_hint"
+            android:textSize="14sp"
+            android:textColor="@color/hint_text"
+            app:layout_constraintTop_toBottomOf="@id/reportsEnvLayout"
+            app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/reportsReminderLabel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="20dp"
-        android:paddingBottom="16dp"
-        android:layout_marginStart="24dp"
-        android:text="Speech reminders"
-        android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@id/reportsJamLabel"
-        app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/reportsTypesLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="8dp"
+            android:layout_marginStart="24dp"
+            android:text="@string/alert_types"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/reportsEnvHint"
+            app:layout_constraintStart_toStartOf="parent" />
 
-    <Switch
-        android:id="@+id/reportsReminderSwitch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/reportsJamLabel" />
+        <TextView
+            android:id="@+id/reportsPoliceLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/speed_traps"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/reportsTypesLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/reportsPoliceSwitch" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/reportsPoliceSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/reportsPoliceLabel"
+            app:layout_constraintBottom_toBottomOf="@id/reportsPoliceLabel" />
+
+        <TextView
+            android:id="@+id/reportsAccidentLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/accidents"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/reportsPoliceLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/reportsAccidentSwitch" />
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/reportsAccidentSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/reportsAccidentLabel"
+            app:layout_constraintBottom_toBottomOf="@id/reportsAccidentLabel" />
+
+        <TextView
+            android:id="@+id/reportsHazardLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/hazards"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/reportsAccidentLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/reportsHazardSwitch" />
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/reportsHazardSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/reportsHazardLabel"
+            app:layout_constraintBottom_toBottomOf="@id/reportsHazardLabel" />
+
+        <TextView
+            android:id="@+id/reportsJamLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/traffic_jams"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/reportsHazardLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/reportsJamSwitch" />
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/reportsJamSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/reportsJamLabel"
+            app:layout_constraintBottom_toBottomOf="@id/reportsJamLabel" />
+
+        <TextView
+            android:id="@+id/reportsReminderLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/speech_reminders"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/reportsJamLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/reportsReminderSwitch" />
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/reportsReminderSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/reportsReminderLabel"
+            app:layout_constraintBottom_toBottomOf="@id/reportsReminderLabel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

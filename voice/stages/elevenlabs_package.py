@@ -30,7 +30,7 @@ def wav_to_ogg(wav_path: Path, ogg_path: Path):
     if result.returncode != 0:
         raise RuntimeError(
             f"ffmpeg WAV→OGG failed for {wav_path.name}: "
-            f"{result.stderr.splitlines()[-1]}")
+            f"{result.stderr.splitlines()[-1] if result.stderr.strip() else '(no stderr)'}")
 
 
 def package_set(src_dir: Path, assets_dir: Path):

@@ -7,11 +7,11 @@ plugins {
 // No build-time copy task needed — the pipeline writes to the assets directory.
 
 android {
-    namespace "com.jsd.x761.growler.Growler"
+    namespace "com.jsd.x761.ds1pace"
     compileSdk 35
 
     defaultConfig {
-        applicationId 'com.jsd.x761.growler.Growler'
+        applicationId 'com.jsd.x761.ds1pace'
         minSdk 33
         targetSdk 35
         versionCode 34
@@ -22,7 +22,7 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -44,6 +44,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.2.0'
     implementation 'androidx.wear:wear:1.2.0'
     implementation 'com.google.android.gms:play-services-location:21.3.0'
+    implementation 'androidx.security:security-crypto:1.1.0-alpha06'
     implementation project(path: ':DS1Library-debug')
     testImplementation 'junit:junit:4.13.2'
     testImplementation 'org.robolectric:robolectric:4.16.1'

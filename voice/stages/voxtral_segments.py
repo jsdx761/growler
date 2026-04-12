@@ -122,6 +122,7 @@ def generate_speech(text: str, voice_id: str, model: str,
             wait = min(2 ** attempt, 30)
             log.warning(f"Request error: {e} — retrying in {wait}s")
             time.sleep(wait)
+    raise RuntimeError(f"All {max_retries} retries exhausted due to rate limiting")
 
 
 def wav_snr(wav_bytes: bytes) -> float:
@@ -185,7 +186,7 @@ def denoise_wav(wav_bytes: bytes) -> bytes:
             capture_output=True, text=True,
         )
         if result.returncode != 0:
-            log.warning(f"ffmpeg denoise failed: {result.stderr.splitlines()[-1]}")
+            log.warning(f"ffmpeg denoise failed: {result.stderr.splitlines()[-1] if result.stderr.strip() else '(no stderr)'}")
             return wav_bytes  # fall back to original
         return Path(dst_path).read_bytes()
     finally:

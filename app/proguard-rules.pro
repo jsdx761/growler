@@ -19,3 +19,9 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+# Keep DS1 library classes (pre-built AAR with reflection)
+-keep class com.nolimits.ds1library.** { *; }
+
+# Keep service binder inner classes
+-keep class com.jsd.x761.ds1pace.SpeechService$ThisBinder { *; }

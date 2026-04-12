@@ -3,8 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    android:screenOrientation="portrait">
+    android:fitsSystemWindows="true">
+
+    <include
+        layout="@layout/settings_toolbar"
+        android:id="@+id/settingsToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/ds1ConnectedImage"
@@ -17,12 +23,13 @@
         android:visibility="visible"
         app:tint="@color/status_icon_inactive"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/settingsToolbar" />
 
     <SeekBar
         android:id="@+id/ds1VolumeSeekBar"
         android:layout_width="0dp"
         android:layout_height="23dp"
+        android:minHeight="48dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="48dp"
         android:layout_marginEnd="24dp"
@@ -37,7 +44,7 @@
         android:layout_height="51dp"
         android:layout_marginTop="8dp"
         android:onClick="onMinus"
-        android:text="-"
+        android:text="@string/volume_decrease"
         app:layout_constraintStart_toStartOf="@+id/ds1VolumeSeekBar"
         app:layout_constraintTop_toBottomOf="@+id/ds1VolumeSeekBar" />
 
@@ -47,7 +54,7 @@
         android:layout_height="51dp"
         android:layout_marginTop="8dp"
         android:onClick="onPlus"
-        android:text="+"
+        android:text="@string/volume_increase"
         app:layout_constraintEnd_toEndOf="@+id/ds1VolumeSeekBar"
         app:layout_constraintTop_toBottomOf="@+id/ds1VolumeSeekBar" />
 
@@ -55,7 +62,7 @@
         android:id="@+id/ds1VolumeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Volume"
+        android:text="@string/volume"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="@+id/ds1VolumeSeekBar"
         app:layout_constraintStart_toStartOf="@+id/ds1VolumeSeekBar"
@@ -65,8 +72,8 @@
         android:id="@+id/ds1VolumeHint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Controls the volume on the DS1 unit"
-        android:textSize="12sp"
+        android:text="@string/ds1_volume_hint"
+        android:textSize="14sp"
         android:textColor="@color/hint_text"
         android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="@+id/ds1VolumeSeekBar"

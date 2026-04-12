@@ -7,10 +7,10 @@
         android:shortcutShortLabel="@string/shortcut_alerts_short_label">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetPackage="com.jsd.x761.growler.Growler"
-            android:targetClass="com.jsd.x761.growler.AlertsActivity" />
+            android:targetPackage="com.jsd.x761.ds1pace"
+            android:targetClass="com.jsd.x761.ds1pace.AlertsActivity" />
         <categories android:name="android.shortcut.conversation" />
-        <capability-binding android:key="actions.intent.GROWLER_ALERTS" />
+        <capability-binding android:key="actions.intent.DS1PACE_ALERTS" />
     </shortcut>
     <shortcut
         android:shortcutId="volume"
@@ -19,9 +19,9 @@
         android:shortcutShortLabel="@string/shortcut_volume_short_label">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetPackage="com.jsd.x761.growler.Growler"
-            android:targetClass="com.jsd.x761.growler.DS1VolumeActivity" />
+            android:targetPackage="com.jsd.x761.ds1pace"
+            android:targetClass="com.jsd.x761.ds1pace.DS1VolumeActivity" />
         <categories android:name="android.shortcut.conversation" />
-        <capability-binding android:key="actions.intent.GROWLER_DS1_VOLUME" />
+        <capability-binding android:key="actions.intent.DS1PACE_DS1_VOLUME" />
     </shortcut>
 </shortcuts>

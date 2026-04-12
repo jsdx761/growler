@@ -47,7 +47,7 @@ Usage:
 
 Architecture:
     ┌─────────────────────────┐       ADB broadcasts        ┌─────────────────────┐
-    │  Python on PC           │ ──────────────────────────▶  │  Growler on phone   │
+    │  Python on PC           │ ──────────────────────────▶  │  DS1-Pace on phone   │
     │                         │   SET_VOICE, SET_PITCH,      │                     │
     │  Optuna optimizer       │   SET_RATE,                  │  SpeechService      │
     │  Resemblyzer scoring    │   SYNTHESIZE_TO_FILE         │  synthesizeToFile() │
@@ -87,8 +87,8 @@ from scipy.signal import sosfilt
 # Suppress Optuna info logs
 optuna.logging.set_verbosity(optuna.logging.WARNING)
 
-PACKAGE = "com.jsd.x761.growler"
-DEVICE_WAV_DIR = "/sdcard/Android/data/com.jsd.x761.growler.Growler/files"
+PACKAGE = "com.jsd.x761.ds1pace"
+DEVICE_WAV_DIR = "/sdcard/Android/data/com.jsd.x761.ds1pace/files"
 
 
 # ---------------------------------------------------------------------------
@@ -557,7 +557,7 @@ class VoiceOptimizer:
         voice_names = [v["name"] for v in self.voices]
         voice_name = trial.suggest_categorical("voice", voice_names)
         pitch = trial.suggest_float("pitch", 0.5, 2.0, step=0.05)
-        rate = trial.suggest_float("rate", 0.5, 2.0, step=0.05)
+        rate = trial.suggest_float("rate", 0.7, 1.1, step=0.05)
 
         # DSP filter parameters
         filter_params = {
@@ -593,14 +593,33 @@ class VoiceOptimizer:
 
         return float(np.mean(scores))
 
-    def optimize(self, n_trials=150):
-        """Run the optimization and return best parameters."""
-        study = optuna.create_study(direction="maximize")
+    def optimize(self, n_trials=150, journal_path=None, study_name=None):
+        """Run the optimization and return best parameters.
+
+        If journal_path is provided, the study is persisted to a plain
+        append-only log file and can be resumed in a later run with the
+        same journal_path and study_name.
+        """
+        storage = None
+        if journal_path:
+            storage = optuna.storages.JournalStorage(
+                optuna.storages.JournalFileStorage(journal_path)
+            )
+        study = optuna.create_study(
+            direction="maximize",
+            storage=storage,
+            study_name=study_name,
+            load_if_exists=True,
+        )
+        existing = len(study.trials)
+        if existing > 0:
+            print(f"Resuming study '{study_name}' with {existing} existing trials "
+                  f"(best so far: {study.best_value:.4f})")
         study.optimize(self.objective, n_trials=n_trials, show_progress_bar=True)
 
         best = study.best_trial
         print(f"\n{'='*60}")
-        print(f"Best score: {best.value:.4f}")
+        print(f"Best score: {best.value:.4f}  (total trials: {len(study.trials)})")
         print(f"Best parameters:")
         for key, value in best.params.items():
             print(f"  {key}: {value}")
@@ -681,6 +700,11 @@ def main():
                         help="Restrict to specific voice names (e.g. en-gb-x-gba-local)")
     parser.add_argument("--trials", type=int, default=150,
                         help="Number of Optuna trials (default: 150)")
+    parser.add_argument("--journal",
+                        help="Path to journal file to persist/resume studies "
+                             "(e.g. voice_tuning/study.log)")
+    parser.add_argument("--study-name", default="voice_opt",
+                        help="Optuna study name for journal (default: voice_opt)")
     args = parser.parse_args()
 
     # Clear logcat to get fresh voice list output
@@ -760,7 +784,11 @@ def main():
         mode=args.mode,
     )
 
-    best = optimizer.optimize(n_trials=args.trials)
+    best = optimizer.optimize(
+        n_trials=args.trials,
+        journal_path=args.journal,
+        study_name=args.study_name,
+    )
     apply_best_params(best, voices, network=(args.mode == "network"))
 
 

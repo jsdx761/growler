@@ -25,8 +25,8 @@ VOICE_ID = "ec49ab12-051e-4853-926a-67d1ef129457"
 MODEL = "voxtral-mini-tts-2603"
 API_KEY = os.environ.get("MISTRAL_API_KEY", "Lm5um6wAYdSHuuxXYTjQXfXSfy7JqOKG")
 API_BASE = "https://api.mistral.ai"
-OUTPUT_DIR = Path(__file__).parent / "output" / "voxtral_segments"
-ASSETS_DIR = Path(__file__).parent.parent / "app" / "src" / "main" / "assets" / "voice_segments"
+OUTPUT_DIR = Path(__file__).parent / "output" / "voxtral_segments_1c_spd_100"
+ASSETS_DIR = Path(__file__).parent.parent / "app" / "src" / "main" / "assets" / "voice_segments_voxtral_100"
 SEGMENTS_FILE = Path(__file__).parent / "data" / "voice_segments.txt"
 
 CANDIDATES = 5

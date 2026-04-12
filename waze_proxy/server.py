@@ -16,11 +16,15 @@ The Android app calls:
 
 import argparse
 import functools
+import hmac
 import logging
+import os
 import queue
+import signal
 import threading
 from flask import Flask, request, jsonify
 from playwright.sync_api import sync_playwright
+from waitress import serve
 
 logging.basicConfig(
     level=logging.INFO,
@@ -36,8 +40,9 @@ GEORSS_PATH = "/live-map/api/georss"
 RECAPTCHA_TIMEOUT = 15
 
 _api_key = None
-_request_queue = queue.Queue()
+_request_queue = queue.Queue(maxsize=10)
 _browser_ready = threading.Event()
+_shutdown = threading.Event()
 
 FETCH_JS = """(url) => {
     return new Promise((resolve) => {
@@ -94,8 +99,11 @@ def browser_loop():
     _browser_ready.set()
     log.info("Browser ready")
 
-    while True:
-        qs, result_event, result_holder = _request_queue.get()
+    while not _shutdown.is_set():
+        try:
+            qs, result_event, result_holder = _request_queue.get(timeout=1)
+        except queue.Empty:
+            continue
 
         url = f"{GEORSS_PATH}?{qs}"
         context = None
@@ -141,13 +149,17 @@ def browser_loop():
                     pass
             result_event.set()
 
+    log.info("Shutting down browser")
+    browser.close()
+    pw.stop()
+
 
 def require_api_key(f):
     @functools.wraps(f)
     def decorated(*args, **kwargs):
         if _api_key is not None:
             provided = request.headers.get("X-API-Key", "")
-            if provided != _api_key:
+            if not hmac.compare_digest(provided, _api_key):
                 return jsonify({"error": "Unauthorized"}), 401
         return f(*args, **kwargs)
     return decorated
@@ -165,7 +177,10 @@ def georss():
 
     result_event = threading.Event()
     result_holder = {}
-    _request_queue.put((qs, result_event, result_holder))
+    try:
+        _request_queue.put_nowait((qs, result_event, result_holder))
+    except queue.Full:
+        return jsonify({"error": "Server busy"}), 503
     result_event.wait(timeout=30)
 
     if not result_event.is_set():
@@ -200,15 +215,22 @@ def main():
                         help="Require this key in the X-API-Key header")
     args = parser.parse_args()
 
-    if args.api_key:
-        _api_key = args.api_key
+    _api_key = args.api_key or os.environ.get("WAZE_PROXY_API_KEY")
+    if _api_key:
         log.info("API key authentication enabled")
+
+    def shutdown_handler(sig, frame):
+        log.info("Received signal %s, shutting down", sig)
+        _shutdown.set()
+
+    signal.signal(signal.SIGINT, shutdown_handler)
+    signal.signal(signal.SIGTERM, shutdown_handler)
 
     t = threading.Thread(target=browser_loop, daemon=True)
     t.start()
 
     log.info("Starting server on %s:%d", args.host, args.port)
-    app.run(host=args.host, port=args.port, threaded=True)
+    serve(app, host=args.host, port=args.port)
 
 
 if __name__ == "__main__":

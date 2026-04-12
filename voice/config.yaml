@@ -3,7 +3,7 @@
 # Target: UK female navigation / radar detector / aviation alert voice
 #
 # Uses the Mistral Voxtral API to clone a voice from reference recordings
-# and generate pre-recorded audio segments for the Growler Android app.
+# and generate pre-recorded audio segments for the DS1-Pace Android app.
 #
 # Usage:
 #   python pipeline.py                   # run all stages
@@ -35,6 +35,14 @@ voxtral_segments:
   candidates_per_segment: 1             # N takes per segment; >1 enables SNR-based selection
   denoise: false                        # Apply FFmpeg denoise filter chain (can alter speech timbre)
 
+# ─── Voxtral Speed Variants (Rubberband time-stretch) ────────────────────
+# Generates pitch-preserving speed variants of existing Voxtral segments
+# using FFmpeg's rubberband filter.  Each value is a tempo multiplier
+# (1.10 = 10% faster, 1.20 = 20% faster).  The base segments (1.00x)
+# are always packaged automatically.
+voxtral_speed:
+  speeds: [1.00, 1.10, 1.20]
+
 # ─── ElevenLabs (Instant Voice Cloning + TTS) ────────────────────────────
 # Alternative pipeline using ElevenLabs API (stages 4–6).
 # Requires ELEVENLABS_API_KEY in .env.
@@ -55,12 +63,12 @@ elevenlabs:
   remove_background_noise: false        # Reference is already Adobe-denoised; enabling degrades quality
   stability: 1.00                       # 0.0–1.0: higher = more consistent (0.60–0.85 for narration)
   similarity_boost: 1.00                # 0.0–1.0: higher = closer to reference voice
-  speed: 0.82                            # 0.7–1.2: speaking rate (1.0 = default; lower = slower)
+  speed: 1.00                            # 0.7–1.2: speaking rate (1.0 = default; lower = slower)
   style: 0.0                            # Keep at 0 (ElevenLabs recommendation)
   use_speaker_boost: true               # Enhances voice similarity at slight latency cost
   request_delay_s: 0.5                  # Delay between API calls (Starter: 3 concurrent v2 requests)
   voice_output_subdir: elevenlabs_voice
-  package_speeds: [0.75, 0.82]           # Speed variants to package in stage 6
+  package_speeds: [0.90, 1.00, 1.10, 1.20]  # Speed variants to package in stage 7
 
 # ─── ElevenLabs Voice Segments ───────────────────────────────────────────
 elevenlabs_segments:

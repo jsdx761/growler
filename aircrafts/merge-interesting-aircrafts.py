@@ -1,5 +1,9 @@
 import csv
+import logging
 import re
+
+logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
+log = logging.getLogger("merge")
 
 interesting_opensky_aircrafts = dict()
 with open('data/interesting_opensky_aircrafts.csv', 'r', encoding='ISO-8859-1') as f:
@@ -36,7 +40,10 @@ with open('data/test_only_in_interesting_faa_aircrafts.csv', 'w') as f:
 
 interesting_aircrafts = dict()
 interesting_aircrafts.update(interesting_opensky_aircrafts)
-interesting_aircrafts.update(interesting_faa_aircrafts)
+for icao, row in interesting_faa_aircrafts.items():
+  if icao in interesting_aircrafts:
+    log.info(f"Duplicate ICAO {icao}: FAA data overrides OpenSky")
+  interesting_aircrafts[icao] = row
 with open('data/interesting_aircrafts.csv', 'w') as f:
   writer = csv.writer(f)
   for icao, row in interesting_aircrafts.items():

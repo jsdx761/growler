@@ -1,8 +1,8 @@
-# Growler
+# DS1-Pace
 
-[![Android CI](https://github.com/jsdx761/Growler/actions/workflows/android.yml/badge.svg)](https://github.com/jsdx761/Growler/actions/workflows/android.yml)
+[![Android CI](https://github.com/jsdx761/DS1-Pace/actions/workflows/android.yml/badge.svg)](https://github.com/jsdx761/DS1-Pace/actions/workflows/android.yml)
 
-A companion Android app for the [Radenso DS1](https://radenso.com/products/radenso-ds1) radar detector, forked from [Radenso Nexus](https://github.com/nolimits-enterprises/RadensoNexus). Growler adds voice announcements, crowd-sourced alerts, and surveillance aircraft detection on top of the original DS1 radar detector alerts.
+A companion Android app for the [Radenso DS1](https://radenso.com/products/radenso-ds1) radar detector, forked from [Radenso Nexus](https://github.com/nolimits-enterprises/RadensoNexus). DS1-Pace adds voice announcements, crowd-sourced alerts, and surveillance aircraft detection on top of the original DS1 radar detector alerts.
 
 ## Features
 
@@ -30,7 +30,7 @@ Connects to the DS1 over Bluetooth Low Energy. Supports all DS1 alert types:
 | Speed Cam | Fixed speed cameras (from DS1 database) |
 | Red Light Cam | Fixed red light cameras (from DS1 database) |
 
-Growler trusts the DS1's filtering, lockouts, and muting without adding logic on top. It reports exactly what the DS1 provides. Alerts auto-clear after 10 seconds of no events, matching real DS1 behavior.
+DS1-Pace trusts the DS1's filtering, lockouts, and muting without adding logic on top. It reports exactly what the DS1 provides. Alerts auto-clear after 10 seconds of no events, matching real DS1 behavior.
 
 ### Crowd-sourced Alerts
 
@@ -64,7 +64,7 @@ The app is not coupled to Waze specifically -- any server implementing the same 
 
 ## Voice and Audio
 
-Growler supports two voice engines, selectable at build time:
+DS1-Pace supports two voice engines, selectable at build time:
 
 - **Live TTS** (default) -- Uses Android's built-in Text-to-Speech engine with a local offline British English voice. No setup required.
 - **Pre-recorded segments** -- Uses a voice-cloning TTS pipeline (Voxtral or ElevenLabs) to generate WAV segments offline. At runtime the `PreRecordedTtsEngine` concatenates segments with crossfading, producing consistent, natural announcements similar to high-end car navigation systems. See [`voice/README.md`](voice/README.md) for full pipeline setup, voice cloning, and segment generation instructions.
@@ -91,7 +91,7 @@ Alerts are announced in priority order: Laser > Cameras > KA > K > Other Radar >
 
 ### Audio Setup
 
-Growler plays announcements on the **Music** audio stream using `USAGE_ASSISTANCE_NAVIGATION_GUIDANCE` so that music automatically ducks during announcements. Select your phone's Bluetooth as the audio source in your vehicle. TTS pitch is set to 0.95 (slightly lower to cut through road and engine noise) and rate to 1.1x (slightly faster to keep alerts brief while music is ducked). The voice is a local offline British English TTS voice chosen to be consistent with the built-in navigation system in a Jaguar F-Pace.
+DS1-Pace plays announcements on the **Music** audio stream using `USAGE_ASSISTANCE_NAVIGATION_GUIDANCE` so that music automatically ducks during announcements. Select your phone's Bluetooth as the audio source in your vehicle. TTS pitch is set to 0.95 (slightly lower to cut through road and engine noise) and rate to 1.1x (slightly faster to keep alerts brief while music is ducked). The voice is a local offline British English TTS voice chosen to be consistent with the built-in navigation system in a Jaguar F-Pace.
 
 ## Main Screen
 
@@ -205,11 +205,11 @@ Or install manually:
 adb install -r ./app/build/outputs/apk/debug/app-debug.apk
 ```
 
-Growler installs alongside the original Radenso Nexus app -- they have separate package names.
+DS1-Pace installs alongside the original Radenso Nexus app -- they have separate package names.
 
 ### Download a Pre-built APK
 
-CI builds are available in the artifacts section of the [Android CI workflow](https://github.com/jsdx761/Growler/actions/workflows/android.yml).
+CI builds are available in the artifacts section of the [Android CI workflow](https://github.com/jsdx761/DS1-Pace/actions/workflows/android.yml).
 
 ## Files Not in Git
 
@@ -228,7 +228,7 @@ fresh clone:
 
 ## Permissions
 
-On first launch, Growler requests the following permissions in sequence:
+On first launch, DS1-Pace requests the following permissions in sequence:
 
 | Permission | Purpose |
 |------------|---------|
@@ -299,16 +299,16 @@ Radar detection can be simulated at runtime via ADB broadcasts, without needing 
 
 ```sh
 # KA band at 34.7 GHz
-adb shell am broadcast -a com.jsd.x761.growler.SIMULATE_RADAR --es band KA --ef freq 34.7
+adb shell am broadcast -a com.jsd.x761.ds1pace.SIMULATE_RADAR --es band KA --ef freq 34.7
 
 # K band at 24.1 GHz
-adb shell am broadcast -a com.jsd.x761.growler.SIMULATE_RADAR --es band K --ef freq 24.1
+adb shell am broadcast -a com.jsd.x761.ds1pace.SIMULATE_RADAR --es band K --ef freq 24.1
 
 # Laser
-adb shell am broadcast -a com.jsd.x761.growler.SIMULATE_RADAR --es band Laser
+adb shell am broadcast -a com.jsd.x761.ds1pace.SIMULATE_RADAR --es band Laser
 
 # With custom signal intensity (default 50)
-adb shell am broadcast -a com.jsd.x761.growler.SIMULATE_RADAR --es band KA --ef freq 34.7 --ef intensity 80
+adb shell am broadcast -a com.jsd.x761.ds1pace.SIMULATE_RADAR --es band KA --ef freq 34.7 --ef intensity 80
 ```
 
 Supported bands: `X`, `K`, `KA`, `POP`, `MRCD`, `MRCT`, `GT3`, `GT4`, `Laser`.
@@ -318,13 +318,13 @@ Multiple bands can be active simultaneously -- each broadcast adds to the set of
 **Simulate rapid-fire events:**
 
 ```sh
-for i in $(seq 1 10); do adb shell am broadcast -a com.jsd.x761.growler.SIMULATE_RADAR --es band KA --ef freq 34.7; sleep 0.3; done
+for i in $(seq 1 10); do adb shell am broadcast -a com.jsd.x761.ds1pace.SIMULATE_RADAR --es band KA --ef freq 34.7; sleep 0.3; done
 ```
 
 **Clear all simulated radar alerts immediately:**
 
 ```sh
-adb shell am broadcast -a com.jsd.x761.growler.SIMULATE_RADAR_CLEAR
+adb shell am broadcast -a com.jsd.x761.ds1pace.SIMULATE_RADAR_CLEAR
 ```
 
 ### Simulating Crowd-sourced Reports
@@ -335,13 +335,13 @@ Crowd-sourced report alerts can be simulated via ADB broadcasts. The app must ha
 
 ```sh
 # Police visible on US-101 S
-adb shell am broadcast -a com.jsd.x761.growler.SIMULATE_REPORT \
+adb shell am broadcast -a com.jsd.x761.ds1pace.SIMULATE_REPORT \
   --es type POLICE --es subtype POLICE_VISIBLE \
   --es city "San Mateo, CA" --es street "US-101 S" \
   --ed lat 37.581049 --ed lng -122.325196
 
 # Accident on University Ave
-adb shell am broadcast -a com.jsd.x761.growler.SIMULATE_REPORT \
+adb shell am broadcast -a com.jsd.x761.ds1pace.SIMULATE_REPORT \
   --es type ACCIDENT --es subtype HAZARD_ON_ROAD_CONSTRUCTION \
   --es city "East Palo Alto, CA" --es street "University Ave" \
   --ed lat 37.458524 --ed lng -122.141221
@@ -352,7 +352,7 @@ Supported types: `POLICE`, `ACCIDENT`, `HAZARD`, `JAM`. Supported subtypes: `POL
 **Clear all simulated reports:**
 
 ```sh
-adb shell am broadcast -a com.jsd.x761.growler.SIMULATE_REPORT_CLEAR
+adb shell am broadcast -a com.jsd.x761.ds1pace.SIMULATE_REPORT_CLEAR
 ```
 
 ### Simulating Aircraft Alerts
@@ -363,14 +363,14 @@ Aircraft alerts can be simulated via ADB broadcasts. The app must have a locatio
 
 ```sh
 # Surveillance aircraft nearby
-adb shell am broadcast -a com.jsd.x761.growler.SIMULATE_AIRCRAFT \
+adb shell am broadcast -a com.jsd.x761.ds1pace.SIMULATE_AIRCRAFT \
   --es transponder a6165b --es type "Fixed wing single engine" \
   --es owner "State Police" \
   --es manufacturer "CESSNA" \
   --ed lat 37.498 --ed lng -121.9982 --ef altitude 1676.4
 
 # Another aircraft
-adb shell am broadcast -a com.jsd.x761.growler.SIMULATE_AIRCRAFT \
+adb shell am broadcast -a com.jsd.x761.ds1pace.SIMULATE_AIRCRAFT \
   --es transponder a54f11 --es type "Fixed wing multi engine" \
   --es owner "County Sheriff" --es manufacturer "CESSNA" \
   --ed lat 37.4636 --ed lng -122.0931 --ef altitude 259.08
@@ -379,7 +379,7 @@ adb shell am broadcast -a com.jsd.x761.growler.SIMULATE_AIRCRAFT \
 **Clear all simulated aircraft:**
 
 ```sh
-adb shell am broadcast -a com.jsd.x761.growler.SIMULATE_AIRCRAFT_CLEAR
+adb shell am broadcast -a com.jsd.x761.ds1pace.SIMULATE_AIRCRAFT_CLEAR
 ```
 
 ## Configuration
@@ -396,7 +396,7 @@ Most tunable parameters are defined as constants in [`Configuration.java`](app/s
 
 ## Design Decisions
 
-**Radar detection** -- Growler trusts the DS1's filtering, lockouts, and muting without adding logic on top. It reports exactly what the DS1 provides.
+**Radar detection** -- DS1-Pace trusts the DS1's filtering, lockouts, and muting without adding logic on top. It reports exactly what the DS1 provides.
 
 **Crowd-sourced alerts** -- Reports the closest alerts within a 2-mile radius regardless of road or route, to catch threats from side roads and avoid missing misplaced reports.
 

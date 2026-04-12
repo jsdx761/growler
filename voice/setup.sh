@@ -9,7 +9,7 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 cd "$SCRIPT_DIR"
 
 PYTHON_VERSION="3.12.10"
-VENV_NAME="growler-voice"
+VENV_NAME="ds1-pace-voice"
 
 echo ""
 echo "═══════════════════════════════════════════════════════════════"

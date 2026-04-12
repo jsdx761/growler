@@ -1,6 +1,32 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="Theme.Growler" parent="Theme.AppCompat">
+    <style name="Theme.DS1Pace" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">?attr/colorSurface</item>
 
+        <!-- Pixel Settings neutral palette — light -->
+        <item name="colorPrimary">#6E7073</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#DADCE0</item>
+        <item name="colorOnPrimaryContainer">#3C4043</item>
+        <item name="colorSecondary">#5F6368</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="colorSecondaryContainer">#E8EAED</item>
+        <item name="colorOnSecondaryContainer">#3C4043</item>
+        <item name="colorTertiary">#5F6368</item>
+        <item name="colorOnTertiary">#FFFFFF</item>
+        <item name="colorTertiaryContainer">#E8EAED</item>
+        <item name="colorOnTertiaryContainer">#3C4043</item>
+        <item name="colorSurface">#FDFBFF</item>
+        <item name="colorOnSurface">#1B1B1F</item>
+        <item name="colorSurfaceVariant">#E4E1E6</item>
+        <item name="colorOnSurfaceVariant">#47464A</item>
+        <item name="colorOutline">#787680</item>
+        <item name="colorOutlineVariant">#C8C5D0</item>
+    </style>
+
+    <!-- Splash theme with a fixed dark background so the system starting
+         window never flashes white even when the phone is in light mode. -->
+    <style name="Theme.DS1Pace.Splash" parent="Theme.DS1Pace">
+        <item name="android:windowBackground">#1C1B1F</item>
     </style>
 </resources>

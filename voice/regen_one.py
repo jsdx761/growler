@@ -19,7 +19,7 @@ TEXT = "K    A  band thirty four point seven Radar"
 VOICE_ID = "ec49ab12-051e-4853-926a-67d1ef129457"
 MODEL = "voxtral-mini-tts-2603"
 API_KEY = os.environ.get("MISTRAL_API_KEY", "Lm5um6wAYdSHuuxXYTjQXfXSfy7JqOKG")
-OUTPUT = Path(__file__).parent / "output" / "voxtral_segments" / f"{SEGMENT_ID}.wav"
+OUTPUT = Path(__file__).parent / "output" / "voxtral_segments_1c_spd_100" / f"{SEGMENT_ID}.wav"
 
 CANDIDATES = 3
 SILENCE_PAD_MS = 50

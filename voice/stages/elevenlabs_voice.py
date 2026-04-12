@@ -28,6 +28,8 @@ import numpy as np
 import requests
 import scipy.io.wavfile as wavfile
 
+from .audio_utils import get_elevenlabs_api_key as get_api_key, pcm_to_wav, mp3_to_wav
+
 log = logging.getLogger("pipeline.elevenlabs_voice")
 
 API_BASE = "https://api.elevenlabs.io/v1"
@@ -40,44 +42,6 @@ PREVIEW_PROMPTS = [
     "Continue straight for 3 miles on the M25 motorway.",
     "Caution. Laser alert detected. Proceed with care.",
 ]
-
-
-def get_api_key() -> str:
-    key = os.environ.get("ELEVENLABS_API_KEY")
-    if not key:
-        raise RuntimeError(
-            "ELEVENLABS_API_KEY environment variable is not set. "
-            "Add it to .env or export it before running the pipeline."
-        )
-    return key
-
-
-def pcm_to_wav(pcm_bytes: bytes, sample_rate: int = 24000) -> bytes:
-    """Convert raw S16LE PCM bytes to WAV format."""
-    data = np.frombuffer(pcm_bytes, dtype=np.int16)
-    buf = io.BytesIO()
-    wavfile.write(buf, sample_rate, data)
-    return buf.getvalue()
-
-
-def mp3_to_wav(mp3_bytes: bytes, target_sr: int = 24000) -> bytes:
-    """Convert MP3 bytes to mono WAV at the target sample rate."""
-    with tempfile.NamedTemporaryFile(suffix=".mp3", delete=False) as src, \
-         tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as dst:
-        src.write(mp3_bytes)
-        src.flush()
-        src_path, dst_path = src.name, dst.name
-
-    try:
-        subprocess.run(
-            ["ffmpeg", "-y", "-i", src_path, "-ar", str(target_sr),
-             "-ac", "1", dst_path],
-            capture_output=True, text=True, check=True,
-        )
-        return Path(dst_path).read_bytes()
-    finally:
-        os.unlink(src_path)
-        os.unlink(dst_path)
 
 
 def create_voice(cfg: dict, api_key: str) -> dict:
@@ -172,6 +136,7 @@ def generate_speech(text: str, voice_id: str, model: str,
             wait = min(2 ** attempt, 30)
             log.warning(f"Request error: {e} — retrying in {wait}s")
             time.sleep(wait)
+    raise RuntimeError(f"All {max_retries} retries exhausted due to rate limiting")
 
 
 def run(cfg: dict):

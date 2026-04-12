@@ -1,6 +1,6 @@
 # Voice Segment Generation Pipeline
 
-Generates pre-recorded voice segments for the Growler Android app using
+Generates pre-recorded voice segments for the DS1-Pace Android app using
 voice cloning and text-to-speech APIs. Two independent TTS providers are
 supported — Mistral Voxtral (stages 1–3) and ElevenLabs (stages 4–6) —
 each producing equivalent output from the same segment manifest. Choose
@@ -53,7 +53,7 @@ cd voice/
 
 This will:
 1. Install Python 3.12 via pyenv (if not already present)
-2. Create a `growler-voice` pyenv virtualenv
+2. Create a `ds1-pace-voice` pyenv virtualenv
 3. Install the required Python packages
 
 ### 3. API Keys

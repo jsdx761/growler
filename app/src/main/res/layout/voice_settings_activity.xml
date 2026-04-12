@@ -3,12 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    android:screenOrientation="portrait">
+    android:fitsSystemWindows="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/settings_toolbar"
+            android:id="@+id/settingsToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/voiceBackendLabel"
@@ -17,9 +23,9 @@
             android:paddingTop="20dp"
             android:paddingBottom="8dp"
             android:layout_marginStart="24dp"
-            android:text="Voice engine"
+            android:text="@string/voice_engine"
             android:textSize="16sp"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/settingsToolbar"
             app:layout_constraintStart_toStartOf="parent" />
 
         <RadioGroup
@@ -32,163 +38,202 @@
             app:layout_constraintStart_toStartOf="parent">
 
             <RadioButton
-                android:id="@+id/voiceBackendPreRecordedElevenLabs"
+                android:id="@+id/voiceBackendElevenLabs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:minHeight="48dp"
                 android:paddingTop="8dp"
-                android:text="Car Voice #1"
+                android:text="@string/car_voice_elevenlabs"
                 android:textSize="16sp" />
 
             <TextView
+                android:id="@+id/voiceBackendElevenLabsHint"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="48dp"
                 android:layout_marginEnd="24dp"
                 android:paddingBottom="8dp"
-                android:text="Cloned voice, pre-recorded segments. ElevenLabs TTS at 0.82x speed."
-                android:textSize="11sp"
+                android:text="@string/car_voice_elevenlabs_hint"
+                android:textSize="14sp"
                 android:textColor="@color/hint_text" />
 
             <RadioButton
-                android:id="@+id/voiceBackendPreRecordedElevenLabs075"
+                android:id="@+id/voiceBackendVoxtral"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:minHeight="48dp"
                 android:paddingTop="8dp"
-                android:text="Car Voice #2"
+                android:text="@string/car_voice_voxtral"
                 android:textSize="16sp" />
 
             <TextView
+                android:id="@+id/voiceBackendVoxtralHint"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="48dp"
                 android:layout_marginEnd="24dp"
                 android:paddingBottom="8dp"
-                android:text="Cloned voice, pre-recorded segments. ElevenLabs TTS at 0.75x speed."
-                android:textSize="11sp"
+                android:text="@string/car_voice_voxtral_hint"
+                android:textSize="14sp"
                 android:textColor="@color/hint_text" />
 
-            <RadioButton
-                android:id="@+id/voiceBackendPreRecorded"
+            <LinearLayout
+                android:id="@+id/carVoiceRateSection"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="8dp"
-                android:text="Car Voice #3"
-                android:textSize="16sp" />
+                android:orientation="vertical"
+                android:visibility="gone">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="48dp"
-                android:layout_marginEnd="24dp"
-                android:paddingBottom="8dp"
-                android:text="Cloned voice, pre-recorded segments. Voxtral TTS."
-                android:textSize="11sp"
-                android:textColor="@color/hint_text" />
+                <TextView
+                    android:id="@+id/carVoiceRateLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="4dp"
+                    android:layout_marginStart="24dp"
+                    android:text="@string/voice_speed"
+                    android:textSize="16sp" />
+
+                <SeekBar
+                    android:id="@+id/carVoiceRateSeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:max="3"
+                    android:progress="1"
+                    android:tickMark="@drawable/seekbar_tick" />
+
+                <TextView
+                    android:id="@+id/carVoiceRateValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:paddingBottom="8dp"
+                    android:text="1.00x"
+                    android:textSize="14sp"
+                    android:textColor="@color/hint_text" />
+
+            </LinearLayout>
 
             <RadioButton
                 android:id="@+id/voiceBackendSystem"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:minHeight="48dp"
                 android:paddingTop="8dp"
-                android:text="Built-in Phone Voice"
+                android:text="@string/builtin_phone_voice"
                 android:textSize="16sp" />
 
             <TextView
+                android:id="@+id/voiceBackendSystemHint"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="48dp"
                 android:layout_marginEnd="24dp"
                 android:paddingBottom="8dp"
-                android:text="Uses the phone's default TTS engine. Adjustable speed and pitch."
-                android:textSize="11sp"
+                android:text="@string/builtin_phone_voice_hint"
+                android:textSize="14sp"
                 android:textColor="@color/hint_text" />
 
             <RadioButton
                 android:id="@+id/voiceBackendTunedLocal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:minHeight="48dp"
                 android:paddingTop="8dp"
-                android:text="DSP-Enhanced Voice"
+                android:text="@string/dsp_enhanced_voice"
                 android:textSize="16sp" />
 
             <TextView
+                android:id="@+id/voiceBackendTunedLocalHint"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="48dp"
                 android:layout_marginEnd="24dp"
                 android:paddingBottom="8dp"
-                android:text="Phone's default TTS processed through optimized DSP audio filters."
-                android:textSize="11sp"
+                android:text="@string/dsp_enhanced_voice_hint"
+                android:textSize="14sp"
                 android:textColor="@color/hint_text" />
+
+            <LinearLayout
+                android:id="@+id/voiceRateSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/voiceSpeedLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="4dp"
+                    android:layout_marginStart="24dp"
+                    android:text="@string/speech_rate"
+                    android:textSize="16sp" />
+
+                <SeekBar
+                    android:id="@+id/voiceSpeedSeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:max="200"
+                    android:progress="110" />
+
+                <TextView
+                    android:id="@+id/voiceSpeedValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:text="1.10x"
+                    android:textSize="14sp"
+                    android:textColor="@color/hint_text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/voicePitchSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/voicePitchLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="4dp"
+                    android:layout_marginStart="24dp"
+                    android:text="@string/pitch"
+                    android:textSize="16sp" />
+
+                <SeekBar
+                    android:id="@+id/voicePitchSeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:max="200"
+                    android:progress="90" />
+
+                <TextView
+                    android:id="@+id/voicePitchValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:text="0.90"
+                    android:textSize="14sp"
+                    android:textColor="@color/hint_text" />
+
+            </LinearLayout>
 
         </RadioGroup>
-
-        <LinearLayout
-            android:id="@+id/voiceSlidersSection"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:visibility="gone"
-            app:layout_constraintTop_toBottomOf="@id/voiceBackendGroup"
-            app:layout_constraintStart_toStartOf="parent">
-
-            <TextView
-                android:id="@+id/voiceSpeedLabel"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="20dp"
-                android:paddingBottom="4dp"
-                android:layout_marginStart="24dp"
-                android:text="Speech rate"
-                android:textSize="16sp" />
-
-            <SeekBar
-                android:id="@+id/voiceSpeedSeekBar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginEnd="24dp"
-                android:max="200"
-                android:progress="110" />
-
-            <TextView
-                android:id="@+id/voiceSpeedValue"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:text="1.10x"
-                android:textSize="14sp"
-                android:textColor="@color/hint_text" />
-
-            <TextView
-                android:id="@+id/voicePitchLabel"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="20dp"
-                android:paddingBottom="4dp"
-                android:layout_marginStart="24dp"
-                android:text="Pitch"
-                android:textSize="16sp" />
-
-            <SeekBar
-                android:id="@+id/voicePitchSeekBar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginEnd="24dp"
-                android:max="200"
-                android:progress="90" />
-
-            <TextView
-                android:id="@+id/voicePitchValue"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:text="0.90"
-                android:textSize="14sp"
-                android:textColor="@color/hint_text" />
-
-        </LinearLayout>
 
         <Button
             android:id="@+id/voiceTestButton"
@@ -197,10 +242,10 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="24dp"
             android:layout_marginBottom="24dp"
-            android:text="Test Voice"
+            android:text="@string/test_voice"
             android:textAllCaps="false"
             android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@id/voiceSlidersSection"
+            app:layout_constraintTop_toBottomOf="@id/voiceBackendGroup"
             app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -153,7 +153,7 @@ def combine_segments(recordings_dir: Path, output_path: Path,
     )
     if result.returncode != 0:
         raise RuntimeError(
-            f"ffmpeg combine failed: {result.stderr.splitlines()[-1]}")
+            f"ffmpeg combine failed: {result.stderr.splitlines()[-1] if result.stderr.strip() else '(no stderr)'}")
 
     log.info(f"Combined {len(segments)} segments with {gap_ms}ms gaps -> "
              f"{output_path.name} ({output_path.stat().st_size / 1024:.0f} KB)")
@@ -172,7 +172,7 @@ def denoise_wav(wav_path: Path) -> bytes:
         )
         if result.returncode != 0:
             log.warning(f"ffmpeg denoise failed, using original: "
-                        f"{result.stderr.splitlines()[-1]}")
+                        f"{result.stderr.splitlines()[-1] if result.stderr.strip() else '(no stderr)'}")
             return wav_path.read_bytes()
         return Path(dst_path).read_bytes()
     finally:
@@ -211,7 +211,7 @@ def normalize_sample_rate(wav_path: Path, target_sr: int = 22050) -> bytes:
         )
         if result.returncode != 0:
             raise RuntimeError(
-                f"Resample failed: {result.stderr.splitlines()[-1]}")
+                f"Resample failed: {result.stderr.splitlines()[-1] if result.stderr.strip() else '(no stderr)'}")
         return Path(dst_path).read_bytes()
     finally:
         os.unlink(dst_path)

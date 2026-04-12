@@ -3,35 +3,38 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    android:screenOrientation="portrait">
+    android:fitsSystemWindows="true">
 
-    <TextView
-        android:id="@+id/locationIntervalLabel"
+    <include
+        layout="@layout/settings_toolbar"
+        android:id="@+id/settingsToolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="20dp"
-        android:paddingBottom="4dp"
-        android:layout_marginStart="24dp"
-        android:text="Update interval (ms)"
-        android:textSize="16sp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/locationIntervalEdit"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/locationIntervalLayout"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="24dp"
-        android:autofillHints=""
-        android:inputType="number"
-        android:text="2000"
-        android:textSize="16sp"
-        android:hint="2000"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="@string/update_interval_label"
+        app:layout_constraintTop_toBottomOf="@id/settingsToolbar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/locationIntervalLabel" />
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/locationIntervalEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:inputType="number"
+            android:text="@string/default_interval"
+            android:textSize="16sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/locationIntervalHint"
@@ -39,10 +42,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
-        android:text="How often to request location updates. Lower values are more responsive but use more battery. Default: 2000 (2 seconds)."
-        android:textSize="12sp"
+        android:text="@string/update_interval_hint"
+        android:textSize="14sp"
         android:textColor="@color/hint_text"
-        app:layout_constraintTop_toBottomOf="@id/locationIntervalEdit"
+        app:layout_constraintTop_toBottomOf="@id/locationIntervalLayout"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

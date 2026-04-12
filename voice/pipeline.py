@@ -3,22 +3,23 @@
 Voice Segment Generation Pipeline
 
 Two independent TTS pipelines for creating pre-recorded audio segments
-for the Growler Android app's concatenative speech engine.
+for the DS1-Pace Android app's concatenative speech engine.
 
-Voxtral pipeline (stages 1–3):
+Voxtral pipeline (stages 1–4):
   1. Create voice clone + preview samples (Mistral Voxtral API)
   2. Generate all voice segments (Voxtral API)
-  3. Package segments for Android assets
+  3. Generate speed variants (Rubberband time-stretch)
+  4. Package segments for Android assets
 
-ElevenLabs pipeline (stages 4–6):
-  4. Create voice clone + preview samples (ElevenLabs IVC API)
-  5. Generate all voice segments (ElevenLabs TTS API)
-  6. Package segments for Android assets
+ElevenLabs pipeline (stages 5–7):
+  5. Create voice clone + preview samples (ElevenLabs IVC API)
+  6. Generate all voice segments (ElevenLabs TTS API)
+  7. Package segments for Android assets
 
 Usage:
-    python pipeline.py --stage 1 2 3     # run Voxtral pipeline
-    python pipeline.py --stage 4 5 6     # run ElevenLabs pipeline
-    python pipeline.py --stage 4         # clone voice + previews only
+    python pipeline.py --stage 1 2 3 4   # run Voxtral pipeline
+    python pipeline.py --stage 5 6 7     # run ElevenLabs pipeline
+    python pipeline.py --stage 5         # clone voice + previews only
     python pipeline.py --list            # list stage descriptions
     python pipeline.py --config my.yaml  # custom config file
 """
@@ -44,7 +45,10 @@ def load_dotenv(env_path: Path):
             if not line or line.startswith("#") or "=" not in line:
                 continue
             key, value = line.split("=", 1)
-            os.environ.setdefault(key.strip(), value.strip())
+            value = value.strip()
+            if len(value) >= 2 and value[0] == value[-1] and value[0] in ('"', "'"):
+                value = value[1:-1]
+            os.environ.setdefault(key.strip(), value)
 
 logging.basicConfig(
     level=logging.INFO,
@@ -56,12 +60,13 @@ log = logging.getLogger("pipeline")
 # ── Pipeline stages ────────────────────────────────────────────────────────
 
 STAGES = [
-    (1, "Create voice clone + preview (Voxtral)",     "stages.voxtral_voice"),
-    (2, "Generate pre-recorded segments (Voxtral)",    "stages.voxtral_segments"),
-    (3, "Package segments for Android (Voxtral)",      "stages.segments_package"),
-    (4, "Create voice clone + preview (ElevenLabs)",   "stages.elevenlabs_voice"),
-    (5, "Generate pre-recorded segments (ElevenLabs)", "stages.elevenlabs_segments"),
-    (6, "Package segments for Android (ElevenLabs)",   "stages.elevenlabs_package"),
+    (1,  "Create voice clone + preview (Voxtral)",      "stages.voxtral_voice"),
+    (2,  "Generate pre-recorded segments (Voxtral)",     "stages.voxtral_segments"),
+    (3,  "Generate speed variants (Voxtral/Rubberband)", "stages.voxtral_speed"),
+    (4,  "Package segments for Android (Voxtral)",       "stages.segments_package"),
+    (5,  "Create voice clone + preview (ElevenLabs)",    "stages.elevenlabs_voice"),
+    (6,  "Generate pre-recorded segments (ElevenLabs)",  "stages.elevenlabs_segments"),
+    (7,  "Package segments for Android (ElevenLabs)",    "stages.elevenlabs_package"),
 ]
 
 
@@ -93,6 +98,9 @@ def resolve_paths(cfg: dict, base_dir: Path) -> dict:
             sim = int(ecfg.get("similarity_boost", 1.0) * 100)
             spd = int(ecfg.get("speed", 0.82) * 100)
             subdir += f"_sta_{sta:03d}_sim_{sim:03d}_spd_{spd:03d}"
+        # Voxtral: append _spd_100 for base segments
+        if key == "voxtral_segments":
+            subdir += "_spd_100"
         section["_output_path"] = str(out / subdir)
 
     # Voxtral voice output path

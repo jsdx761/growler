@@ -62,11 +62,11 @@ instead of localhost.
 
 ## Connecting the Android App
 
-In the Growler app, go to Settings > Crowd-sourced Alerts and set:
+In the DS1-Pace app, go to Settings > Crowd-sourced Alerts and set:
 
 - **URL**: `http://YOUR_SERVER_IP:8080` (e.g. `http://192.168.1.50:8080`)
 - **API key**: the same key you passed to `--api-key`
-- **Region**: `na` (North America), `row` (rest of world), or `il` (Israel)
+- **Region**: `na` (North America) or `row` (rest of world)
 
 The app polls the proxy every 24 seconds for alerts near your location.
 
@@ -84,7 +84,7 @@ Returns crowd-sourced traffic alerts within a geographic bounding box.
 | `left`    | float  | yes      | Western longitude of bounding box |
 | `top`     | float  | yes      | Northern latitude of bounding box |
 | `right`   | float  | yes      | Eastern longitude of bounding box |
-| `env`     | string | yes      | Region: `na`, `row`, or `il` |
+| `env`     | string | yes      | Region: `na` or `row` |
 | `types`   | string | yes      | Comma-separated: `alerts`, `traffic`, `users` |
 
 **Headers:**

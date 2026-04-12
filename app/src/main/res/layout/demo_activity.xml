@@ -3,8 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    android:screenOrientation="portrait">
+    android:fitsSystemWindows="true">
+
+    <include
+        layout="@layout/settings_toolbar"
+        android:id="@+id/settingsToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/demoDescription"
@@ -14,9 +20,9 @@
         android:paddingBottom="24dp"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
-        android:text="Run a demo with simulated alerts. Tap a button to send sample alerts, then navigate to the main screen to hear the announcements."
+        android:text="@string/demo_description"
         android:textSize="14sp"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settingsToolbar"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -26,7 +32,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
         android:layout_marginTop="8dp"
-        android:text="Radar Alerts Demo"
+        android:text="@string/radar_alerts_demo"
         android:textAllCaps="false"
         app:layout_constraintTop_toBottomOf="@id/demoDescription"
         app:layout_constraintStart_toStartOf="parent" />
@@ -38,7 +44,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
         android:layout_marginTop="8dp"
-        android:text="Crowd-sourced Alerts Demo"
+        android:text="@string/waze_alerts_demo"
         android:textAllCaps="false"
         app:layout_constraintTop_toBottomOf="@id/demoRadarButton"
         app:layout_constraintStart_toStartOf="parent" />
@@ -50,7 +56,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
         android:layout_marginTop="8dp"
-        android:text="Aircraft Alerts Demo"
+        android:text="@string/aircraft_alerts_demo"
         android:textAllCaps="false"
         app:layout_constraintTop_toBottomOf="@id/demoCrowdSourcedButton"
         app:layout_constraintStart_toStartOf="parent" />

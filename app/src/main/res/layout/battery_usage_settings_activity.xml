@@ -3,29 +3,37 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    android:screenOrientation="portrait">
+    android:fitsSystemWindows="true">
+
+    <include
+        layout="@layout/settings_toolbar"
+        android:id="@+id/settingsToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/foregroundServiceLabel"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:paddingTop="20dp"
         android:paddingBottom="20dp"
         android:layout_marginStart="24dp"
-        android:text="Use foreground service"
+        android:layout_marginEnd="24dp"
+        android:text="@string/use_foreground_service"
         android:textSize="16sp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/settingsToolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/foregroundServiceSwitch" />
 
-    <Switch
+    <com.google.android.material.materialswitch.MaterialSwitch
         android:id="@+id/foregroundServiceSwitch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:layout_marginEnd="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@id/foregroundServiceLabel"
+        app:layout_constraintBottom_toBottomOf="@id/foregroundServiceLabel" />
 
     <TextView
         android:id="@+id/foregroundServiceHint"
@@ -33,32 +41,34 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
-        android:text="Keeps the app alive when in the background. Shows a persistent notification."
-        android:textSize="12sp"
+        android:text="@string/foreground_service_hint"
+        android:textSize="14sp"
         android:textColor="@color/hint_text"
         app:layout_constraintTop_toBottomOf="@id/foregroundServiceLabel"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/wakeLockLabel"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:paddingTop="20dp"
         android:paddingBottom="20dp"
         android:layout_marginStart="24dp"
-        android:text="Use wake lock"
+        android:layout_marginEnd="24dp"
+        android:text="@string/use_wake_lock"
         android:textSize="16sp"
         app:layout_constraintTop_toBottomOf="@id/foregroundServiceHint"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/wakeLockSwitch" />
 
-    <Switch
+    <com.google.android.material.materialswitch.MaterialSwitch
         android:id="@+id/wakeLockSwitch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/foregroundServiceHint" />
+        app:layout_constraintTop_toTopOf="@id/wakeLockLabel"
+        app:layout_constraintBottom_toBottomOf="@id/wakeLockLabel" />
 
     <TextView
         android:id="@+id/wakeLockHint"
@@ -66,8 +76,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
-        android:text="Prevents the CPU from sleeping. Uses more battery."
-        android:textSize="12sp"
+        android:text="@string/wake_lock_hint"
+        android:textSize="14sp"
         android:textColor="@color/hint_text"
         app:layout_constraintTop_toBottomOf="@id/wakeLockLabel"
         app:layout_constraintStart_toStartOf="parent" />
